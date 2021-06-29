@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#181818"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/item_bg"
+
+
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ফিতরা "
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:padding="15dp"
+                android:background="@drawable/gradient_bg">
+
+            </TextView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="6dp"
+                android:id="@+id/cancelBtn"
+                android:src="@drawable/cross">
+
+            </ImageView>
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/jakat8"
+
+            >
+
+        </ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="ফিতরা বা সাদকাতুল ফিতর হলো সেই নির্ধারিত সাদকা, যা ঈদের নামাজের আগে অসহায় গরিব-দুঃখীদের দিতে হয়। এটিকে জাকাতুল ফিতরও বলা হয়। ঈদের দিন সকালেও যদি করো কাছে নিসাব পরিমাণ সম্পদ- সাড়ে ৭ ভরি সোনা বা সাড়ে ৫২ ভরি রুপা বা সমমূল্যের ব্যবসাপণ্য থাকে তবে তাকে তাঁর নিজের ও পরিবারের ছোট–বড় সবার পক্ষ থেকে ফিতরা আদায় করা ওয়াজিব।"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:padding="10dp"
+            android:textSize="16dp"
+            android:layout_margin="3dp">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="‘ফিতর’ মানে হলো ‘রোজা ছাড়া’। অর্থাৎ যা রমজানের রোজা ছাড়ার কারণে আদায় করতে হয়। ফিতরা মানে হলো প্রকৃতি। যেহেতু ফিতরার মাধ্যমে মানুষ তার পালণীয় রোজার যাবতীয় খতগুলো; ভুলগুলো থেকে আত্মশুদ্ধি ও আত্মার আমলকে নির্মল করার জন্য অসহায়দের মাঝে দেয়া আবশ্যক, তাই এর নাম ফিতরা।"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:padding="10dp"
+            android:textSize="16dp"
+            android:layout_margin="3dp">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="অসহায় প্রতিবেশি ও স্বজনদের জন্য ফিতরা, দান-অনুদান ও উপহার সামগ্রী প্রদান আল্লাহর সন্তুষ্টি পাওয়ারও অন্যতম মাধ্যম। রোজা পালনে কোনোভাবে যদি রোজার আংশিক ক্ষতি, ত্রুটি-বিচ্যুতি হয়; তার সমাধান ও মুক্তির মাধ্যম হচ্ছে- অসচ্ছল, অসহায় ব্যক্তিদের মাঝে ঈদগাহে যাওয়ার পূর্বে ফিতরা আদায় করা। যা আমাদের জন্য একান্ত আবশ্যকীয়।"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:padding="10dp"
+            android:textSize="16dp"
+            android:layout_margin="3dp">
+
+        </TextView>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/jakat81"
+
+            >
+
+        </ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="বুধবার (২১ এপ্রিল) ১৪৪২ হিজরির জন্য ইসলামিক ফাউন্ডেশন কর্তৃক নির্ধারিত ফিতরার পরিমাণ ঘোষণা করেছে। তাহলো-
+
+‘রমজানে এ বছরও বাংলাদেশে ফিতরার হার জনপ্রতি সর্বনিম্ন ৭০ টাকা ও সর্বোচ্চ ২ হাজার ৩১০ টাকা নির্ধারণ করা হয়েছে। গত বছরও সর্বনিম্ন ফিতরা ৭০ টাকাই ছিল তবে সর্বোচ্চ ছিল দুই হাজার ২০০ টাকা।’"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:padding="10dp"
+            android:textSize="16dp"
+            android:layout_margin="3dp">
+
+        </TextView>
+    </LinearLayout>
+
+
+</ScrollView>

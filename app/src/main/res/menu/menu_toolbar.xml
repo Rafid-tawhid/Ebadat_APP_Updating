@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<group>
+    <item
+        android:id="@+id/compass_id"
+        android:title="ক্বিবলা কম্পাস"
+        android:icon="@drawable/a"
+
+        >
+
+    </item>
+</group>
+
+<group>
+    <item
+
+        android:title="মসজিদ"
+        android:icon="@drawable/b"
+        >
+
+    </item>
+</group>
+
+    <group>
+        <item
+
+            android:title="লোকেশন"
+            android:id="@+id/locationId"
+            android:icon="@drawable/c"
+            >
+
+        </item>
+    </group>
+
+
+    <group>
+        <item
+
+            android:title="সেটিংস"
+            android:icon="@drawable/d"
+            >
+
+        </item>
+    </group>
+
+    <group>
+        <item
+
+            android:title="নোটিফিকেশন"
+            android:icon="@drawable/e"
+            >
+
+        </item>
+    </group>
+<group>
+    <item
+
+        android:title="রেটিং"
+        android:icon="@drawable/f"
+        >
+
+    </item>
+</group>
+    <group>
+        <item
+
+            android:title="শেয়ার"
+            android:icon="@drawable/g"
+            android:id="@+id/shareId"
+            >
+
+        </item>
+    </group>
+    <group>
+        <item
+
+            android:title="ফিডব্যাক"
+            android:id="@+id/fbBk"
+            android:icon="@drawable/h"
+            >
+
+        </item>
+    </group>
+    <group>
+        <item
+
+            android:title="আমাদের সর্ম্পকে"
+            android:icon="@drawable/i"
+            >
+
+        </item>
+    </group>
+
+
+<group>
+    <item
+
+        android:title="গোপনীয় নীতি"
+        android:icon="@drawable/j"
+        >
+
+    </item>
+</group>
+
+
+
+
+
+
+</menu>

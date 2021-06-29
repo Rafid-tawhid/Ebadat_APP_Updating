@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#151515"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/ramadan_up"
+        android:scaleType="fitXY"
+
+
+        ></ImageView>
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-8dp"
+        android:layout_marginLeft="8dp"
+        android:padding="3dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/item_bg2"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:id="@+id/nm"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_makruh">
+
+                </ImageView>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="14dp"
+                    android:layout_below="@+id/nm"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_union">
+
+                </ImageView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="12dp"
+                    android:id="@+id/cancelBtn"
+                    android:src="@drawable/cross">
+
+                </ImageView>
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+               android:text="  গড়গড়া কুলি করা অথবা নাকে বেশি গভীরে পানি দেওয়া।"
+                android:layout_marginLeft="18dp"
+                android:drawableStart="@drawable/point"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="13dp">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+               android:text="  অপ্রয়োজনে কোন জিনিস চিবানো।"
+                android:layout_marginLeft="18dp"
+                android:drawableStart="@drawable/point"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="13dp">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+               android:text="  তরকারি, তৈরিকৃত খাবার ইত্যাদির স্বাদ গ্রহণ করে ফেলে দেয়া"
+                android:layout_marginLeft="18dp"
+                android:drawableLeft="@drawable/point"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="13dp">
+
+            </TextView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="  রোগী বা কোন পরীক্ষার জন্য শরীর দুর্বল হয়ে যায়, এমন পরিমাণ রক্ত দেওয়া।"
+                android:layout_marginLeft="18dp"
+                android:drawablePadding="7dp"
+                android:drawableStart="@drawable/point"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="13dp">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="7dp"
+               android:text="   ইচ্ছাকৃত মুখে থুথু জমা করে গলাধঃকরণ করা"
+                android:layout_marginLeft="18dp"
+                android:drawableStart="@drawable/point"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="13dp">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="7dp"
+               android:text="  কুলি করার সময় অসতর্কতার কারণে কণ্ঠনালীতে পানি প্রবেশ করলে রোজা ভঙ্গ হয়ে যায়।"
+                android:layout_marginLeft="18dp"
+                android:drawableStart="@drawable/point"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="13dp">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="   কয়লা চিবিয়ে অথবা পাউডার, পেস্ট ও মাজন ইত্যাদি দ্বারা দাঁত পরিষ্কার করা"
+                android:layout_marginLeft="18dp"
+                android:drawablePadding="7dp"
+                android:drawableStart="@drawable/point"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="13dp">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="  দাঁতে ছোলা/বুটের চেয়ে ছোট কোন বস্তু আটকে থাকলে তা বের করে মুখের ভিতর থাকা অবস্থায় গিলে ফেলা।"
+                 android:layout_marginLeft="18dp"
+                android:drawablePadding="7dp"
+                android:drawableStart="@drawable/point"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="13dp">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+             android:text="  গীবত, গালা-গালি ও ঝগড়া-ফাসাদ করা। কেউ গায়ে পড়ে ঝগড়া-ফাসাদ করতে এলে বলবে, আমি রোজাদার তোমাকে প্রত্যুত্থর দিতে অক্ষম  ।"
+              android:layout_marginLeft="18dp"
+                android:drawablePadding="7dp"
+                android:drawableStart="@drawable/point"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="13dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+              android:text="  গোসল ফরজ হয়েছে, এমন অবস্থায় নাপাক থেকে সারাদিন অতিবাহিত করা।"
+               android:layout_marginLeft="18dp"
+                android:drawablePadding="7dp"
+                android:drawableStart="@drawable/point"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="13dp">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

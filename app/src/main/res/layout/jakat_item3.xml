@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+
+    android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/item_bg"
+
+
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="যাকাত ফরজ হওয়ার শর্তসমূহ"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:padding="15dp"
+                android:background="@drawable/gradient_bg">
+
+            </TextView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="6dp"
+                android:id="@+id/cancelBtn"
+                android:src="@drawable/cross">
+
+            </ImageView>
+        </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#181818"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingTop="5dp"
+                android:src="@drawable/jakat3"
+
+                >
+
+            </ImageView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:text="  নেসাব পরিমাণ মালের মালিক হওয়া। অর্থাৎ সাড়ে সাত তোলা স্বর্ণ, বা সাড়ে বায়ান্ন তোলা রুপা,কিংবা সমপরিমাণ মূল্যের নগদ টাকা বা ব্যবসার মালের মালিক হওয়া।"
+                android:textColor="#FFFFFF"
+                android:textAlignment="textStart"
+                android:drawableStart="@drawable/point"
+                android:padding="5dp"
+                android:textSize="15dp"
+                android:layout_margin="3dp">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="  মুসলমান হওয়া। কাফেরের উপর যাকাত ফরজ নয়।"
+                android:textColor="#FFFFFF"
+                android:drawableStart="@drawable/point"
+                android:padding="5dp"
+                android:textSize="15dp"
+                android:layout_margin="3dp">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="  বালেগ হওয়া। নাবালেগের উপর যাকাত ফরজ নয়।"
+                android:textColor="#FFFFFF"
+                android:drawableStart="@drawable/point"
+                android:padding="5dp"
+                android:textSize="15dp"
+                android:layout_margin="3dp">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="  জ্ঞানী ও বিবেক সম্পন্ন হওয়া। সর্বদা যে পাগল থাকে তার নেসাব পরিমাণ মাল থাকলেও তার উপর যাকাত ফরজ নয়।"
+                android:textColor="#FFFFFF"
+                android:drawableStart="@drawable/point"
+                android:padding="5dp"
+                android:textSize="15dp"
+                android:layout_margin="3dp">
+
+            </TextView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="  স্বাধীন বা মুক্ত হওয়া। দাস-দাসীর উপর যাকাত ফরজ নয়।"
+                android:textColor="#FFFFFF"
+                android:drawableStart="@drawable/point"
+                android:padding="5dp"
+                android:textSize="15dp"
+                android:layout_margin="3dp">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="  মালের উপর পূর্ণ মালিকানা থাকা। অসম্পূর্ণ মালিকানার উপর যাকাত ফরজ হয় না।" android:textColor="#FFFFFF"
+                android:drawableStart="@drawable/point"
+                android:padding="5dp"
+                android:textSize="15dp"
+                android:layout_margin="3dp">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="  নেসাব পরিমাণ মাল নিত্য প্রয়োজনীয় সম্পদের অতিরিক্ত হওয়া।" android:textColor="#FFFFFF"
+                android:drawableStart="@drawable/point"
+                android:padding="5dp"
+                android:textSize="15dp"
+                android:layout_margin="3dp">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="  মাল বর্ধনশীল হওয়া। যাকাতের ফজিলত, আল্লাহ তাআলা ইরশাদ করেন, ‘তোমরা যা কিছু (আল্লাহর রাস্তায়) ব্যয় কর তিনি তার বিনিময় দান করবেন। আর তিনিই উত্তম রিজিকদাতা। (সুরা সাবা,আয়াত:৩৯)" android:textColor="#FFFFFF"
+                android:drawableStart="@drawable/point"
+                android:padding="5dp"
+                android:textSize="15dp"
+                android:layout_margin="3dp">
+
+            </TextView>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

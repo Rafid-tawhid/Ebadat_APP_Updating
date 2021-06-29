@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".DoaShowActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#181818"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/doa_up"
+                android:background="#F6B066"
+                >
+            </ImageView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_ic"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:paddingLeft="10dp"
+                android:id="@+id/bck_btn"
+                ></ImageView>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-22dp"
+            android:padding="12dp"
+            android:background="@drawable/item_bg2"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="6dp"
+                android:orientation="vertical"
+                android:layout_marginRight="6dp"
+                android:background="#000000">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="সাইয়্যেদুল "
+                    android:textSize="18dp"
+
+                    android:id="@+id/nameDoa"
+                    android:background="@drawable/gradient_bg"
+                    android:padding="13dp"
+                    android:textColor="#000000">
+
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="সাইয়্যেদুল ইস্তিগফার"
+                    android:textColor="@color/tgl"
+                    android:id="@+id/nameDoa2"
+                    android:textAlignment="center"
+                    android:layout_margin="4dp"
+                    ></TextView>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/dwn_ic">
+
+                        </ImageView>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/doaImg"
+                            >
+
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="বাংলা"
+                            android:textAlignment="center"
+                            android:textSize="22dp"
+                            android:textColor="@color/tgl"
+                            android:layout_margin="4dp"
+                            >
+
+                        </TextView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="FullDoa  "
+                            android:textAlignment="center"
+                            android:textSize="22dp"
+                            android:id="@+id/doaBangla"
+                            android:textColor="@color/tgl"
+                            android:layout_margin="4dp"
+                            >
+
+                        </TextView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="বাংলা অর্থ:"
+                            android:textAlignment="center"
+                            android:textSize="22dp"
+                            android:textColor="@color/tgl"
+                            android:layout_margin="4dp"
+                            >
+
+                        </TextView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="BanglMeaning  "
+                            android:textAlignment="center"
+                            android:textSize="22dp"
+                            android:id="@+id/doaMeaning"
+                            android:textColor="@color/tgl"
+                            android:layout_margin="4dp"
+                            >
+
+                        </TextView>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+  >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/kalima_header"
+            android:background="#F6B066"
+            >
+        </ImageView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_ic"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:paddingLeft="10dp"
+            android:id="@+id/bck_btn"
+            ></ImageView>
+    </RelativeLayout>
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-8dp"
+        android:layout_marginLeft="8dp"
+        android:padding="3dp"
+
+        android:layout_marginRight="8dp"
+        android:background="@drawable/item_bg2"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="center"
+                    android:src="@drawable/kalima1">
+
+                </ImageView>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="12dp"
+                    android:id="@+id/cancelBtn"
+                    android:src="@drawable/cross">
+
+                </ImageView>
+            </RelativeLayout>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@drawable/kalima1_arbi">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="বাংলা উচ্চারন:"
+                android:textAlignment="center"
+                android:textColor="@color/tgl"
+                android:textSize="24dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="আশ্হাদু আল-লা-ইলা-হা  ইল্লাল্লা-হু ওয়াহ্দাহু-লা-শারীকালাহু ওয়া আম্হাদু আন্না মুহাম্মাদান আবদুহু ওয়া রাসূলুহু।"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="বাংলা অর্থ:"
+                android:textAlignment="center"
+                android:textColor="@color/tgl"
+                android:textSize="24dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="আমি সাক্ষ্য দিতেছি যে, আল্লাহ্ ছাড়া কোন
+উপাস্য নাই। তিনি এক,অদ্বিতীয় এবং আরও সাক্ষ্য দিতেছি যে, মুহাম্মাদ (সাঃ) তাঁহার বান্দা ও প্রেরিত রাসুল।"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp">
+
+            </TextView>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

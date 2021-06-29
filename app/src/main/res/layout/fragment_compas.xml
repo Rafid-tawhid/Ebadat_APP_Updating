@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.CompasFragment">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/item_bg2"
+            >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/ic_kibla"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="20dp"
+                    android:id="@+id/ttl"
+                    >
+
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ttl"
+                    android:textSize="18dp"
+                    android:id="@+id/namaz"
+                    android:textColor="#FFC07B"
+                    android:layout_centerInParent="true"
+                    android:text="পরবর্তী নামাজের ওয়াক্ত: যোহর"
+                    >
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/namaz"
+                    android:textSize="14dp"
+                    android:id="@+id/time"
+                    android:textColor="#FFC07B"
+                    android:layout_centerInParent="true"
+                    android:text="২ ঘন্টা ৩৩ মিনিট ০৪ সেকেন্ড বাকি"
+                    >
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/time"
+                    android:textSize="14dp"
+                    android:textColor="#FFC07B"
+                    android:layout_centerInParent="true"
+                    android:text="খালিশপুর, খুলনা"
+                    >
+
+                </TextView>
+
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:rotation="60"
+                    android:layout_centerInParent="true"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/compuss_icon"
+                    android:contentDescription="@string/todo" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/fab_bg"
+
+                    android:layout_below="@+id/imageView"
+                    android:layout_margin="40dp"
+                    android:text="@string/reset"
+                    android:textColor="#FFC07B"
+                    android:textAllCaps="false"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+
+        </RelativeLayout>
+</FrameLayout>

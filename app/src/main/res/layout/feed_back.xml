@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+
+    android:layout_height="400dp">
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/feedbkId"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/aladin"
+        android:padding="3dp"
+        android:text="FeedBack"
+        android:textAlignment="center"
+        android:textColor="#FF5722"
+        android:textSize="28dp"></TextView>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:id="@+id/feedbkId"
+        android:hint="Share your Thoughts"
+        android:textAlignment="center"
+        android:background="@drawable/ed_bg"
+        android:layout_centerInParent="true"
+        >
+
+    </EditText>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/feedbkId"
+        android:layout_margin="15dp"
+        android:background="#FF5722"
+        android:id="@+id/feedBtn"
+        >
+
+    </Button>
+
+
+</LinearLayout>

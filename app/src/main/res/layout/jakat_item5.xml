@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#181818"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/item_bg"
+
+
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="নিসাব "
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:padding="15dp"
+                android:background="@drawable/gradient_bg">
+
+            </TextView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="6dp"
+                android:id="@+id/cancelBtn"
+                android:src="@drawable/cross">
+
+            </ImageView>
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/jakat5"
+
+            >
+
+        </ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="নিসাব আরবি শব্দ। ইসলামী শরিয়তের পারিভাষায় যাকাতের নিসাব হলো যাকাত ফরজ হওয়ার জন্য নির্ধারিত পরিমাণ সম্পদ। অর্থ্যাৎ দৈনন্দিন প্রয়োজন পূরণ ও নিত্য প্রয়োজনীয় দ্রব্য সামগ্রী বাদ দেয়ার পর সাড়ে বায়ান্ন তোলা পরিমাণ রূপা অথবা সাড়ে সাত তোলা পরিমাণ স্বর্ণ থাকলে অথবা এর সমমূল্যের ব্যবসায়িক পণ্যের মালিকানা থাকলে তাকে যাকাতের নিসাব বলে।"
+            android:textColor="#FFFFFF"
+            android:padding="10dp"
+            android:textSize="16dp"
+            android:layout_margin="10dp">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+</ScrollView>

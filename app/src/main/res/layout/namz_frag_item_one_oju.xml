@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:background="#181818"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/namaz_main_frame_bg"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/up"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/namaj_up"
+                android:background="#F6B066"
+                >
+            </ImageView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_ic"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:paddingLeft="10dp"
+                android:id="@+id/bck_btn"
+                ></ImageView>
+        </RelativeLayout>
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:scaleType="center"
+                    android:src="@drawable/namaj_ic1_tittle"
+                    android:layout_margin="3dp"
+                    >
+
+                </ImageView>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:scaleType="fitXY"
+                    android:padding="5dp"
+                    android:src="@drawable/namj_doa1_ic"
+                    >
+
+                </ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="#ffffff"
+                    android:padding="4dp"
+                    android:text="অর্থ : “হে মুমিনগণ! যখন তোমরা সালাতের জন্য প্রস্তুত হবে, তখন তোমরা তোমাদের মুখ মন্ডল ও দুই হাত কনুই সহ ধৌত করবে, এবং তোমাদের মাথা মাসেহ করবে, আর দুই পা গোড়ালীসহ ধৌত করবে।” [সূরা মায়িদাহঃ আয়াত-৬]"
+                    >
+
+                </TextView>
+                <ExpandableListView
+                    android:layoutDirection="rtl"
+                    android:background="#181818"
+                    android:dividerHeight="1dp"
+
+                    android:id="@+id/expandableListVieId"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+
+
+
+</FrameLayout>

@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:background="#181818"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/zakat_bg"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="60dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/up"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_up_zakat"
+                android:background="#F6B066"
+                >
+            </ImageView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_ic"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:paddingLeft="10dp"
+                android:id="@+id/bck_btn"
+                ></ImageView>
+        </RelativeLayout>
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/jakat_ttl_"
+                    android:layout_margin="5dp"
+                    ></ImageView>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/jakat_arbi"
+                    android:scaleType="centerCrop"
+                    android:padding="10dp"
+
+                    android:layout_margin="10dp"
+                    >
+
+                </ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                   android:textSize="16dp"
+                    android:layout_margin="5dp"
+                    android:text="অর্থ : “আর তাদেরকে কেবল এই নির্দেশ দেয়া হয়েছিল যে, তারা যেন আল্লাহর, ইবাদাত করে তাঁরই জন্য দীনকে একনিষ্ঠ করে, সালাত কায়েম করে এবং যাকাত দেয়; আর এটিই হল সঠিক দীন।” [ সূরা আল বাইয়িনাহ, আয়াত: ৫]"
+                    android:textColor="#FFFFFF">
+
+                </TextView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="4dp"
+                    android:id="@+id/namaz_item1"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#28272C"
+
+                        android:id="@+id/jakat_item1"
+                        android:orientation="horizontal"
+                        android:weightSum="7"
+                        >
+                        <TextView
+                            android:id="@+id/headerTextViewId"
+                            android:layout_width="0dp"
+                            android:layout_weight="6"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/hind_siliguri_semibold"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="যাকাতের কি"
+                            android:textColor="#FDCA85"
+                            android:textSize="18sp" />
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:padding="16dp"
+
+                            android:layout_height="match_parent"
+                            android:src="@drawable/arroww"
+
+                            ></ImageView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="4dp"
+                    android:id="@+id/namaz_item2"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#28272C"
+                        android:id="@+id/jakat_item2"
+                        android:orientation="horizontal"
+                        android:weightSum="7"
+                        >
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_weight="6"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/hind_siliguri_semibold"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:text=" যাকাত ক্যালকুলেটর"
+                            android:textColor="#FDCA85"
+                            android:textSize="18sp" />
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:padding="16dp"
+
+                            android:layout_height="match_parent"
+                            android:src="@drawable/arroww"
+
+                            ></ImageView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="4dp"
+                    android:id="@+id/namaz_item3"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#28272C"
+                        android:id="@+id/jakat3"
+                        android:orientation="horizontal"
+                        android:weightSum="7"
+                        >
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_weight="6"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/hind_siliguri_semibold"
+                            android:paddingLeft="15dp"
+
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:text=" যাকাত ফরজ হওয়ার শর্তসমূহ"
+                            android:textColor="#FDCA85"
+                            android:textSize="18sp" />
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:padding="16dp"
+
+                            android:layout_height="match_parent"
+                            android:src="@drawable/arroww"
+
+                            ></ImageView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="4dp"
+                    android:id="@+id/namaz_item4"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#28272C"
+                        android:id="@+id/jakat4"
+
+                        android:orientation="horizontal"
+                        android:weightSum="7"
+                        >
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_weight="6"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/hind_siliguri_semibold"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:text=" যাকাত প্রদানের খাত সমূহ"
+                            android:textColor="#FDCA85"
+                            android:textSize="18sp" />
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:padding="16dp"
+
+                            android:layout_height="match_parent"
+                            android:src="@drawable/arroww"
+
+                            ></ImageView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="4dp"
+                    android:id="@+id/namaz_item5"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#28272C"
+                        android:id="@+id/jakat5"
+                        android:orientation="horizontal"
+                        android:weightSum="7"
+                        >
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_weight="6"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/hind_siliguri_semibold"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:text=" নিসাব"
+                            android:textColor="#FDCA85"
+                            android:textSize="18sp" />
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:padding="16dp"
+
+                            android:layout_height="match_parent"
+                            android:src="@drawable/arroww"
+
+                            ></ImageView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="4dp"
+                    android:id="@+id/namaz_item6"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#28272C"
+                        android:id="@+id/jakat6"
+                        android:orientation="horizontal"
+                        android:weightSum="7"
+                        >
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_weight="6"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/hind_siliguri_semibold"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:text=" নিসাবের বিবরণ"
+                            android:textColor="#FDCA85"
+                            android:textSize="18sp" />
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:padding="16dp"
+
+                            android:layout_height="match_parent"
+                            android:src="@drawable/arroww"
+
+                            ></ImageView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="4dp"
+                    android:id="@+id/namaz_item7"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#28272C"
+                        android:id="@+id/jakat7"
+                        android:orientation="horizontal"
+                        android:weightSum="7"
+                        >
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_weight="6"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/hind_siliguri_semibold"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:text=" যাকাতের গুরুত্ব ও ফজিলত"
+                            android:textColor="#FDCA85"
+                            android:textSize="18sp" />
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:padding="16dp"
+
+                            android:layout_height="match_parent"
+                            android:src="@drawable/arroww"
+
+                            ></ImageView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="4dp"
+                    android:id="@+id/namaz_item8"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#28272C"
+                        android:id="@+id/jakat8"
+                        android:orientation="horizontal"
+                        android:weightSum="7"
+                        >
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_weight="6"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/hind_siliguri_semibold"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:text=" ফিতরা"
+
+                            android:textColor="#FDCA85"
+                            android:textSize="18sp" />
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:padding="16dp"
+
+                            android:layout_height="match_parent"
+                            android:src="@drawable/arroww"
+
+                            ></ImageView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="4dp"
+                    android:id="@+id/namaz_item10"
+                    >
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+
+</FrameLayout>
