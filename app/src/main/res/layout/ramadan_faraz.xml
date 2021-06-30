@@ -84,7 +84,7 @@
                 android:drawableStart="@drawable/point"
                android:textAlignment="textStart"
                 android:textColor="#FFFFFF"
-                android:textSize="13dp">
+                android:textSize="16dp">
 
             </TextView>
             <TextView
@@ -96,7 +96,7 @@
                 android:drawableStart="@drawable/point"
                 android:textAlignment="textStart"
                 android:textColor="#FFFFFF"
-                android:textSize="13dp">
+                android:textSize="16dp">
 
             </TextView>
             <TextView
@@ -108,7 +108,7 @@
                 android:drawableLeft="@drawable/point"
                 android:textAlignment="textStart"
                 android:textColor="#FFFFFF"
-                android:textSize="13dp">
+                android:textSize="16dp">
 
             </TextView>
 
@@ -136,7 +136,7 @@
                 android:drawableStart="@drawable/point"
                 android:textAlignment="textStart"
                 android:textColor="#FFFFFF"
-                android:textSize="13dp">
+                android:textSize="16dp">
 
             </TextView>
             <TextView
@@ -149,7 +149,7 @@
                 android:drawableStart="@drawable/point"
                 android:textAlignment="textStart"
                 android:textColor="#FFFFFF"
-                android:textSize="13dp">
+                android:textSize="16dp">
 
             </TextView>
             <TextView
@@ -162,7 +162,7 @@
                 android:drawableStart="@drawable/point"
                 android:textAlignment="textStart"
                 android:textColor="#FFFFFF"
-                android:textSize="13dp">
+                android:textSize="16dp">
 
             </TextView>
             <TextView
@@ -175,7 +175,7 @@
                 android:drawableStart="@drawable/point"
                 android:textAlignment="textStart"
                 android:textColor="#FFFFFF"
-                android:textSize="13dp">
+                android:textSize="16dp">
 
             </TextView>
             <TextView
@@ -188,7 +188,7 @@
                 android:drawableStart="@drawable/point"
                 android:textAlignment="textStart"
                 android:textColor="#FFFFFF"
-                android:textSize="13dp">
+                android:textSize="16dp">
 
             </TextView>
             <TextView
@@ -201,7 +201,7 @@
                 android:drawableStart="@drawable/point"
                 android:textAlignment="textStart"
                 android:textColor="#FFFFFF"
-                android:textSize="13dp">
+                android:textSize="16dp">
 
             </TextView>
 
@@ -230,7 +230,7 @@
 রাসূলে করিম সাল্লাল্লাহু আলাইহি ওয়া সাল্লাম বলেছেন : ইসলাম যে পাঁচটি ভিত্তির উপর প্রতিষ্ঠিত তার একটি হল সিয়াম পালন। এ সিয়াম জান্নাত লাভের একটি মাধ্যম ; যেমন হাদিসে এসেছে : যে আল্লাহ ও তাঁর রাসূলের প্রতি ঈমান আনল, সালাত কায়েম করল, জাকাত আদায় করল, সিয়াম পালন করল রমজান মাসে, আল্লাহ তাআলার কর্তব্য হল তাকে জান্নাতে প্রবেশ করানো। [ বোখারি ]"
                 android:textAlignment="center"
                 android:textColor="#FFFFFF"
-                android:textSize="14dp">
+                android:textSize="16dp">
 
             </TextView>
             <TextView
@@ -244,7 +244,7 @@
 এ মাসে মানুষের হেদায়াত ও আলোকবর্তিকা যেমন নাজিল হয়েছে তেমনি আল্লাহর রহমত হিসেবে এসেছে সিয়াম। তাই এ দুই নিয়ামতের শুকরিয়া আদায় করতে বেশি বেশি করে কোরআন তিলাওয়াত করা উচিত। প্রতি বছর রমজান মাসে জিবরাইল রাসূলুল্লাহ সাল্লাল্লাহু আলাইহি ওয়া সাল্লাম-কে পূর্ণ কোরআন শোনাতেন এবং রাসূল সাল্লাল্লাহু আলাইহি ওয়া সাল্লাম-ও তাকে পূর্ণ কোরআন শোনাতেন। আর জীবনের শেষ রমজানে আল্লাহর রাসূল দু বার পূর্ণ কোরআন তিলাওয়াত করেছেন। সহি মুসলিমের হাদিস দ্বারা এটা প্রমাণিত"
                 android:textAlignment="center"
                 android:textColor="#FFFFFF"
-                android:textSize="14dp">
+                android:textSize="16dp">
 
             </TextView>
 

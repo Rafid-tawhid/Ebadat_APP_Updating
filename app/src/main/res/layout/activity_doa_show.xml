@@ -67,8 +67,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="সাইয়্যেদুল ইস্তিগফার"
-                    android:textColor="@color/tgl"
+                    android:textColor="#FDCA85"
                     android:id="@+id/nameDoa2"
+                    android:textSize="18dp"
                     android:textAlignment="center"
                     android:layout_margin="4dp"
                     ></TextView>
@@ -101,8 +102,9 @@
                             android:layout_height="wrap_content"
                             android:text="বাংলা"
                             android:textAlignment="center"
-                            android:textSize="22dp"
-                            android:textColor="@color/tgl"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:textColor="#FDCA85"
                             android:layout_margin="4dp"
                             >
 
@@ -112,9 +114,9 @@
                             android:layout_height="wrap_content"
                             android:text="FullDoa  "
                             android:textAlignment="center"
-                            android:textSize="22dp"
+                            android:textSize="16dp"
                             android:id="@+id/doaBangla"
-                            android:textColor="@color/tgl"
+                            android:textColor="#fff"
                             android:layout_margin="4dp"
                             >
 
@@ -124,8 +126,8 @@
                             android:layout_height="wrap_content"
                             android:text="বাংলা অর্থ:"
                             android:textAlignment="center"
-                            android:textSize="22dp"
-                            android:textColor="@color/tgl"
+                            android:textSize="18dp"
+                            android:textColor="#FDCA85"
                             android:layout_margin="4dp"
                             >
 
@@ -135,9 +137,9 @@
                             android:layout_height="wrap_content"
                             android:text="BanglMeaning  "
                             android:textAlignment="center"
-                            android:textSize="22dp"
+                            android:textSize="16dp"
                             android:id="@+id/doaMeaning"
-                            android:textColor="@color/tgl"
+                            android:textColor="#fff"
                             android:layout_margin="4dp"
                             >
 

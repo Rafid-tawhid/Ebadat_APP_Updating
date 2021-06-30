@@ -74,8 +74,8 @@
                 android:layout_marginTop="15dp"
                 android:text="বাংলা উচ্চারন:"
                 android:textAlignment="center"
-                android:textColor="@color/tgl"
-                android:textSize="24dp">
+                android:textColor="#FDCA85"
+                android:textSize="18dp">
 
             </TextView>
 
@@ -86,7 +86,7 @@
                 android:text="নাওয়াইতু আন আছুম্মা গাদাম মিন শাহরি রমাজানাল মুবারাকি ফারদাল্লাকা, ইয়া আল্লাহু ফাতাকাব্বাল মিন্নি ইন্নিকা আনতাস সামিউল আলিম।"
                 android:textAlignment="center"
                 android:textColor="#FFFFFF"
-                android:textSize="20dp">
+                android:textSize="16dp">
 
             </TextView>
 
@@ -96,8 +96,8 @@
                 android:layout_marginTop="15dp"
                 android:text="বাংলা অর্থ:"
                 android:textAlignment="center"
-                android:textColor="@color/tgl"
-                android:textSize="24dp">
+                android:textColor="#FDCA85"
+                android:textSize="18dp">
 
             </TextView>
 
@@ -108,7 +108,7 @@
                 android:text="  হে আল্লাহ! আমি আগামীকাল পবিত্র রমজানের তোমার পক্ষ থেকে নির্ধারিত ফরজ রোজা রাখার ইচ্ছা পোষণ (নিয়্যত) করলাম। অতএব তুমি আমার পক্ষ থেকে (আমার রোযা তথা পানাহার থেকে বিরত থাকাকে) কবুল কর, নিশ্চয়ই তুমি সর্বশ্রোতা ও সর্বজ্ঞানী।"
                 android:textAlignment="center"
                 android:textColor="#FFFFFF"
-                android:textSize="20dp">
+                android:textSize="16dp">
 
             </TextView>
 
@@ -135,8 +135,8 @@
                 android:layout_marginTop="15dp"
                 android:text="বাংলা উচ্চারন:"
                 android:textAlignment="center"
-                android:textColor="@color/tgl"
-                android:textSize="24dp">
+                android:textColor="#FDCA85"
+                android:textSize="18dp">
 
             </TextView>
 
@@ -147,7 +147,7 @@
                 android:text="আল্লাহুম্মা লাকা ছুমতু ওয়া আলা রিযক্বিকা ওয়া আফতারতু বিরাহমাতিকা ইয়া আরহামার রাহিমিন।"
                android:textAlignment="center"
                 android:textColor="#FFFFFF"
-                android:textSize="20dp">
+                android:textSize="16dp">
 
             </TextView>
 
@@ -157,8 +157,8 @@
                 android:layout_marginTop="15dp"
                 android:text="বাংলা অর্থ:"
                 android:textAlignment="center"
-                android:textColor="@color/tgl"
-                android:textSize="24dp">
+                android:textColor="#FDCA85"
+                android:textSize="18dp">
 
             </TextView>
 
@@ -169,7 +169,7 @@
                 android:text="হে আল্লাহ! আমি তোমারই সন্তুষ্টির জন্য রোজা রেখেছি এবং তোমারই দেয়া রিযিক্বের মাধ্যমে ইফতার করছি।"
                 android:textAlignment="center"
                 android:textColor="#FFFFFF"
-                android:textSize="20dp">
+                android:textSize="16dp">
 
             </TextView>
 

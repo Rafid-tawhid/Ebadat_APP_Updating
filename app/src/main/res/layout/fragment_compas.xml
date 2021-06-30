@@ -30,7 +30,7 @@
                     android:layout_below="@+id/ttl"
                     android:textSize="18dp"
                     android:id="@+id/namaz"
-                    android:textColor="#FFC07B"
+                    android:textColor="#FDCA85"
                     android:layout_centerInParent="true"
                     android:text="পরবর্তী নামাজের ওয়াক্ত: যোহর"
                     >
@@ -42,7 +42,7 @@
                     android:layout_below="@+id/namaz"
                     android:textSize="14dp"
                     android:id="@+id/time"
-                    android:textColor="#FFC07B"
+                    android:textColor="#FDCA85"
                     android:layout_centerInParent="true"
                     android:text="২ ঘন্টা ৩৩ মিনিট ০৪ সেকেন্ড বাকি"
                     >
@@ -53,7 +53,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/time"
                     android:textSize="14dp"
-                    android:textColor="#FFC07B"
+                    android:textColor="#FDCA85"
                     android:layout_centerInParent="true"
                     android:text="খালিশপুর, খুলনা"
                     >

@@ -56,13 +56,26 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:textSize="18dp"
+                    android:id="@+id/name"
+                    android:textAlignment="center"
+                    android:textColor="#FDCA85"
+                    android:text="কালেমা শাহাদাত">
+
+                </TextView>
                 <ImageView
                     android:layout_width="wrap_content"
-                    android:layout_height="40dp"
+                    android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:src="@drawable/ic_kalimaname1">
+                    android:layout_below="@+id/name"
+                    android:src="@drawable/underline"
+                    android:padding="3dp"
+                    ></ImageView>
 
-                </ImageView>
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
@@ -83,7 +96,7 @@
             android:padding="5dp"
             android:text=":ٱللَّٰهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ أَنْ أُشْرِكَ بِكَ شَيْءً وَأَنَا أَعْلَمُ بِهِ وَأَسْتَغْفِرُكَ لِمَا لَا أَعْلَمُ بِهِ تُبْتُ عَنْهُ وَتَبَرَّأَتُ مِنَ ٱلْكُفْرِ وَٱلشِّرْكِ وَٱلْكِذْبِ وَٱلْغِيبَةِ وَٱلْبِدْعَةِ وَٱلنَّمِيمَةِ وَٱلْفَوَاحِشِ وَٱلْبُهْتَانِ وَٱلْمَعَاصِي كُلِّهَا وَأَسْلَمْتُ وَأَقُولُ لَا إِلَٰهَ إِلَّا ٱللَّٰهُ مُحَمَّدٌ رَسُولُ ٱللَّٰ"
 
-            android:textSize="24dp"
+            android:textSize="20dp"
             android:textAlignment="center"
             android:textColor="#FDCA85">
 
@@ -96,7 +109,7 @@
                 android:text="বাংলা উচ্চারন:"
                 android:textAlignment="center"
                 android:textColor="#FDCA85"
-                android:textSize="20dp">
+                android:textSize="18dp">
 
             </TextView>
 
@@ -107,7 +120,7 @@
                 android:text="আল্লাহুম্মা ইন্নী আউযুবিকা মিন আন উশরিকা বিকা শাইআও ওয়া আনা আলামু বিহি ওয়া আসতাগ ফিরুকা লিমা আলামু বিহি ওয়ামা লা আলামু বিহি তুবতু আনহু ওয়া তাবাররাতু মিনাল কুফরি ওয়াশ্শির্কি ওয়াল মা আছি কুল্লিহা ওয়া আসলামতু ওয়া আমানতু ওয়া আক্কলু আল্লা ইলাহা ইল্লাল্লাহু মুহাম্মাদু রাসূলুল্লাহ"
                 android:textAlignment="center"
                 android:textColor="#FFFFFF"
-                android:textSize="18dp">
+                android:textSize="16dp">
 
             </TextView>
 
@@ -118,7 +131,7 @@
                 android:text="বাংলা অর্থ:"
                 android:textAlignment="center"
                 android:textColor="#FDCA85"
-                android:textSize="20dp">
+                android:textSize="18dp">
 
             </TextView>
 
@@ -137,7 +150,7 @@
 রাসুল। "
                 android:textAlignment="center"
                 android:textColor="#FFFFFF"
-                android:textSize="18dp">
+                android:textSize="16dp">
 
             </TextView>
 

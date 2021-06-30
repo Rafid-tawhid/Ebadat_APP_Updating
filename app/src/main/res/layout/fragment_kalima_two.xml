@@ -56,14 +56,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 >
-                <ImageView
+                <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="40dp"
+                    android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:scaleType="center"
+                    android:text="কালেমা শাহাদাত"
+                    android:textSize="18dp"
+                    android:textColor="#FDCA85"
                     android:src="@drawable/kalima1">
 
-                </ImageView>
+                </TextView>
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
