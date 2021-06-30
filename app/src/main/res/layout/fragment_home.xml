@@ -26,18 +26,24 @@
                 android:layout_width="match_parent"
                 android:paddingTop="1dp"
                 android:padding="5dp"
-                android:layout_height="350dp"
+                android:layout_height="350dp">
 
 
-                >
 
-                <!--                    <RelativeLayout-->
-                <!--                        android:layout_width="match_parent"-->
-                <!--                        android:layout_height="192dp"-->
-                <!--                        android:background="@drawable/flower2"-->
-                <!--                        >-->
 
-                <!--                    </RelativeLayout>-->
+
+
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="240dp"
+                                        android:background="@drawable/f2"
+                                        android:layout_marginTop="-14dp"
+                                        android:layout_marginLeft="-7dp"
+                                        android:layout_marginRight="-7dp"
+                                        >
+
+                                    </ImageView>
 
 
                 <TextView
@@ -101,13 +107,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <ImageView
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
-                    android:background="@drawable/flower1"
-                    android:layout_marginTop="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="156dp"/>
+<!--                <ImageView-->
+<!--                    android:layout_marginLeft="30dp"-->
+<!--                    android:layout_marginRight="30dp"-->
+<!--                    android:background="@drawable/flower1"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="156dp"/>-->
             </LinearLayout>
             <LinearLayout
                 android:gravity="center"

@@ -95,8 +95,8 @@
                 android:layout_marginTop="15dp"
                 android:text="বাংলা উচ্চারন:"
                 android:textAlignment="center"
-                android:textColor="@color/tgl"
-                android:textSize="24dp">
+                android:textColor="#FDCA85"
+                android:textSize="20dp">
 
             </TextView>
 
@@ -107,7 +107,7 @@
                 android:text="আল্লাহুম্মা ইন্নী আউযুবিকা মিন আন উশরিকা বিকা শাইআও ওয়া আনা আলামু বিহি ওয়া আসতাগ ফিরুকা লিমা আলামু বিহি ওয়ামা লা আলামু বিহি তুবতু আনহু ওয়া তাবাররাতু মিনাল কুফরি ওয়াশ্শির্কি ওয়াল মা আছি কুল্লিহা ওয়া আসলামতু ওয়া আমানতু ওয়া আক্কলু আল্লা ইলাহা ইল্লাল্লাহু মুহাম্মাদু রাসূলুল্লাহ"
                 android:textAlignment="center"
                 android:textColor="#FFFFFF"
-                android:textSize="20dp">
+                android:textSize="18dp">
 
             </TextView>
 
@@ -117,8 +117,8 @@
                 android:layout_marginTop="15dp"
                 android:text="বাংলা অর্থ:"
                 android:textAlignment="center"
-                android:textColor="@color/tgl"
-                android:textSize="24dp">
+                android:textColor="#FDCA85"
+                android:textSize="20dp">
 
             </TextView>
 
@@ -137,7 +137,7 @@
 রাসুল। "
                 android:textAlignment="center"
                 android:textColor="#FFFFFF"
-                android:textSize="20dp">
+                android:textSize="18dp">
 
             </TextView>
 

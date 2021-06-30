@@ -106,8 +106,8 @@
                 android:layout_marginTop="15dp"
                 android:text="বাংলা উচ্চারন:"
                 android:textAlignment="center"
-                android:textColor="@color/tgl"
-                android:textSize="24dp">
+                android:textColor="#FDCA85"
+                android:textSize="20dp">
 
             </TextView>
 
@@ -118,7 +118,7 @@
                 android:text=" লা-ইলাহা ইল্লাল্লাহু ওয়াহ্ দাহু লা-সারিকা লা-হু লাহুল মুলকু ওয়া লাহুল হামদু ইউহা ই ওয়া উ মিতু বি ইয়া সি হিল খাইরু ওয়া-হু-ওয়া আ-লা কুল্লি শাইয়িন ক্বাদীর। "
                 android:textAlignment="center"
                 android:textColor="#FFFFFF"
-                android:textSize="20dp">
+                android:textSize="18dp">
 
             </TextView>
 
@@ -128,8 +128,8 @@
                 android:layout_marginTop="15dp"
                 android:text="বাংলা অর্থ:"
                 android:textAlignment="center"
-                android:textColor="@color/tgl"
-                android:textSize="24dp">
+                android:textColor="#FDCA85"
+                android:textSize="20dp">
 
             </TextView>
 
@@ -140,7 +140,7 @@
                 android:text=" আল্লাহ এক আর কোন মাবুদ নেই তিনি এক তার কোন অংশীদার নেই। সমস্ত সৃষ্টি জগৎ এবং সকল প্রশংসা তাঁরই। তিনি জীবন হান করেন আবার তিনিই মৃত্যুর কারণ তার হাতেই সব ভাল কিছু এবং তিনিই সৃষ্টির সবকিছুর উপর ক্ষমতাবান।"
                 android:textAlignment="center"
                 android:textColor="#FFFFFF"
-                android:textSize="20dp">
+                android:textSize="18dp">
 
             </TextView>
 

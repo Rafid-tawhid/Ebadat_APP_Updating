@@ -107,7 +107,7 @@
                 android:text="বাংলা উচ্চারন:"
                 android:textAlignment="center"
                 android:textColor="#FDCA85"
-                android:textSize="24dp">
+                android:textSize="20dp">
 
             </TextView>
 
@@ -118,7 +118,7 @@
                 android:text=" আস্তাগফিরুল্লাহা রাব্বি মিন কুল্লি জামবি আয নাবতুহু আমাদান আওখাতাআন সিররান আওয়ালা নিয়াতান ওয়াতুবু ইলাইহি মিনাযযামবিল্লাজি ওয়ামিনাযযামবিল্লাজি লা আলামু ইন্নাকা আনতা আল্লামুল গুয়ুবী ওয়া সাত্তারুল উইয়ুবী ওয়া গাফফারুজজুনুবি ওয়ালা হাওলা ওয়ালা কুয়াতা ইল্লা বিল্লাহিল আলিউল আযীম।"
                 android:textAlignment="center"
                 android:textColor="#FFFFFF"
-                android:textSize="20dp">
+                android:textSize="18dp">
 
             </TextView>
 
@@ -129,7 +129,7 @@
                 android:text="বাংলা অর্থ:"
                 android:textAlignment="center"
                 android:textColor="#FDCA85"
-                android:textSize="24dp">
+                android:textSize="20dp">
 
             </TextView>
 
@@ -141,7 +141,7 @@
                 android:text=" আমি আল্লাহর কাছে ক্ষমা চাই সকল পাপ থেকে, যা আমি সংঘটিত করেছি আমার জ্ঞাতসারে অথবা অজ্ঞাতসারে, গোপনে বা প্রকাশ্যে এবং আমি আমার পালনকর্তার আশ্রয় চাই সেই পাপ থেকে, যে পাপ আমি জানি এবং যে পাপ আমি জানিনা। অবশ্যই আপনি লুকানো এবং গোপন (ভুল) পাপ সম্পর্কে জানেন এবং ক্ষমাশীল। আল্লাহ ছাড়া কোন শক্তি নেই, কোন ক্ষমতা নেই, তিনি সম্মানিত, তিনি মহান।"
                 android:textAlignment="center"
                 android:textColor="#FFFFFF"
-                android:textSize="20dp">
+                android:textSize="18dp">
 
             </TextView>
 

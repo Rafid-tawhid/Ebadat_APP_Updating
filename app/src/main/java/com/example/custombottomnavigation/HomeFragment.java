@@ -13,6 +13,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -46,7 +48,7 @@ import retrofit2.Response;
 
 public class HomeFragment extends Fragment {
 
-    LinearLayout hadis,kalima,ramadan,dua,jakat,namaj,koran;
+    LinearLayout hadis,kalima,ramadan,dua,jakat,namaj,koran,name99;
     TextView fajar,johur,asar,magrib,esha;
     private Context context;
     ApiInterface apiInterface;
@@ -82,6 +84,7 @@ public class HomeFragment extends Fragment {
         koran=view.findViewById(R.id.koran_id);
         jakat=view.findViewById(R.id.jakat_btn);
         namaj=view.findViewById(R.id.namaj_btn);
+        name99=view.findViewById(R.id.allahs_name);
         fajar=view.findViewById(R.id.fajartimeId);
         johur=view.findViewById(R.id.johor);
         asar=view.findViewById(R.id.asorId);
@@ -91,7 +94,7 @@ public class HomeFragment extends Fragment {
 
 
 
-        //find bangla date
+
 
 
 
@@ -187,6 +190,20 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 KoranFragment fragment = new KoranFragment();
+                FragmentManager fragmentManager = getFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.main_frame_bg, fragment);
+                fragmentTransaction.commit();
+
+
+
+
+            }
+        });
+        name99.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SortFragment fragment = new SortFragment();
                 FragmentManager fragmentManager = getFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.main_frame_bg, fragment);
