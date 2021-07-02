@@ -8,7 +8,7 @@
     <item
         android:id="@+id/compass_id"
         android:title="ক্বিবলা কম্পাস"
-        android:icon="@drawable/a"
+        android:icon="@drawable/a11"
 
         >
 
@@ -19,7 +19,7 @@
     <item
 
         android:title="মসজিদ"
-        android:icon="@drawable/b"
+        android:icon="@drawable/b11"
         >
 
     </item>
@@ -30,7 +30,7 @@
 
             android:title="লোকেশন"
             android:id="@+id/locationId"
-            android:icon="@drawable/c"
+            android:icon="@drawable/c11"
             >
 
         </item>
@@ -41,7 +41,7 @@
         <item
 
             android:title="সেটিংস"
-            android:icon="@drawable/d"
+            android:icon="@drawable/d11"
             >
 
         </item>
@@ -60,7 +60,7 @@
     <item
 
         android:title="রেটিং"
-        android:icon="@drawable/f"
+        android:icon="@drawable/f11"
         >
 
     </item>
@@ -69,7 +69,7 @@
         <item
 
             android:title="শেয়ার"
-            android:icon="@drawable/g"
+            android:icon="@drawable/shr"
             android:id="@+id/shareId"
             >
 
@@ -80,7 +80,7 @@
 
             android:title="ফিডব্যাক"
             android:id="@+id/fbBk"
-            android:icon="@drawable/h"
+            android:icon="@drawable/g11"
             >
 
         </item>
@@ -89,7 +89,7 @@
         <item
 
             android:title="আমাদের সর্ম্পকে"
-            android:icon="@drawable/i"
+            android:icon="@drawable/h11"
             >
 
         </item>
@@ -100,7 +100,7 @@
     <item
 
         android:title="গোপনীয় নীতি"
-        android:icon="@drawable/j"
+        android:icon="@drawable/j11"
         >
 
     </item>
