@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="#151515"
     android:layout_height="match_parent">
@@ -37,19 +38,23 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 >
-                <ImageView
+                <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="26dp"
+                    android:layout_height="30dp"
                     android:id="@+id/nm"
+                    android:textSize="20dp"
+                    android:text="রোজা ভঙ্গের কারণ সমূহ"
+                    android:layout_marginTop="5dp"
                     android:layout_alignParentTop="true"
                     android:layout_centerInParent="true"
-                    android:src="@drawable/ic_makruh">
+                    android:textColor="#FDCA85">
 
-                </ImageView>
+                </TextView>
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="14dp"
                     android:layout_below="@+id/nm"
+                    android:layout_marginBottom="5dp"
                     android:layout_centerInParent="true"
                     android:src="@drawable/ic_union">
 
@@ -73,6 +78,8 @@
                 android:layout_marginTop="5dp"
                android:text="  গড়গড়া কুলি করা অথবা নাকে বেশি গভীরে পানি দেওয়া।"
                 android:layout_marginLeft="18dp"
+                app:iconGravity="textStart"
+             android:drawableLeft="@drawable/point"
                 android:drawableStart="@drawable/point"
                 android:textAlignment="textStart"
                 android:textColor="#FFFFFF"
@@ -177,7 +184,9 @@
              android:text="  গীবত, গালা-গালি ও ঝগড়া-ফাসাদ করা। কেউ গায়ে পড়ে ঝগড়া-ফাসাদ করতে এলে বলবে, আমি রোজাদার তোমাকে প্রত্যুত্থর দিতে অক্ষম  ।"
               android:layout_marginLeft="18dp"
                 android:drawablePadding="7dp"
-                android:drawableStart="@drawable/point"
+               
+                android:drawableLeft="@drawable/point"
+                app:iconGravity="textStart"
                 android:textAlignment="textStart"
                 android:textColor="#FFFFFF"
                 android:textSize="16dp">

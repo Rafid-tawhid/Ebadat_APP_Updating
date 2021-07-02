@@ -37,19 +37,23 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 >
-                <ImageView
+                <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="26dp"
+                    android:layout_height="30dp"
                     android:id="@+id/nm"
+                    android:textSize="20dp"
+                    android:text="তারাবির নামাজ"
+                    android:layout_marginTop="5dp"
                     android:layout_alignParentTop="true"
                     android:layout_centerInParent="true"
-                    android:src="@drawable/ic_tarabi">
+                    android:textColor="#FDCA85">
 
-                </ImageView>
+                </TextView>
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="14dp"
                     android:layout_below="@+id/nm"
+                    android:layout_marginBottom="5dp"
                     android:layout_centerInParent="true"
                     android:src="@drawable/ic_union">
 
@@ -76,7 +80,7 @@
                 android:paddingLeft="10dp"
                 android:drawableLeft="@drawable/heading"
                 android:textAlignment="textStart"
-                android:textColor="@color/tgl"
+                android:textColor="#FDCA85"
                 android:textSize="18dp">
 
             </TextView>
@@ -101,7 +105,7 @@
 
 
                 android:textAlignment="center"
-                android:textColor="@color/tgl"
+                android:textColor="#FDCA85"
                 android:textSize="18dp">
 
             </TextView>
@@ -126,7 +130,7 @@
                 android:text=" বাংলা অর্থ:"
                 android:paddingLeft="10dp"
                 android:textAlignment="center"
-                android:textColor="@color/tgl"
+                android:textColor="#FDCA85"
                 android:textSize="18dp">
 
             </TextView>
@@ -155,7 +159,7 @@
                 android:paddingLeft="10dp"
                 android:drawableLeft="@drawable/heading"
                 android:textAlignment="textStart"
-                android:textColor="@color/tgl"
+                android:textColor="#FDCA85"
                 android:textSize="18dp">
 
             </TextView>
@@ -180,7 +184,7 @@
 
 
                 android:textAlignment="center"
-                android:textColor="@color/tgl"
+                android:textColor="#FDCA85"
                 android:textSize="18dp">
 
             </TextView>
@@ -205,7 +209,7 @@
                 android:text=" বাংলা অর্থ:"
                 android:paddingLeft="10dp"
                 android:textAlignment="center"
-                android:textColor="@color/tgl"
+                android:textColor="#FDCA85"
                 android:textSize="18dp">
 
             </TextView>
@@ -234,7 +238,7 @@
                 android:paddingLeft="10dp"
                 android:drawableLeft="@drawable/heading"
                 android:textAlignment="textStart"
-                android:textColor="@color/tgl"
+                android:textColor="#FDCA85"
                 android:textSize="18dp">
 
             </TextView>
@@ -259,7 +263,7 @@
 
 
                 android:textAlignment="center"
-                android:textColor="@color/tgl"
+                android:textColor="#FDCA85"
                 android:textSize="18dp">
 
             </TextView>
@@ -284,7 +288,7 @@
                 android:text=" বাংলা অর্থ:"
                 android:paddingLeft="10dp"
                 android:textAlignment="center"
-                android:textColor="@color/tgl"
+                android:textColor="#FDCA85"
                 android:textSize="18dp">
 
             </TextView>
@@ -311,7 +315,7 @@
                 android:paddingLeft="10dp"
                 android:drawableLeft="@drawable/heading"
                 android:textAlignment="textStart"
-                android:textColor="@color/tgl"
+                android:textColor="#FDCA85"
                 android:textSize="18dp">
 
             </TextView>

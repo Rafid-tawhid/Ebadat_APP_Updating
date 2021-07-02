@@ -47,12 +47,12 @@
         android:background="@drawable/item_bg"
         >
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:layout_gravity="center"
-            android:padding="3dp"
+            android:padding="1dp"
             android:id="@+id/del"
-            android:background="#181818"
+            android:background="@drawable/item_bg"
             android:src="@drawable/ic_vector"
             >
 

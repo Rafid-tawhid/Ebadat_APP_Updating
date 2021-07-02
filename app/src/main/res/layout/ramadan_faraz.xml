@@ -40,12 +40,25 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:id="@+id/nm"
+                    android:textSize="20dp"
+                    android:text="রোজার ফরজ সমূহ"
+                    android:layout_marginTop="5dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:textColor="#FDCA85">
+
+                </TextView>
                 <ImageView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_height="14dp"
+                    android:layout_below="@+id/nm"
+                    android:layout_marginBottom="5dp"
                     android:layout_centerInParent="true"
-                    android:src="@drawable/ramadan_faraz">
+                    android:src="@drawable/ic_union">
 
                 </ImageView>
                 <ImageView
@@ -70,7 +83,7 @@
                 android:paddingLeft="10dp"
                 android:drawableLeft="@drawable/heading"
                 android:textAlignment="textStart"
-                android:textColor="@color/tgl"
+                android:textColor="#FDCA85"
                 android:textSize="18dp">
 
             </TextView>
@@ -121,7 +134,7 @@
 
                 android:drawableLeft="@drawable/heading"
                 android:textAlignment="textStart"
-                android:textColor="@color/tgl"
+                android:textColor="#FDCA85"
                 android:textSize="18dp">
 
             </TextView>

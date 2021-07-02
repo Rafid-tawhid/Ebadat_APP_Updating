@@ -131,7 +131,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/tgl"
+                        android:textColor="#FFC07B"
                         android:textAlignment="center"
                         android:textSize="16dp"
                         android:layout_marginTop="40dp"
@@ -145,7 +145,7 @@
                         android:layout_height="wrap_content"/>
                     <TextView
                         android:textAlignment="center"
-                        android:textColor="#D5B75E"
+                        android:textColor="#FFC07B"
                         android:textSize="13sp"
                         android:layout_marginTop="-8dp"
                         android:text="ওয়াক্ত শেষ হতে বাকি\n০১:১০:২০"
@@ -164,16 +164,16 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content">
                             <TextView
-                                android:textStyle="bold"
+
                                 android:textAlignment="center"
-                                android:textColor="#D5B75E"
+                                android:textColor="#FFC07B"
                                 android:textSize="12sp"
                                 android:text="সময় শুরু"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"/>
                             <TextView
                                 android:textAlignment="center"
-                                android:textColor="#D5B75E"
+                                android:textColor="#FFC07B"
                                 android:textSize="11sp"
                                 android:text="ভোর ৪:৪৫"
                                 android:layout_width="match_parent"
@@ -185,16 +185,16 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content">
                             <TextView
-                                android:textStyle="bold"
+
                                 android:textAlignment="center"
-                                android:textColor="#D5B75E"
+                                android:textColor="#FFC07B"
                                 android:textSize="12sp"
                                 android:text=" সময় শেষ"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"/>
                             <TextView
                                 android:textAlignment="center"
-                                android:textColor="#D5B75E"
+                                android:textColor="#FFC07B"
                                 android:textSize="11sp"
                                 android:text="ভোর ৬:৩০"
                                 android:layout_width="match_parent"
@@ -225,7 +225,7 @@
                                 android:layout_margin="5dp"
                                 >
                                 <LinearLayout
-                                    android:background="#3E3E3E"
+                                    android:background="#28272C"
                                     android:gravity="center"
                                     android:orientation="vertical"
                                     android:layout_width="match_parent"
@@ -233,7 +233,7 @@
                                     <TextView
                                         android:textStyle="bold"
                                         android:textAlignment="center"
-                                        android:textColor="#D5B75E"
+                                        android:textColor="#FDCA85"
                                         android:textSize="12sp"
                                         android:text="ফজর"
                                         android:layout_width="wrap_content"
@@ -241,14 +241,14 @@
 
                                     <TextView
                                         android:textAlignment="center"
-                                        android:textColor="#D5B75E"
+                                        android:textColor="#FDCA85"
                                         android:textSize="10.5sp"
                                         android:text="সময় শুরু"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"/>
                                     <TextView
                                         android:textAlignment="center"
-                                        android:textColor="#D5B75E"
+                                        android:textColor="#FDCA85"
                                         android:textSize="10.5sp"
                                         android:text="ভোর ৫:২৫"
                                         android:id="@+id/fajartimeId"
@@ -269,7 +269,7 @@
                                 android:layout_margin="5dp"
                                 >
                                 <LinearLayout
-                                    android:background="#3E3E3E"
+                                    android:background="#28272C"
                                     android:gravity="center"
                                     android:orientation="vertical"
                                     android:layout_width="match_parent"
@@ -277,7 +277,7 @@
                                     <TextView
                                         android:textStyle="bold"
                                         android:textAlignment="center"
-                                        android:textColor="#D5B75E"
+                                        android:textColor="#FDCA85"
                                         android:textSize="12sp"
                                         android:text="যোহর"
                                         android:layout_width="wrap_content"
@@ -285,14 +285,14 @@
 
                                     <TextView
                                         android:textAlignment="center"
-                                        android:textColor="#D5B75E"
+                                        android:textColor="#FDCA85"
                                         android:textSize="10.5sp"
                                         android:text="সময় শুরু"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"/>
                                     <TextView
                                         android:textAlignment="center"
-                                        android:textColor="#D5B75E"
+                                        android:textColor="#FDCA85"
                                         android:textSize="10.5sp"
                                         android:text="ভোর ৫:২৫"
                                         android:id="@+id/johor"
@@ -313,7 +313,7 @@
                                 android:layout_margin="5dp"
                                 >
                                 <LinearLayout
-                                    android:background="#3E3E3E"
+                                    android:background="#28272C"
                                     android:gravity="center"
                                     android:orientation="vertical"
                                     android:layout_width="match_parent"
@@ -321,7 +321,7 @@
                                     <TextView
                                         android:textStyle="bold"
                                         android:textAlignment="center"
-                                        android:textColor="#D5B75E"
+                                        android:textColor="#FDCA85"
                                         android:textSize="12sp"
                                         android:text="আছর"
                                         android:layout_width="wrap_content"
@@ -329,14 +329,14 @@
 
                                     <TextView
                                         android:textAlignment="center"
-                                        android:textColor="#D5B75E"
+                                        android:textColor="#FDCA85"
                                         android:textSize="10.5sp"
                                         android:text="সময় শুরু"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"/>
                                     <TextView
                                         android:textAlignment="center"
-                                        android:textColor="#D5B75E"
+                                        android:textColor="#FDCA85"
                                         android:textSize="10.5sp"
                                         android:text="ভোর ৫:২৫"
                                         android:id="@+id/asorId"
@@ -357,7 +357,7 @@
                                 android:layout_margin="5dp"
                                 >
                                 <LinearLayout
-                                    android:background="#3E3E3E"
+                                    android:background="#28272C"
                                     android:gravity="center"
                                     android:orientation="vertical"
                                     android:layout_width="match_parent"
@@ -365,7 +365,7 @@
                                     <TextView
                                         android:textStyle="bold"
                                         android:textAlignment="center"
-                                        android:textColor="#D5B75E"
+                                        android:textColor="#FDCA85"
                                         android:textSize="12sp"
                                         android:text="মাগরিব"
                                         android:layout_width="wrap_content"
@@ -373,14 +373,14 @@
 
                                     <TextView
                                         android:textAlignment="center"
-                                        android:textColor="#D5B75E"
+                                        android:textColor="#FDCA85"
                                         android:textSize="10.5sp"
                                         android:text="সময় শুরু"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"/>
                                     <TextView
                                         android:textAlignment="center"
-                                        android:textColor="#D5B75E"
+                                        android:textColor="#FDCA85"
                                         android:textSize="10.5sp"
                                         android:text="ভোর ৫:২৫"
                                         android:id="@+id/magribId"
@@ -402,7 +402,7 @@
                                 android:layout_margin="5dp"
                                 >
                                 <LinearLayout
-                                    android:background="#3E3E3E"
+                                    android:background="#28272C"
                                     android:gravity="center"
                                     android:orientation="vertical"
                                     android:layout_width="match_parent"
@@ -410,7 +410,7 @@
                                     <TextView
                                         android:textStyle="bold"
                                         android:textAlignment="center"
-                                        android:textColor="#D5B75E"
+                                        android:textColor="#FDCA85"
                                         android:textSize="12sp"
                                         android:text="এশা"
                                         android:layout_width="wrap_content"
@@ -418,14 +418,14 @@
 
                                     <TextView
                                         android:textAlignment="center"
-                                        android:textColor="#D5B75E"
+                                        android:textColor="#FDCA85"
                                         android:textSize="10.5sp"
                                         android:text="সময় শুরু"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"/>
                                     <TextView
                                         android:textAlignment="center"
-                                        android:textColor="#D5B75E"
+                                        android:textColor="#FDCA85"
                                         android:textSize="10.5sp"
                                         android:id="@+id/esaId"
                                         android:text="ভোর ৫:২৫"
@@ -472,7 +472,7 @@
                                     android:layout_height="40dp"/>
                                 <TextView
                                     android:textSize="15sp"
-                                    android:textColor="#D5B75E"
+                                    android:textColor="#FFC07B"
                                     android:text="কালিমা"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"/>
@@ -495,7 +495,7 @@
                                     android:layout_height="45dp"/>
                                 <TextView
                                     android:textSize="15dp"
-                                    android:textColor="#D5B75E"
+                                    android:textColor="#FFC07B"
                                     android:text="নামাজ"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"/>
@@ -516,7 +516,7 @@
                                     android:layout_height="45dp"/>
                                 <TextView
                                     android:textSize="15dp"
-                                    android:textColor="#D5B75E"
+                                    android:textColor="#FFC07B"
                                     android:text="রমজান"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"/>
@@ -543,7 +543,7 @@
                                     android:layout_height="45dp"/>
                                 <TextView
                                     android:textSize="15dp"
-                                    android:textColor="#D5B75E"
+                                    android:textColor="#FFC07B"
                                     android:text="হজ্জ"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"/>
@@ -566,7 +566,7 @@
                                     android:layout_height="45dp"/>
                                 <TextView
                                     android:textSize="15dp"
-                                    android:textColor="#D5B75E"
+                                    android:textColor="#FFC07B"
                                     android:text="যাকাত"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"/>
@@ -588,7 +588,7 @@
 
                                 <TextView
                                     android:textSize="15dp"
-                                    android:textColor="#D5B75E"
+                                    android:textColor="#FFC07B"
                                     android:text="কুরআন"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"/>
@@ -640,7 +640,7 @@
 
                                 <TextView
                                     android:textSize="15dp"
-                                    android:textColor="#D5B75E"
+                                    android:textColor="#FFC07B"
                                     android:text="দুআ"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"/>
@@ -662,7 +662,7 @@
 
                                 <TextView
                                     android:textSize="15dp"
-                                    android:textColor="#D5B75E"
+                                    android:textColor="#FFC07B"
                                     android:text="৯৯ নাম"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"/>

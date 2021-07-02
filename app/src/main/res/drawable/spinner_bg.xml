@@ -15,13 +15,18 @@
             </shape>
         </item>
 
-        <item
-            android:width="24dp"
-            android:height="24dp"
+<!--        <item-->
+<!--            android:width="24dp"-->
+<!--            android:height="24dp"-->
 
-            android:gravity="end|center_vertical"
-            android:drawable="@drawable/tg"
-            android:right="5dp"/>
+<!--            android:gravity="end|center_vertical"-->
+<!--            android:drawable="@drawable/tg"-->
+<!--            android:right="5dp"/>-->
+        <item android:right="-7dp"
+            android:bottom="-3dp">
+            <bitmap
+                android:gravity="right" android:src="@drawable/spp" />
+        </item>
 
     </layer-list>
 
