@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:gravity="center"
     android:orientation="vertical"
 
-    android:layout_height="wrap_content">
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -42,117 +42,130 @@
 
             </ImageView>
         </RelativeLayout>
-        <ImageView
+
+
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:paddingTop="5dp"
-            android:src="@drawable/jakat6"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-            >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingTop="5dp"
+                    android:src="@drawable/jakat6"
 
-        </ImageView>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+                    >
+
+                </ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
 
 
-            android:text="  স্বর্ণের ক্ষেত্রে যাকাতের নিসাব হল বিশ মিসকাল, আধুনিক হিসাবে সাড়ে সাত ভরি (মুসান্নাফে আব্দুর রাযযাক হাদীস ৭০৭৭,৭১০৪)।
+                    android:text="  স্বর্ণের ক্ষেত্রে যাকাতের নিসাব হল বিশ মিসকাল, আধুনিক হিসাবে সাড়ে সাত ভরি (মুসান্নাফে আব্দুর রাযযাক হাদীস ৭০৭৭,৭১০৪)।
 " android:textColor="#FFFFFF"
-            android:textAlignment="textStart"
-           android:drawableStart="@drawable/point"
-            android:padding="5dp"
-            android:textSize="15dp"
-            android:layout_margin="3dp">
+                    android:textAlignment="textStart"
+                    android:drawableStart="@drawable/point"
+                    android:padding="5dp"
+                    android:textSize="15dp"
+                    android:layout_margin="3dp">
 
-        </TextView>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
 
-            android:text="  রূপার ক্ষেত্রে নিসাব হল দুইশত দেরহাম। (সহীহ বুখারী, হাদীস ১৪৪৭, সহীহ মুসলিম, হাদীস ৯৭৯) আধুনিক হিসাবে সাড়ে বায়ান্ন তোলা। এ পরিমান সোনা রূপা থাকলে যাকাত দিতে হবে।"
-            android:textColor="#FFFFFF"
-           android:drawableStart="@drawable/point"
-            android:padding="5dp"
-            android:textSize="15dp"
-            android:layout_margin="3dp">
+                    android:text="  রূপার ক্ষেত্রে নিসাব হল দুইশত দেরহাম। (সহীহ বুখারী, হাদীস ১৪৪৭, সহীহ মুসলিম, হাদীস ৯৭৯) আধুনিক হিসাবে সাড়ে বায়ান্ন তোলা। এ পরিমান সোনা রূপা থাকলে যাকাত দিতে হবে।"
+                    android:textColor="#FFFFFF"
+                    android:drawableStart="@drawable/point"
+                    android:padding="5dp"
+                    android:textSize="15dp"
+                    android:layout_margin="3dp">
 
-        </TextView>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
 
-            android:text="  প্রয়োজনের উদ্ধৃত্ত টাকা-পয়সা বা বানিজ্য দ্রব্যের মুল্য যদি সাড়ে বায়ান্ন তোলা রূপার সমপরিমাণ হয় তাহলে যাকাতের নেসাব পূর্ণ হয়েছে বলে ধরা হবে এবং এর যাকাত দিতে হবে (মুসান্নাফে ইবনে আবী শায়বা হাদীস ৯৯৩৭)।"
-            android:textColor="#FFFFFF"
-           android:drawableStart="@drawable/point"
-            android:padding="5dp"
-            android:textSize="15dp"
-            android:layout_margin="3dp">
+                    android:text="  প্রয়োজনের উদ্ধৃত্ত টাকা-পয়সা বা বানিজ্য দ্রব্যের মুল্য যদি সাড়ে বায়ান্ন তোলা রূপার সমপরিমাণ হয় তাহলে যাকাতের নেসাব পূর্ণ হয়েছে বলে ধরা হবে এবং এর যাকাত দিতে হবে (মুসান্নাফে ইবনে আবী শায়বা হাদীস ৯৯৩৭)।"
+                    android:textColor="#FFFFFF"
+                    android:drawableStart="@drawable/point"
+                    android:padding="5dp"
+                    android:textSize="15dp"
+                    android:layout_margin="3dp">
 
-        </TextView>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
 
-            android:text="  যদি সোনা- রূপা, টাকা-পয়সা, কিংবা বাণিজ্য দ্রব্য এগুলোর পৃথকভাবে নেসাব পরিমান না থাকে, কিন্তু এসবের একাধিক সামগ্রী এ পরিমান রয়েছে যা একত্র করলে সাড়ে বায়ান্ন তোলা রূপার সমমূল্য বা তার চেয়ে বেশি হয় তাহলে এক্ষেত্রে সকল সম্পদ হিসাব করে যাকাত দিতে হবে (মুসান্নাফে আব্দুর রাযযাক, হাদীস ৭০৬৬,৭০৮১)।"
-            android:textColor="#FFFFFF"
-           android:drawableStart="@drawable/point"
-            android:padding="5dp"
-            android:textSize="15dp"
-            android:layout_margin="3dp">
+                    android:text="  যদি সোনা- রূপা, টাকা-পয়সা, কিংবা বাণিজ্য দ্রব্য এগুলোর পৃথকভাবে নেসাব পরিমান না থাকে, কিন্তু এসবের একাধিক সামগ্রী এ পরিমান রয়েছে যা একত্র করলে সাড়ে বায়ান্ন তোলা রূপার সমমূল্য বা তার চেয়ে বেশি হয় তাহলে এক্ষেত্রে সকল সম্পদ হিসাব করে যাকাত দিতে হবে (মুসান্নাফে আব্দুর রাযযাক, হাদীস ৭০৬৬,৭০৮১)।"
+                    android:textColor="#FFFFFF"
+                    android:drawableStart="@drawable/point"
+                    android:padding="5dp"
+                    android:textSize="15dp"
+                    android:layout_margin="3dp">
 
-        </TextView>
+                </TextView>
 
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
 
-            android:text="  নিসাবের অতিরিক্ত সোনা-রূপা, টাকা-পয়সা ও বাণিজ্য পণ্যের যাকাত আনুপাতিক হারে দিতে হবে। (মুসান্নাফে ইবনে আবী শায়বা হাদীস, ৬/৩৯০)"
-            android:textColor="#FFFFFF"
-            android:drawableStart="@drawable/point"
-            android:padding="5dp"
-            android:textSize="15dp"
-            android:layout_margin="3dp">
+                    android:text="  নিসাবের অতিরিক্ত সোনা-রূপা, টাকা-পয়সা ও বাণিজ্য পণ্যের যাকাত আনুপাতিক হারে দিতে হবে। (মুসান্নাফে ইবনে আবী শায়বা হাদীস, ৬/৩৯০)"
+                    android:textColor="#FFFFFF"
+                    android:drawableStart="@drawable/point"
+                    android:padding="5dp"
+                    android:textSize="15dp"
+                    android:layout_margin="3dp">
 
-        </TextView>
-        <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
 
-        android:text="  কারো কাছে সোনা-রূপা, টাকা-পয়সা কিংবা বাণিজ্য দ্রব্য পৃথকভাবে বা সম্মিলিতভাবে নিসাব পরিমান ছিল, বছরের মাঝে এ জাতীয় আরো কিছু সম্পদ কোন সুত্রে পাওয়া গেল। এ ক্ষেত্রে নতুন পাওয়া সম্পদ পুরাতন সম্পদের সাথে যোগ হবে এবং পুরাতন সম্পদের বছর পর সমুদয় সম্পদের যাকাত দিতে হবে। বছরের মাঝে যা যোগ হয়েছে তার জন্য পৃথক বছর পূর্ণ হওয়া লাগবেনা । (মুসান্নাফে আব্দুর রাযযাক হাদীস ৬৮৭২, ৭০৪০, ৭০৪৪)"
-            android:drawableStart="@drawable/point"
-        android:padding="5dp"
-            android:textColor="#FFFFFF"
-        android:textSize="15dp"
-            android:layout_margin="3dp">
+                    android:text="  কারো কাছে সোনা-রূপা, টাকা-পয়সা কিংবা বাণিজ্য দ্রব্য পৃথকভাবে বা সম্মিলিতভাবে নিসাব পরিমান ছিল, বছরের মাঝে এ জাতীয় আরো কিছু সম্পদ কোন সুত্রে পাওয়া গেল। এ ক্ষেত্রে নতুন পাওয়া সম্পদ পুরাতন সম্পদের সাথে যোগ হবে এবং পুরাতন সম্পদের বছর পর সমুদয় সম্পদের যাকাত দিতে হবে। বছরের মাঝে যা যোগ হয়েছে তার জন্য পৃথক বছর পূর্ণ হওয়া লাগবেনা । (মুসান্নাফে আব্দুর রাযযাক হাদীস ৬৮৭২, ৭০৪০, ৭০৪৪)"
+                    android:drawableStart="@drawable/point"
+                    android:padding="5dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp"
+                    android:layout_margin="3dp">
 
-    </TextView>
-        <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
 
-        android:text="  নেসাব পরিমাণ মাল নিত্য প্রয়োজনীয় সম্পদের অতিরিক্ত হওয়া।" android:textColor="#FFFFFF"
-        android:drawableStart="@drawable/point"
-        android:padding="5dp"
-        android:textSize="15dp"
-            android:layout_margin="3dp">
+                    android:text="  নেসাব পরিমাণ মাল নিত্য প্রয়োজনীয় সম্পদের অতিরিক্ত হওয়া।" android:textColor="#FFFFFF"
+                    android:drawableStart="@drawable/point"
+                    android:padding="5dp"
+                    android:textSize="15dp"
+                    android:layout_margin="3dp">
 
-    </TextView>
-        <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
 
-        android:text="  বছরের শুরু ও শেষে নেসাব পূর্ণ থাকলে যাকাত আদায় করতে হবে। মাঝে নিসাব কমে যাওয়া ধর্তব্য নয়। অবশ্যই বছরের মাঝে সম্পূর্ণ সম্পদ নষ্ট হয়ে যাওয়ার পর পুনরায় যদি নিসাব পরিমান সম্পদের মালিক হয় তাহলে ঐ সময় থেকে নতুন করে বছরের হিসাব আরম্ভ হবে। এক বছর পূর্ণ হওয়ার পর যাকাত আদায় করতে হবে। (আদ্দুররুল মুখতার ২/৩০২)"
-            android:drawableStart="@drawable/point"
-        android:padding="5dp"
-            android:textColor="#FFFFFF"
-        android:textSize="15dp"
-            android:layout_margin="3dp">
+                    android:text="  বছরের শুরু ও শেষে নেসাব পূর্ণ থাকলে যাকাত আদায় করতে হবে। মাঝে নিসাব কমে যাওয়া ধর্তব্য নয়। অবশ্যই বছরের মাঝে সম্পূর্ণ সম্পদ নষ্ট হয়ে যাওয়ার পর পুনরায় যদি নিসাব পরিমান সম্পদের মালিক হয় তাহলে ঐ সময় থেকে নতুন করে বছরের হিসাব আরম্ভ হবে। এক বছর পূর্ণ হওয়ার পর যাকাত আদায় করতে হবে। (আদ্দুররুল মুখতার ২/৩০২)"
+                    android:drawableStart="@drawable/point"
+                    android:padding="5dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp"
+                    android:layout_margin="3dp">
 
-    </TextView>
+                </TextView>
+            </LinearLayout>
+        </ScrollView>
+
 
 
     </LinearLayout>
 
 
-</ScrollView>
+</LinearLayout>

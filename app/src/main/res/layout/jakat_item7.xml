@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:gravity="center"
     android:orientation="vertical"
@@ -42,20 +42,28 @@
 
             </ImageView>
         </RelativeLayout>
-        <ImageView
+
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:paddingTop="5dp"
-            android:src="@drawable/jakat7"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingTop="5dp"
+                    android:src="@drawable/jakat7"
 
-            >
+                    >
 
-        </ImageView>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+                </ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
 
-            android:text="সৃষ্টিজগতের প্রতিপালক, সর্বশ্রোতা, সর্বদ্রষ্টা মহান আল্লাহর আনুগত্য স্বীকার করার এক অনন্য মাধ্যম যাকাত। ইসলাম পরিপূর্ণ জীবন বিধান। ইসলামের মৌলিক পাঁচটি বিষয়ের মধ্যে এটি অন্যতম। যাকাত আদায়ের মাধ্যমে সর্বশক্তিমান আল্লাহ বান্দাহ’র সম্পদ পবিত্র করে দেন এবং সম্পদের পরিমান বাড়িয়ে দেন। \n
+                    android:text="সৃষ্টিজগতের প্রতিপালক, সর্বশ্রোতা, সর্বদ্রষ্টা মহান আল্লাহর আনুগত্য স্বীকার করার এক অনন্য মাধ্যম যাকাত। ইসলাম পরিপূর্ণ জীবন বিধান। ইসলামের মৌলিক পাঁচটি বিষয়ের মধ্যে এটি অন্যতম। যাকাত আদায়ের মাধ্যমে সর্বশক্তিমান আল্লাহ বান্দাহ’র সম্পদ পবিত্র করে দেন এবং সম্পদের পরিমান বাড়িয়ে দেন। \n
 
 রমযানের রোযা রহমতের দশ দিনের পর মাগফিরাতের দশ দিনও প্রায় অস্তায়মান। বছরের যেকোন সময়ের থেকে রমজান মাসে যাকাত আদায়ের গুরুত্ব অনস্বীকার্য। কেননা এ সময় আল্লাহ বান্দার প্রত্যেকটি নেক আমলের সাওয়াবকে সত্তর গুণ বাড়িয়ে দেন। আল্লাহ চাইলে এর সাওয়াব অগণিত হতে পারে। \n
 
@@ -66,14 +74,17 @@
 পার্থিব জীবনে যারা যাকাত দিতে অস্বীকার করে তারা বাস্তব জীবনে  কৃপণ হিসেবে আখ্যায়িত হয় আর পরকালে কঠিন শাস্তির সম্মুখীন হবে। আল্লাহ তায়ালা পবিত্র কুরআনে বলেছেন: ‘ধ্বংস সেসব মুশরিকের জন্য, যারা যাকাত দেয় না এবং আখিরাত তথা পরকালকে অস্বীকার করে’। [সূরা হা-মিম সাজদাহ, আয়াত ৬-৭)\n
 
 প্রত্যেক মুুমিন বান্দার উচিত পরকালের কঠিন শাস্তি থেকে মুক্তি ও আল্লাহর নৈকট্য লাভের আশায় যথাযথভাবে যাকাত আদায় করা। অন্যকে যাকাত দানে উৎসাহিত করা। যাকাত আদায়ের মাধ্যমে সমাজের অসহায় দরিদ্রের উন্নতি করা।"
-            android:textColor="#FFFFFF"
-            android:padding="10dp"
-            android:textSize="16dp"
-            android:layout_margin="3dp">
+                    android:textColor="#FFFFFF"
+                    android:padding="10dp"
+                    android:textSize="16dp"
+                    android:layout_margin="3dp">
 
-        </TextView>
+                </TextView>
+            </LinearLayout>
+        </ScrollView>
+
 
     </LinearLayout>
 
 
-</ScrollView>
+</LinearLayout>

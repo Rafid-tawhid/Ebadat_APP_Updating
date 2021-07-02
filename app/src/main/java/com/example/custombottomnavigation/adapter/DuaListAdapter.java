@@ -2,22 +2,15 @@ package com.example.custombottomnavigation.adapter;
 
 import android.content.Context;
 import android.content.Intent;
-import android.os.Parcelable;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.custombottomnavigation.DoaShowActivity;
-import com.example.custombottomnavigation.MainActivity;
 import com.example.custombottomnavigation.R;
-import com.example.custombottomnavigation.fragments.DoaFragmentShows;
-import com.example.custombottomnavigation.fragments.NamazFragment;
 import com.example.custombottomnavigation.models.DuaItems;
 
 import java.util.List;
@@ -52,11 +45,11 @@ public class  DuaListAdapter extends RecyclerView.Adapter<DuaListAdapter.ViewHol
 
 
         String title=duaItemsList.get(position).getTitle();
-        int arbi=duaItemsList.get(position).getArbi();
-        int bangla=duaItemsList.get(position).getBangla();
-        int dua=duaItemsList.get(position).getDua();
-        int ayat=duaItemsList.get(position).getAyat();
-        holder.setData(title,arbi,bangla,dua,ayat);
+        String arbi=duaItemsList.get(position).getArbi();
+        String bangla=duaItemsList.get(position).getBangla();
+        String ortho=duaItemsList.get(position).getOrtho();
+        String ayat=duaItemsList.get(position).getAyat();
+        holder.setData(title,arbi,bangla,ortho,ayat);
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -109,7 +102,7 @@ public class  DuaListAdapter extends RecyclerView.Adapter<DuaListAdapter.ViewHol
         }
 
 
-        public void setData(String title, int arbi, int bangla, int dua, int ayat) {
+        public void setData(String title, String arbi, String bangla, String dua, String ayat) {
             dua_title.setText(title);
         }
     }

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:gravity="center"
     android:orientation="vertical"
 
-    android:layout_height="wrap_content">
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -42,258 +42,270 @@
 
             </ImageView>
         </RelativeLayout>
-        <ImageView
+
+
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:paddingTop="5dp"
-            android:src="@drawable/jakat3"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingTop="5dp"
+                    android:src="@drawable/jakat3"
 
-            >
+                    >
 
-        </ImageView>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+                </ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
 
 
-            android:text="  প্রথম খাত: ফকীর -"
-            android:textColor="@color/tgl"
-            android:textAlignment="textStart"
+                    android:text="  প্রথম খাত: ফকীর -"
+                    android:textColor="@color/tgl"
+                    android:textAlignment="textStart"
 
-            android:padding="5dp"
-            android:textSize="15dp"
-            >
+                    android:padding="5dp"
+                    android:textSize="15dp"
+                    >
 
-        </TextView>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
 
 
-            android:text=" ফকীর - হলো সেই ব্যক্তি যার নিসাব পরিমাণ সম্পদ নেই। যে ব্যক্তি রিক্তহস্ত, অভাব মেটানোর যোগ্য সম্পদ নেই, ভিক্ষুক হোক বা না হোক, এরাই ফকীর। যে সকল স্বল্প সামর্থ্যের দরিদ্র মুসলমান যথাসাধ্য চেষ্ট করা সত্ত্বেও বা দৈহিক অক্ষমতাহেতু প্রাত্যহিক ন্যায়সঙ্গত প্রয়োজনটুকু মেটাতে পারে না, তারাই ফকীর। কারও মতে যার কাছে একবেলা বা একদিনের খাবার আছে সে ফকীর।"
-            android:textColor="#FFFFFF"
-            android:textAlignment="textStart"
+                    android:text=" ফকীর - হলো সেই ব্যক্তি যার নিসাব পরিমাণ সম্পদ নেই। যে ব্যক্তি রিক্তহস্ত, অভাব মেটানোর যোগ্য সম্পদ নেই, ভিক্ষুক হোক বা না হোক, এরাই ফকীর। যে সকল স্বল্প সামর্থ্যের দরিদ্র মুসলমান যথাসাধ্য চেষ্ট করা সত্ত্বেও বা দৈহিক অক্ষমতাহেতু প্রাত্যহিক ন্যায়সঙ্গত প্রয়োজনটুকু মেটাতে পারে না, তারাই ফকীর। কারও মতে যার কাছে একবেলা বা একদিনের খাবার আছে সে ফকীর।"
+                    android:textColor="#FFFFFF"
+                    android:textAlignment="textStart"
 
-            android:padding="5dp"
-            android:textSize="15dp"
-            android:layout_margin="5dp">
+                    android:padding="5dp"
+                    android:textSize="15dp"
+                    android:layout_margin="5dp">
 
-        </TextView>
+                </TextView>
 
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
 
 
-            android:text="  দ্বিতীয় খাত: মিসকীন-"
-            android:textColor="@color/tgl"
-            android:textAlignment="textStart"
+                    android:text="  দ্বিতীয় খাত: মিসকীন-"
+                    android:textColor="@color/tgl"
+                    android:textAlignment="textStart"
 
-            android:padding="5dp"
-            android:textSize="15dp"
-            >
+                    android:padding="5dp"
+                    android:textSize="15dp"
+                    >
 
-        </TextView>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
 
 
-            android:text=" মিসকীন- মিসকীন সেই ব্যক্তি যার কিছুই নেই, যার কাছে একবেলা খাবারও নেই। যে সব লোকের অবস্থা এমন খারাপ যে, পরের নিকট সওয়াল করতে বাধ্য হয়, নিজের পেটের আহারও যারা যোগাতে পারে না, তারা মিসকীন। মিসকীন হলো যার কিছুই নেই, সুতরাং যার কাছে প্রয়োজনের অতিরিক্ত নিসাব পরিমাণ অর্থ সম্পদ নেই, তাকে যাকাত দেয়া যাবে এবং সেও নিতে পারবে। তবে লক্ষ্য রাখতে হবে, ফকীর বা মিসকীন যাকেই যাকাত দেয়া হবে, সে যেন মুসলমান হয় এবং প্রয়োজনের অতিরিক্ত নিসাব পরিমাণ সম্পদের মালিক না হয়।"
-            android:textColor="#FFFFFF"
-            android:textAlignment="textStart"
+                    android:text=" মিসকীন- মিসকীন সেই ব্যক্তি যার কিছুই নেই, যার কাছে একবেলা খাবারও নেই। যে সব লোকের অবস্থা এমন খারাপ যে, পরের নিকট সওয়াল করতে বাধ্য হয়, নিজের পেটের আহারও যারা যোগাতে পারে না, তারা মিসকীন। মিসকীন হলো যার কিছুই নেই, সুতরাং যার কাছে প্রয়োজনের অতিরিক্ত নিসাব পরিমাণ অর্থ সম্পদ নেই, তাকে যাকাত দেয়া যাবে এবং সেও নিতে পারবে। তবে লক্ষ্য রাখতে হবে, ফকীর বা মিসকীন যাকেই যাকাত দেয়া হবে, সে যেন মুসলমান হয় এবং প্রয়োজনের অতিরিক্ত নিসাব পরিমাণ সম্পদের মালিক না হয়।"
+                    android:textColor="#FFFFFF"
+                    android:textAlignment="textStart"
 
-            android:padding="5dp"
-            android:textSize="15dp"
-            android:layout_margin="5dp">
+                    android:padding="5dp"
+                    android:textSize="15dp"
+                    android:layout_margin="5dp">
 
-        </TextView>
+                </TextView>
 
 
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
 
 
-            android:text="  তৃতীয়  খাত: আমেলীন-"
-            android:textColor="@color/tgl"
-            android:textAlignment="textStart"
+                    android:text="  তৃতীয়  খাত: আমেলীন-"
+                    android:textColor="@color/tgl"
+                    android:textAlignment="textStart"
 
-            android:padding="5dp"
-            android:textSize="15dp"
-            >
+                    android:padding="5dp"
+                    android:textSize="15dp"
+                    >
 
-        </TextView>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
 
 
-            android:text="আমেলীন-  ইসলামী সরকারের পক্ষে লোকদের কাছ থেকে যাকাত, উসর প্রভৃতি আদায় করে বায়তুল মালে জমা প্রদান, সংরক্ষণ ও বন্টনের কার্যে নিয়োজিত ব্যক্তিবর্গ। এদের পারিশ্রমিক যাকাতের খাত থেকেই আদায় করা যাবে। কুরআনে বর্ণিত আটটি খাতের মধ্যে এ একটি খাতই এমন, যেখানে সংগৃহীত যাকাতের অর্থ থেকেই পারিশ্রমিক দেয়া হয়। এ খাতের বৈশিষ্ট্য হলো এতে ফকীর বা মিসকীন হওয়া শর্ত নয়। পক্ষান্তরে, অবশিষ্ট ৫টি খাতে দরিদ্র ও অভাবগ্রস্থ দূরীকরণে যাকাত আদায় শর্ত।"
-            android:textColor="#FFFFFF"
-            android:textAlignment="textStart"
+                    android:text="আমেলীন-  ইসলামী সরকারের পক্ষে লোকদের কাছ থেকে যাকাত, উসর প্রভৃতি আদায় করে বায়তুল মালে জমা প্রদান, সংরক্ষণ ও বন্টনের কার্যে নিয়োজিত ব্যক্তিবর্গ। এদের পারিশ্রমিক যাকাতের খাত থেকেই আদায় করা যাবে। কুরআনে বর্ণিত আটটি খাতের মধ্যে এ একটি খাতই এমন, যেখানে সংগৃহীত যাকাতের অর্থ থেকেই পারিশ্রমিক দেয়া হয়। এ খাতের বৈশিষ্ট্য হলো এতে ফকীর বা মিসকীন হওয়া শর্ত নয়। পক্ষান্তরে, অবশিষ্ট ৫টি খাতে দরিদ্র ও অভাবগ্রস্থ দূরীকরণে যাকাত আদায় শর্ত।"
+                    android:textColor="#FFFFFF"
+                    android:textAlignment="textStart"
 
-            android:padding="5dp"
-            android:textSize="15dp"
-            android:layout_margin="5dp">
+                    android:padding="5dp"
+                    android:textSize="15dp"
+                    android:layout_margin="5dp">
 
-        </TextView>
+                </TextView>
 
 
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
 
 
-            android:text="  চতুর্থ  খাত: মুআলস্নাফাতুল কুলুব (চিত্ত জয় করার জন্য)- "
-            android:textColor="@color/tgl"
-            android:textAlignment="textStart"
+                    android:text="  চতুর্থ  খাত: মুআলস্নাফাতুল কুলুব (চিত্ত জয় করার জন্য)- "
+                    android:textColor="@color/tgl"
+                    android:textAlignment="textStart"
 
-            android:padding="5dp"
-            android:textSize="15dp"
-            >
+                    android:padding="5dp"
+                    android:textSize="15dp"
+                    >
 
-        </TextView>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
 
 
-            android:text="নতুন মুসলিম যার ঈমান এখনও পরিপক্ক হয়নি অথবা ইসলাম গ্রহণ করতে ইচ্ছুক অমুসলিম। যাদের চিত্ত (দ্বীন ইসলামের প্রতি আকর্ষণ করে) আকর্ষণ ও উৎসাহিত করণ আবশ্যকীয় মনে করে যাকাত দান করা হয়, যাতে তাদের ঈমান পরিপক্ক হয়। এ খাতের আওতায় দুঃস্থ নওমুসলিম ব্যক্তিদের যাকাত প্রদানের ব্যাপারে ফকিহগণ অভিমত প্রদান করেছেন।"
-            android:textColor="#FFFFFF"
-            android:textAlignment="textStart"
+                    android:text="নতুন মুসলিম যার ঈমান এখনও পরিপক্ক হয়নি অথবা ইসলাম গ্রহণ করতে ইচ্ছুক অমুসলিম। যাদের চিত্ত (দ্বীন ইসলামের প্রতি আকর্ষণ করে) আকর্ষণ ও উৎসাহিত করণ আবশ্যকীয় মনে করে যাকাত দান করা হয়, যাতে তাদের ঈমান পরিপক্ক হয়। এ খাতের আওতায় দুঃস্থ নওমুসলিম ব্যক্তিদের যাকাত প্রদানের ব্যাপারে ফকিহগণ অভিমত প্রদান করেছেন।"
+                    android:textColor="#FFFFFF"
+                    android:textAlignment="textStart"
 
-            android:padding="5dp"
-            android:textSize="15dp"
-            android:layout_margin="5dp">
+                    android:padding="5dp"
+                    android:textSize="15dp"
+                    android:layout_margin="5dp">
 
-        </TextView>
+                </TextView>
 
 
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
 
 
-            android:text="  পঞ্চম  খাত: ক্রীতদাস/বন্দী মুক্তি-"
-            android:textColor="@color/tgl"
-            android:textAlignment="textStart"
+                    android:text="  পঞ্চম  খাত: ক্রীতদাস/বন্দী মুক্তি-"
+                    android:textColor="@color/tgl"
+                    android:textAlignment="textStart"
 
-            android:padding="5dp"
-            android:textSize="15dp"
-            >
+                    android:padding="5dp"
+                    android:textSize="15dp"
+                    >
 
-        </TextView>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
 
 
-            android:text="এ খাতে ক্রীতদাস-দাসী/বন্দী মুক্তির জন্য যাকাতের অর্থ ব্যয় করা যাবে। অন্যায়ভাবে কোন নিঃস্ব ও অসহায় ব্যক্তি বন্দী হলে তাকেও মুক্ত করার জন্য যাকাতের অর্থ ব্যয় করা যাবে।"
-            android:textColor="#FFFFFF"
-            android:textAlignment="textStart"
+                    android:text="এ খাতে ক্রীতদাস-দাসী/বন্দী মুক্তির জন্য যাকাতের অর্থ ব্যয় করা যাবে। অন্যায়ভাবে কোন নিঃস্ব ও অসহায় ব্যক্তি বন্দী হলে তাকেও মুক্ত করার জন্য যাকাতের অর্থ ব্যয় করা যাবে।"
+                    android:textColor="#FFFFFF"
+                    android:textAlignment="textStart"
 
-            android:padding="5dp"
-            android:textSize="15dp"
-            android:layout_margin="5dp">
+                    android:padding="5dp"
+                    android:textSize="15dp"
+                    android:layout_margin="5dp">
 
-        </TextView>
+                </TextView>
 
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
 
 
-            android:text="  ষষ্ঠ  খাত: ঋণগ্রস্থ-"
-            android:textColor="@color/tgl"
-            android:textAlignment="textStart"
+                    android:text="  ষষ্ঠ  খাত: ঋণগ্রস্থ-"
+                    android:textColor="@color/tgl"
+                    android:textAlignment="textStart"
 
-            android:padding="5dp"
-            android:textSize="15dp"
-            >
+                    android:padding="5dp"
+                    android:textSize="15dp"
+                    >
 
-        </TextView>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
 
 
-            android:text="এ ধরণের ব্যক্তিকে তার ঋণ মুক্তির জন্য যাকাত দেয়ার শর্ত হচ্ছে- সেই ঋণগ্রস্থের কাছে ঋণ পরিশোধ পরিমাণ সম্পদ না থাকা। আবার কোন ইমাম এ শর্তারোপও করেছেন যে, সে ঋণ যেন কোন অবৈধ কাজের জন্য- যেমন মদ কিংবা না- জায়েয প্রথা  অনুষ্ঠান ইত্যাদির জন্য ব্যয় না করে।"
-            android:textColor="#FFFFFF"
-            android:textAlignment="textStart"
+                    android:text="এ ধরণের ব্যক্তিকে তার ঋণ মুক্তির জন্য যাকাত দেয়ার শর্ত হচ্ছে- সেই ঋণগ্রস্থের কাছে ঋণ পরিশোধ পরিমাণ সম্পদ না থাকা। আবার কোন ইমাম এ শর্তারোপও করেছেন যে, সে ঋণ যেন কোন অবৈধ কাজের জন্য- যেমন মদ কিংবা না- জায়েয প্রথা  অনুষ্ঠান ইত্যাদির জন্য ব্যয় না করে।"
+                    android:textColor="#FFFFFF"
+                    android:textAlignment="textStart"
 
-            android:padding="5dp"
-            android:textSize="15dp"
-            android:layout_margin="5dp">
+                    android:padding="5dp"
+                    android:textSize="15dp"
+                    android:layout_margin="5dp">
 
-        </TextView>
+                </TextView>
 
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
 
 
-            android:text="  সপ্তম খাত: আলস্নাহর পথে-"
-            android:textColor="@color/tgl"
-            android:textAlignment="textStart"
+                    android:text="  সপ্তম খাত: আলস্নাহর পথে-"
+                    android:textColor="@color/tgl"
+                    android:textAlignment="textStart"
 
-            android:padding="5dp"
-            android:textSize="15dp"
-            >
+                    android:padding="5dp"
+                    android:textSize="15dp"
+                    >
 
-        </TextView>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
 
 
-            android:text="সম্বলহীন মুজাহিদের যুদ্ধাস্ত্র/সরঞ্জাম উপকরণ সংগ্রহ এবং নিঃস্ব ও অসহায় গরীব দ্বীনি শিক্ষারত শিক্ষার্থীকে এ খাত থেকে যাকাত প্রদান করা যাবে। এ ছাড়াও ইসলামের মাহাত্ম ও গৌরব প্রচার ও প্রসারের কাজে নিয়োজিত থাকার কারণে যারা জীবিকা অর্জনের অবসর পান না এবং যে আলিমগণ দ্বীনি শিক্ষাদানের কাজে ব্যাপৃত থাকায় জীবিকা অর্জনের অবসর পান না। তারা অসচ্ছল হলে সর্বসম্মতভাবে তাদেরকেও যাকাত দেয়া যাবে। এ প্রসঙ্গে পবিত্র কোরআনের সূরা বাকারায় বর্ণিত আছে যে, ‘‘যাকাত এই সমসত্ম লোকের জন্য  যারা আলস্নাহর পথে এমনভাবে ব্যাপৃত যে, দেশময় ঘুরাফেরা করতে পারে না, যাচঞা না করার জন্য অজ্ঞ লোকেরা তাদেরকে অভাবমুক্ত বলে মনে করে।"
-            android:textColor="#FFFFFF"
-            android:textAlignment="textStart"
+                    android:text="সম্বলহীন মুজাহিদের যুদ্ধাস্ত্র/সরঞ্জাম উপকরণ সংগ্রহ এবং নিঃস্ব ও অসহায় গরীব দ্বীনি শিক্ষারত শিক্ষার্থীকে এ খাত থেকে যাকাত প্রদান করা যাবে। এ ছাড়াও ইসলামের মাহাত্ম ও গৌরব প্রচার ও প্রসারের কাজে নিয়োজিত থাকার কারণে যারা জীবিকা অর্জনের অবসর পান না এবং যে আলিমগণ দ্বীনি শিক্ষাদানের কাজে ব্যাপৃত থাকায় জীবিকা অর্জনের অবসর পান না। তারা অসচ্ছল হলে সর্বসম্মতভাবে তাদেরকেও যাকাত দেয়া যাবে। এ প্রসঙ্গে পবিত্র কোরআনের সূরা বাকারায় বর্ণিত আছে যে, ‘‘যাকাত এই সমসত্ম লোকের জন্য  যারা আলস্নাহর পথে এমনভাবে ব্যাপৃত যে, দেশময় ঘুরাফেরা করতে পারে না, যাচঞা না করার জন্য অজ্ঞ লোকেরা তাদেরকে অভাবমুক্ত বলে মনে করে।"
+                    android:textColor="#FFFFFF"
+                    android:textAlignment="textStart"
 
-            android:padding="5dp"
-            android:textSize="15dp"
-            android:layout_margin="5dp">
+                    android:padding="5dp"
+                    android:textSize="15dp"
+                    android:layout_margin="5dp">
 
-        </TextView>
+                </TextView>
 
 
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
 
 
-            android:text="  অষ্টম খাত: অসহায় মুসাফির-"
-            android:textColor="@color/tgl"
-            android:textAlignment="textStart"
+                    android:text="  অষ্টম খাত: অসহায় মুসাফির-"
+                    android:textColor="@color/tgl"
+                    android:textAlignment="textStart"
 
-            android:padding="5dp"
-            android:textSize="15dp"
-            >
+                    android:padding="5dp"
+                    android:textSize="15dp"
+                    >
 
-        </TextView>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
 
-            android:text=" যে সমসত্ম মুসাফির অর্থ কষ্টে নিপতিত তাদেরকে মৌলিক প্রয়োজন পুরণ হওয়ার মত এবং বাড়ী ফিরে আসতে পারে এমন পরিমাণ অর্থ যাকাত থেকে প্রদান করা যায়।"
-            android:textColor="#FFFFFF"
-            android:textAlignment="textStart"
+                    android:text=" যে সমসত্ম মুসাফির অর্থ কষ্টে নিপতিত তাদেরকে মৌলিক প্রয়োজন পুরণ হওয়ার মত এবং বাড়ী ফিরে আসতে পারে এমন পরিমাণ অর্থ যাকাত থেকে প্রদান করা যায়।"
+                    android:textColor="#FFFFFF"
+                    android:textAlignment="textStart"
 
-            android:padding="5dp"
-            android:textSize="15dp"
-            android:layout_margin="5dp">
+                    android:padding="5dp"
+                    android:textSize="15dp"
+                    android:layout_margin="5dp">
 
-        </TextView>
+                </TextView>
+            </LinearLayout>
+        </ScrollView>
+
 
     </LinearLayout>
 
 
-</ScrollView>
+</LinearLayout>

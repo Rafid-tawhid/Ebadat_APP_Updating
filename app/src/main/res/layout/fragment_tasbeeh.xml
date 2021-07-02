@@ -82,7 +82,11 @@
              android:background="@drawable/spinner_bg"
              android:layout_height="35dp"
              android:textColor="#FFFFFF"
-             android:padding="3dp"
+             android:paddingRight="20dp"
+             android:paddingTop="3dp"
+             android:paddingLeft="8dp"
+             android:paddingBottom="3dp"
+             android:layout_marginBottom="20dp"
              android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
              android:contentDescription="@string/app_name"
              android:layout_centerInParent="true"
@@ -150,7 +154,7 @@
              <ImageView
                  android:layout_width="wrap_content"
                  android:layout_height="wrap_content"
-                 android:src="@drawable/t1"
+                 android:src="@drawable/a"
 
                  android:layout_alignParentRight="true"
 
@@ -163,7 +167,7 @@
              <ImageView
                  android:layout_width="wrap_content"
                  android:layout_height="wrap_content"
-                 android:src="@drawable/t2"
+                 android:src="@drawable/b"
                  android:id="@+id/soundId"
                  android:layout_margin="5dp"
                  android:layout_above="@+id/store_count_id"
@@ -174,7 +178,7 @@
              <ImageView
                  android:layout_width="wrap_content"
                  android:layout_height="wrap_content"
-                 android:src="@drawable/t3"
+                 android:src="@drawable/c"
                  android:id="@+id/store_count_id"
                  android:layout_margin="5dp"
                  android:layout_above="@+id/list_show_id"
@@ -186,7 +190,7 @@
              <ImageView
                  android:layout_width="wrap_content"
                  android:layout_height="wrap_content"
-                 android:src="@drawable/t4"
+                 android:src="@drawable/d"
                  android:id="@+id/list_show_id"
                  android:layout_margin="5dp"
                  android:layout_alignParentRight="true"

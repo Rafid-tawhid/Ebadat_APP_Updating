@@ -1,8 +1,5 @@
 package com.example.custombottomnavigation.fragments;
 
-import android.annotation.SuppressLint;
-import android.app.Activity;
-import android.app.Dialog;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -14,25 +11,15 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
-import android.widget.ExpandableListView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
 import com.example.custombottomnavigation.HomeFragment;
 import com.example.custombottomnavigation.MainActivity;
 import com.example.custombottomnavigation.R;
-import com.example.custombottomnavigation.adapter.ListViewCustomAdapter;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Objects;
 
 
 public class ZakatFragment extends Fragment {
@@ -67,7 +54,7 @@ public class ZakatFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                showDialoge(R.layout.jakat_item1);
+                showDialoge(R.layout.jakat_item1,v);
 
 
             }
@@ -76,7 +63,7 @@ public class ZakatFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-            showDialoge(R.layout.jakat_item3);
+            showDialoge(R.layout.jakat_item3, v);
 
             }
         });
@@ -84,7 +71,7 @@ public class ZakatFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                showDialoge(R.layout.jakat_item4);
+                showDialoge(R.layout.jakat_item4, v);
 
             }
         });
@@ -92,7 +79,7 @@ public class ZakatFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                showDialoge(R.layout.jakat_item5);
+                showDialoge(R.layout.jakat_item5, v);
 
             }
         });
@@ -100,7 +87,7 @@ public class ZakatFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                showDialoge(R.layout.jakat_item6);
+                showDialoge(R.layout.jakat_item6, v);
 
             }
         });
@@ -108,7 +95,7 @@ public class ZakatFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                showDialoge(R.layout.jakat_item7);
+                showDialoge(R.layout.jakat_item7, v);
 
             }
         });
@@ -116,7 +103,7 @@ public class ZakatFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                showDialoge(R.layout.jakat_item8);
+                showDialoge(R.layout.jakat_item8, v);
 
             }
         });
@@ -142,23 +129,42 @@ public class ZakatFragment extends Fragment {
 
     }
 
-    private void showDialoge(int layout) {
-        Dialog dialog = new Dialog(getActivity());
-        dialog.setCancelable(true);
+    private void showDialoge(int layout, View v) {
+//        Dialog dialog = new Dialog(getActivity());
+//        dialog.setCancelable(true);
+//
+//        View view  = getActivity().getLayoutInflater().inflate(layout, null);
+//        dialog.setContentView(view);
+//        ImageView cancel=dialog.findViewById(R.id.cancelBtn);
+//        cancel.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                dialog.cancel();
+//            }
+//        });
+//
+//
+//
+//        dialog.show();
 
-        View view  = getActivity().getLayoutInflater().inflate(layout, null);
-        dialog.setContentView(view);
-        ImageView cancel=dialog.findViewById(R.id.cancelBtn);
+        AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+        ViewGroup viewGroup = v.findViewById(android.R.id.content);
+        View dialogView = LayoutInflater.from(getContext()).inflate(layout, viewGroup, false);
+        builder.setView(dialogView);
+        final AlertDialog alertDialog = builder.create();
+        alertDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        alertDialog.show();
+        //cancel btn
+        ImageView cancel=alertDialog.findViewById(R.id.cancelBtn);
         cancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                dialog.cancel();
+                alertDialog.cancel();
             }
         });
 
 
 
-        dialog.show();
     }
 
 

@@ -257,8 +257,8 @@ public class HomeFragment extends Fragment {
 
         int currentYear = calendar.get(Calendar.YEAR);
         int currentMonth = calendar.get(Calendar.MONTH) + 1;
-//        int currentDay = calendar.get(Calendar.DAY_OF_MONTH);
-        int currentDay = 29;
+        int currentDay = calendar.get(Calendar.DAY_OF_MONTH);
+
 
         //get location from spinner
         myArea=MainActivity.area;
@@ -275,6 +275,11 @@ public class HomeFragment extends Fragment {
                 if (response.code()==200){
 
                     try {
+
+//                        Integer a=response.body().getData().get(currentDay).getDate().getHijri().getMonth().getNumber();
+//                        String b=response.body().getData().get(currentDay).getDate().getHijri().getMonth().getEn();
+//
+//                        Log.e("c", String.valueOf(a+b));
                         // get time remove last character
                         String fazarTime=response.body().getData().get(currentDay).getTimings().getFajr().
                                 substring(0, response.body().getData().get(currentDay).getTimings().getFajr().length() - 6);

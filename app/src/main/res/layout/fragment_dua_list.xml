@@ -33,7 +33,7 @@
                 android:layout_centerInParent="true"
                 android:layout_margin="10dp"
                 android:paddingLeft="10dp"
-                android:id="@+id/bck_btn"
+                android:id="@+id/bck_btn2"
                 ></ImageView>
         </RelativeLayout>
 

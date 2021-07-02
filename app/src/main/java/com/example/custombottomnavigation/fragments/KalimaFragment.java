@@ -81,7 +81,7 @@ public class KalimaFragment extends Fragment {
         kalima2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+                AlertDialog.Builder builder = new AlertDialog.Builder(getContext(),R.style.Widget_MaterialComponents_MaterialCalendar_Fullscreen);
                 ViewGroup viewGroup = v.findViewById(android.R.id.content);
                 View dialogView = LayoutInflater.from(v.getContext()).inflate(R.layout.fragment_kalima_two, viewGroup, false);
                 builder.setView(dialogView);

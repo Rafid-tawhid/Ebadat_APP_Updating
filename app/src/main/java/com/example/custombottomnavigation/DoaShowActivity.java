@@ -1,7 +1,10 @@
 package com.example.custombottomnavigation;
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -13,16 +16,24 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.custombottomnavigation.adapter.DuaListAdapter;
+import com.example.custombottomnavigation.fragments.DuaListFragment;
 import com.example.custombottomnavigation.models.DuaItems;
 
 public class DoaShowActivity extends AppCompatActivity {
 
-    TextView name,title,arbi,bangla,meaing;
-    ImageView doa;
+    TextView name,title,bangla,meaing;
+    TextView doa;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doa_show);
+
+
+        //hide action bar
+
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
 
         name=findViewById(R.id.nameDoa);
         title=findViewById(R.id.nameDoa2);
@@ -34,13 +45,29 @@ public class DoaShowActivity extends AppCompatActivity {
 
         name.setText(""+DuaListAdapter.pos.getTitle());
         title.setText(""+DuaListAdapter.pos.getTitle());
-        bangla.setText(""+getResources().getString(DuaListAdapter.pos.getBangla()));
-        meaing.setText(""+getResources().getString(DuaListAdapter.pos.getArbi()));
-        doa.setImageResource(DuaListAdapter.pos.getDua());
+        bangla.setText(""+DuaListAdapter.pos.getBangla());
+        meaing.setText(""+DuaListAdapter.pos.getOrtho());
+        doa.setText(""+DuaListAdapter.pos.getArbi());
 
 
+
+
+        //back btn
+        ImageView backBtn = findViewById(R.id.bck_btn);
+
+        backBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //go back to previous fragment
+                finish();
+                DoaShowActivity.this.getSupportFragmentManager().beginTransaction()
+                        .add(R.id.doa_bg2, new DuaListFragment(), "createPost").addToBackStack(null).commit();
+
+            }
+        });
+
+    }
 
 
     }
 
-}

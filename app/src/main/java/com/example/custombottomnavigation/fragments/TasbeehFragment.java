@@ -2,6 +2,7 @@ package com.example.custombottomnavigation.fragments;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.graphics.Color;
 import android.os.Bundle;
 
@@ -72,7 +73,7 @@ public class TasbeehFragment extends Fragment {
         //spiner
         spinners = (Spinner) view.findViewById(R.id.spinner2);
 
-
+    
 
 
         getSpinnerValue();

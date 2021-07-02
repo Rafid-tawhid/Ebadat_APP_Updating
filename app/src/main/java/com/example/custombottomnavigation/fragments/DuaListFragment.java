@@ -5,6 +5,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -12,8 +13,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Adapter;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import com.example.custombottomnavigation.HomeFragment;
 import com.example.custombottomnavigation.MainActivity;
 import com.example.custombottomnavigation.R;
 import com.example.custombottomnavigation.adapter.DuaListAdapter;
@@ -26,10 +29,10 @@ import java.util.List;
 public class DuaListFragment extends Fragment {
 
     RecyclerView recyclerView;
-    String title[]={"jan","fab","march","april","jan","fab","march","april","jan","fab","march","april"};
     LinearLayoutManager layoutManager;
     List<DuaItems> duaItems;
     DuaListAdapter adapter;
+    ImageView backBtn;
 
 
 
@@ -48,16 +51,12 @@ public class DuaListFragment extends Fragment {
 
     private void initData() {
         duaItems=new ArrayList<>();
-        duaItems.add(new DuaItems("সাইয়্যেদুল ইস্তিগফার",R.drawable.doa_img,R.string.d1,R.string.b1,1));
-        duaItems.add(new DuaItems("নিদ্রা যাওয়ার  দোয়া",R.drawable.doa_img,R.string.app_name,R.string.b1,2));
-        duaItems.add(new DuaItems("নিদ্রা থেকে জাগ্রত হয়ে কোন দোয়া",R.drawable.doa_img,R.string.d1,R.string.b1,2));
-        duaItems.add(new DuaItems("মসজিদে প্রবেশের দোয়া",R.drawable.doa_img,R.string.d1,R.string.b1,2));
-        duaItems.add(new DuaItems("মসজিদ থেকে বের হওয়ার দোয়া",R.drawable.doa_img,R.string.d1,R.string.b1,2));
-        duaItems.add(new DuaItems("টয়লেটে প্রবেশের দোয়া",R.drawable.doa_img,R.string.d1,R.string.b1,2));
-        duaItems.add(new DuaItems("টয়লেট থেকে বের হওয়ার দোয়া",R.drawable.doa_img,R.string.d1,R.string.b1,2));
-        duaItems.add(new DuaItems("পিতা-মাতার জন্য  দোয়া",R.drawable.doa_img,R.string.d1,R.string.b1,2));
-        duaItems.add(new DuaItems("জ্ঞান বৃদ্ধির জন্য দোয়া",R.drawable.doa_img,R.string.d1,R.string.b1,2));
-        duaItems.add(new DuaItems("ঘর থেকে বের হওয়ার সময়  দোয়া ",R.drawable.doa_img,R.string.d1,R.string.b1,2));
+        duaItems.add(new DuaItems("ঘুমানোর সময় পড়ার দোয়া"," اَللَّهُمَّ بِاسْمِكَ أَمُوتُ وَأَحْيَا","আল্লাহুম্মা বিসমিকা আমুতু ওয়া আহইয়া","আমার বাংলা নিয়ে প্রথম কাজ করবার সুযোগ তৈরি হয়েছিল অভ্র নামক এক যুগান্তকারী বাংলা সফ্টওয়্যার হাতে পাবার মধ্য দিয়ে।","1"));
+        duaItems.add(new DuaItems("ঘুম থেকে উঠে পড়ার দোয়া"," الْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ","আলহামদু লিল্লাহিল লাজি আহইয়ানা বা’দা মা আমাতানা ওয়া ইলাইহিন নুশুর","আমার বাংলা নিয়ে প্রথম কাজ করবার সুযোগ তৈরি হয়েছিল অভ্র^ নামক এক যুগান্তকারী বাংলা সফ্টওয়্যার হাতে পাবার মধ্য দিয়ে।","1"));
+        duaItems.add(new DuaItems("ওযুর দোয়া","اَللَّخُمَّ اغْفِرْلِىْ ذَنْبِى وَ وَسِّعْلِىْ فِىْ دَارِىْ وَبَارِكْ لِىْ فِىْ رِزْقِىْ","আল্লাহুম্মাগফিরলি জামবি, ওয়া ওয়াসসিলি ফি দারি, ওয়া বারিক লি ফি রিযক্বি। (নাসাঈ)","আমার বাংলা নিয়ে প্রথম কাজ করবার সুযোগ তৈরি হয়েছিল অভ্র^ নামক এক যুগান্তকারী বাংলা সফ্টওয়্যার হাতে পাবার মধ্য দিয়ে।","1"));
+        duaItems.add(new DuaItems("মসজিদে প্রবেশ করার সময়ের দোয়া","اَللّٰهُمَّ افْتَحْ لِيْ اَبْوَابَ رَحْمَتِكَ","আল্লাহুম্মাফতাহলী আবওয়াবা রাহমাতিক","আমার বাংলা নিয়ে প্রথম কাজ করবার সুযোগ তৈরি হয়েছিল অভ্র^ নামক এক যুগান্তকারী বাংলা সফ্টওয়্যার হাতে পাবার মধ্য দিয়ে।","1"));
+        duaItems.add(new DuaItems("মসজিদ হতে বের হওয়ার সময়ের দোয়া", "اَللّٰهمَّ اِنِّي اَسْٮَٔلُكَ مِنْ فَضْلِكِ","আল্লাহুম্মা ইন্নী আসআলূকা মিস ফাযলিকা","আমার বাংলা নিয়ে প্রথম কাজ করবার সুযোগ তৈরি হয়েছিল অভ্র^ নামক এক যুগান্তকারী বাংলা সফ্টওয়্যার হাতে পাবার মধ্য দিয়ে।","1"));
+
 
     }
 
@@ -73,5 +72,23 @@ public class DuaListFragment extends Fragment {
         recyclerView.setAdapter(adapter);
         adapter.notifyDataSetChanged();
 
+
+        backBtn=view.findViewById(R.id.bck_btn2);
+
+        backBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //go back to previous fragment
+                Fragment someFragment = new HomeFragment();
+                FragmentTransaction transaction = getFragmentManager().beginTransaction();
+                transaction.replace(R.id.main_frame_bg, someFragment, "Go back to home");
+                transaction.addToBackStack("Go to home");
+
+                transaction.commit();
+
+            }
+        });
+
     }
+
 }

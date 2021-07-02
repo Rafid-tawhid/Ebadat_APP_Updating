@@ -5,17 +5,13 @@ import android.widget.ImageView;
 import java.util.List;
 
 public class DuaItems {
-    String title;
-    int dua;
-    int arbi;
-    int bangla;
-    int ayat;
+    String title,arbi,bangla,ortho,ayat;
 
-    public DuaItems(String title, int dua, int arbi, int bangla, int ayat) {
+    public DuaItems(String title, String arbi, String bangla, String ortho, String ayat) {
         this.title = title;
-        this.dua = dua;
         this.arbi = arbi;
         this.bangla = bangla;
+        this.ortho = ortho;
         this.ayat = ayat;
     }
 
@@ -27,35 +23,35 @@ public class DuaItems {
         this.title = title;
     }
 
-    public int getDua() {
-        return dua;
-    }
-
-    public void setDua(int dua) {
-        this.dua = dua;
-    }
-
-    public int getArbi() {
+    public String getArbi() {
         return arbi;
     }
 
-    public void setArbi(int arbi) {
+    public void setArbi(String arbi) {
         this.arbi = arbi;
     }
 
-    public int getBangla() {
+    public String getBangla() {
         return bangla;
     }
 
-    public void setBangla(int bangla) {
+    public void setBangla(String bangla) {
         this.bangla = bangla;
     }
 
-    public int getAyat() {
+    public String getOrtho() {
+        return ortho;
+    }
+
+    public void setOrtho(String ortho) {
+        this.ortho = ortho;
+    }
+
+    public String getAyat() {
         return ayat;
     }
 
-    public void setAyat(int ayat) {
+    public void setAyat(String ayat) {
         this.ayat = ayat;
     }
 }

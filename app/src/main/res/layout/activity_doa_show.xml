@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
+    android:id="@+id/doa_bg2"
     android:layout_height="match_parent"
     tools:context=".DoaShowActivity">
 
@@ -39,7 +40,7 @@
             android:layout_width="match_parent"
             android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="-22dp"
+            android:layout_marginTop="-10dp"
             android:padding="12dp"
             android:background="@drawable/item_bg2"
             android:layout_height="match_parent">
@@ -89,13 +90,16 @@
                             android:src="@drawable/dwn_ic">
 
                         </ImageView>
-                        <ImageView
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:id="@+id/doaImg"
+                            android:textAlignment="center"
+                            android:textSize="20dp"
+                            android:textColor="#FDCA85"
                             >
 
-                        </ImageView>
+                        </TextView>
 
                         <TextView
                             android:layout_width="match_parent"
@@ -154,4 +158,4 @@
 
 
 
-</LinearLayout>
+</FrameLayout>
