@@ -17,7 +17,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#28272C"
-        android:id="@+id/singel_item"
         android:orientation="horizontal"
         android:weightSum="7"
         >

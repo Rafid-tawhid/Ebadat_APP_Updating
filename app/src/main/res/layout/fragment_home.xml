@@ -67,7 +67,6 @@
                     android:layout_alignParentLeft="true"
                     android:textColor="#FFC07B"
                     android:layout_below="@+id/bg"
-                    android:id="@+id/date2"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="5dp"
                     android:textSize="10dp">

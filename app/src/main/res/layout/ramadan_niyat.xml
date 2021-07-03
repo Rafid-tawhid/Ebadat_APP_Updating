@@ -1,193 +1,217 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#000000"
     android:orientation="vertical"
-    tools:context=".fragments.KalimaOne">
+    android:background="#151515"
+    android:layout_height="match_parent">
 
-
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:src="@drawable/ramadan_up"
-            android:scaleType="fitXY"
+            android:scaleType="centerCrop"
+            android:background="#FDCA85"
+            >
+        </ImageView>
 
-
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_ic"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:paddingLeft="10dp"
+            android:id="@+id/cancelBtn"
             ></ImageView>
+    </RelativeLayout>
 
-
-
-
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="-8dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/item_bg2"
+        android:layout_marginTop="-12dp"
         android:layout_marginLeft="8dp"
         android:padding="3dp"
         android:layout_marginRight="8dp"
-        android:background="@drawable/item_bg2"
-        >
-
-        <LinearLayout
+        android:orientation="vertical">
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#000000"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:background="#0E0E0E"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:id="@+id/nm"
+                android:textSize="20dp"
+                android:text="সেহেরীর নিয়ত"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:textColor="#FDCA85"></TextView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_below="@+id/nm"
+                android:layout_marginBottom="5dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_union">
 
-            <RelativeLayout
+            </ImageView>
+
+            <!--        <ImageView-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="40dp"-->
+            <!--            android:layout_alignParentRight="true"-->
+            <!--            android:layout_marginRight="12dp"-->
+            <!--            android:id="@+id/cancelBtn"-->
+            <!--            android:src="@drawable/cross">-->
+
+            <!--        </ImageView>-->
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+
+            >
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                >
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:id="@+id/nm"
-                    android:textSize="20dp"
-                    android:text="সেহেরীর নিয়ত"
-                    android:layout_marginTop="5dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerInParent="true"
-                    android:textColor="#FDCA85">
+                android:layout_height="match_parent"
+                android:background="#0E0E0E"
+                android:layout_marginBottom="40dp"
+                android:orientation="vertical">
 
-                </TextView>
+
+
+
+
+
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="14dp"
-                    android:layout_below="@+id/nm"
-                    android:layout_marginBottom="5dp"
-                    android:layout_centerInParent="true"
-                    android:src="@drawable/ic_union">
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sahari_niyat">
 
                 </ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="বাংলা উচ্চারন:"
+                    android:textAlignment="center"
+                    android:textColor="#FDCA85"
+                    android:textSize="18dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="নাওয়াইতু আন আছুম্মা গাদাম মিন শাহরি রমাজানাল মুবারাকি ফারদাল্লাকা, ইয়া আল্লাহু ফাতাকাব্বাল মিন্নি ইন্নিকা আনতাস সামিউল আলিম।"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="বাংলা অর্থ:"
+                    android:textAlignment="center"
+                    android:textColor="#FDCA85"
+                    android:textSize="18dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="  হে আল্লাহ! আমি আগামীকাল পবিত্র রমজানের তোমার পক্ষ থেকে নির্ধারিত ফরজ রোজা রাখার ইচ্ছা পোষণ (নিয়্যত) করলাম। অতএব তুমি আমার পক্ষ থেকে (আমার রোযা তথা পানাহার থেকে বিরত থাকাকে) কবুল কর, নিশ্চয়ই তুমি সর্বশ্রোতা ও সর্বজ্ঞানী।"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp">
+
+                </TextView>
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginRight="12dp"
-                    android:id="@+id/cancelBtn"
-                    android:src="@drawable/cross">
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/iftar_niyat">
 
                 </ImageView>
-            </RelativeLayout>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
 
+                    android:layout_margin="10dp"
+                    android:src="@drawable/iftar_niyat_arbi">
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/sahari_niyat">
+                </ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="বাংলা উচ্চারন:"
+                    android:textAlignment="center"
+                    android:textColor="#FDCA85"
+                    android:textSize="18dp">
 
-            </ImageView>
+                </TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:text="বাংলা উচ্চারন:"
-                android:textAlignment="center"
-                android:textColor="#FDCA85"
-                android:textSize="18dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="আল্লাহুম্মা লাকা ছুমতু ওয়া আলা রিযক্বিকা ওয়া আফতারতু বিরাহমাতিকা ইয়া আরহামার রাহিমিন।"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp">
 
-            </TextView>
+                </TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="নাওয়াইতু আন আছুম্মা গাদাম মিন শাহরি রমাজানাল মুবারাকি ফারদাল্লাকা, ইয়া আল্লাহু ফাতাকাব্বাল মিন্নি ইন্নিকা আনতাস সামিউল আলিম।"
-                android:textAlignment="center"
-                android:textColor="#FFFFFF"
-                android:textSize="16dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="বাংলা অর্থ:"
+                    android:textAlignment="center"
+                    android:textColor="#FDCA85"
+                    android:textSize="18dp">
 
-            </TextView>
+                </TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:text="বাংলা অর্থ:"
-                android:textAlignment="center"
-                android:textColor="#FDCA85"
-                android:textSize="18dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="হে আল্লাহ! আমি তোমারই সন্তুষ্টির জন্য রোজা রেখেছি এবং তোমারই দেয়া রিযিক্বের মাধ্যমে ইফতার করছি।"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp">
 
-            </TextView>
+                </TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="  হে আল্লাহ! আমি আগামীকাল পবিত্র রমজানের তোমার পক্ষ থেকে নির্ধারিত ফরজ রোজা রাখার ইচ্ছা পোষণ (নিয়্যত) করলাম। অতএব তুমি আমার পক্ষ থেকে (আমার রোযা তথা পানাহার থেকে বিরত থাকাকে) কবুল কর, নিশ্চয়ই তুমি সর্বশ্রোতা ও সর্বজ্ঞানী।"
-                android:textAlignment="center"
-                android:textColor="#FFFFFF"
-                android:textSize="16dp">
+            </LinearLayout>
 
-            </TextView>
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-               android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:src="@drawable/iftar_niyat">
-
-            </ImageView>
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_gravity="center"
-
-                android:layout_margin="10dp"
-                android:src="@drawable/iftar_niyat_arbi">
-
-            </ImageView>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:text="বাংলা উচ্চারন:"
-                android:textAlignment="center"
-                android:textColor="#FDCA85"
-                android:textSize="18dp">
-
-            </TextView>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="আল্লাহুম্মা লাকা ছুমতু ওয়া আলা রিযক্বিকা ওয়া আফতারতু বিরাহমাতিকা ইয়া আরহামার রাহিমিন।"
-               android:textAlignment="center"
-                android:textColor="#FFFFFF"
-                android:textSize="16dp">
-
-            </TextView>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:text="বাংলা অর্থ:"
-                android:textAlignment="center"
-                android:textColor="#FDCA85"
-                android:textSize="18dp">
-
-            </TextView>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="হে আল্লাহ! আমি তোমারই সন্তুষ্টির জন্য রোজা রেখেছি এবং তোমারই দেয়া রিযিক্বের মাধ্যমে ইফতার করছি।"
-                android:textAlignment="center"
-                android:textColor="#FFFFFF"
-                android:textSize="16dp">
-
-            </TextView>
-
-        </LinearLayout>
-
-    </ScrollView>
+        </ScrollView>
+    </LinearLayout>
 </LinearLayout>

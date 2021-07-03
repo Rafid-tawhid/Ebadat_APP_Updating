@@ -19,9 +19,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:id="@+id/up"
-            >
+            android:layout_marginBottom="5dp">
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
@@ -91,9 +89,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    app:cardCornerRadius="4dp"
-                    android:id="@+id/namaz_item1"
-                    >
+                    app:cardCornerRadius="4dp">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -130,14 +126,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    app:cardCornerRadius="4dp"
-                    android:id="@+id/namaz_item2"
-                    >
+                    app:cardCornerRadius="4dp">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="#28272C"
-                        android:id="@+id/jakat_item2"
                         android:orientation="horizontal"
                         android:weightSum="7"
                         >
@@ -168,9 +161,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    app:cardCornerRadius="4dp"
-                    android:id="@+id/namaz_item3"
-                    >
+                    app:cardCornerRadius="4dp">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -207,9 +198,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    app:cardCornerRadius="4dp"
-                    android:id="@+id/namaz_item4"
-                    >
+                    app:cardCornerRadius="4dp">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -246,9 +235,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    app:cardCornerRadius="4dp"
-                    android:id="@+id/namaz_item5"
-                    >
+                    app:cardCornerRadius="4dp">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -284,9 +271,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    app:cardCornerRadius="4dp"
-                    android:id="@+id/namaz_item6"
-                    >
+                    app:cardCornerRadius="4dp">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -322,9 +307,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    app:cardCornerRadius="4dp"
-                    android:id="@+id/namaz_item7"
-                    >
+                    app:cardCornerRadius="4dp">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -360,9 +343,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    app:cardCornerRadius="4dp"
-                    android:id="@+id/namaz_item8"
-                    >
+                    app:cardCornerRadius="4dp">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -400,9 +381,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    app:cardCornerRadius="4dp"
-                    android:id="@+id/namaz_item10"
-                    >
+                    app:cardCornerRadius="4dp">
 
                 </androidx.cardview.widget.CardView>
 

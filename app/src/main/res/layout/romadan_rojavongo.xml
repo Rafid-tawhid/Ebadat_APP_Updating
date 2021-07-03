@@ -5,216 +5,415 @@
     android:background="#151515"
     android:layout_height="match_parent">
 
-    <ImageView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:src="@drawable/ramadan_up"
-        android:scaleType="fitXY"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/ramadan_up"
+            android:scaleType="centerCrop"
+            android:background="#FDCA85"
+            >
+        </ImageView>
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_ic"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:paddingLeft="10dp"
+            android:id="@+id/cancelBtn"
+            ></ImageView>
+    </RelativeLayout>
 
-        ></ImageView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/item_bg2"
+    android:layout_marginTop="-12dp"
+    android:layout_marginLeft="8dp"
+    android:padding="3dp"
+    android:layout_marginRight="8dp"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0E0E0E"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/nm"
+            android:textSize="20dp"
+            android:text="রোজা ভঙ্গের কারণ সমূহ"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:textColor="#FDCA85"></TextView>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:layout_below="@+id/nm"
+            android:layout_marginBottom="5dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_union">
 
+        </ImageView>
 
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_marginRight="12dp"-->
+<!--            android:id="@+id/cancelBtn"-->
+<!--            android:src="@drawable/cross">-->
+
+<!--        </ImageView>-->
+    </RelativeLayout>
 
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="-8dp"
-        android:layout_marginLeft="8dp"
-        android:padding="3dp"
-        android:layout_marginRight="8dp"
-        android:background="@drawable/item_bg2"
+
+
         >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#000000"
+            android:background="#0E0E0E"
+            android:layout_marginBottom="40dp"
             android:orientation="vertical">
+
+
+
+
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/point">
+
+                </ImageView>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:id="@+id/nm"
-                    android:textSize="20dp"
-                    android:text="রোজা ভঙ্গের কারণ সমূহ"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerInParent="true"
-                    android:textColor="#FDCA85"></TextView>
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="14dp"
-                    android:layout_below="@+id/nm"
-                    android:layout_marginBottom="5dp"
-                    android:layout_centerInParent="true"
-                    android:src="@drawable/ic_union">
-
-                </ImageView>
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="40dp"
+                    android:text="ইচ্ছাকৃত পানাহার করলে রোজা ভঙ্গ হয়ে যায়। অনুরূপ ধুমপান করলে অথবা চিনি-লবন জাতীয় কোন বস্তু মুখে রাখার পর থুতুু গিলে ফেললে রোজা নষ্ট হয়ে যাবে। তবে ভুলবশত কিছু খেয়ে নিলে অথবা জোরপূবর্ক রোজাদারকে কেউ কিছু খেতে বাধ্য করলে রোজা ভঙ্গ হবে না।"
+                    android:layout_marginLeft="18dp"
+                    android:textAlignment="textStart"
                     android:layout_alignParentRight="true"
-                    android:layout_marginRight="12dp"
-                    android:id="@+id/cancelBtn"
-                    android:src="@drawable/cross">
+                    android:paddingLeft="6dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp">
+
+                </TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/point">
 
                 </ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="রোজাদার সিয়াম অবস্থায় স্ত্রী সহবাস করলে, তাকে উক্ত রোজা কাযা করতে হবে এবং কাফফারা আদায় করতে হবে।"
+                    android:layout_marginLeft="16dp"
+                    android:textAlignment="textStart"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="6dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp">
+
+                </TextView>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/point">
+
+                </ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="ইচ্ছাকৃত বমি করলে সিয়াম ভঙ্গ হয়ে যায়। তবে অনিচ্ছাকৃত বমির কারণে সিয়াম ভঙ্গ হবে না। যেমন মহানবী সাল্লালাহু আলাইহি ওয়াসাল্লাম ইরশাদ করেছেন, “যার অনিচ্ছাকৃত বমি আসে, তাকে সিয়াম কাযা করতে হবে না, আর যে ইচ্ছাকৃত বমি করে, সে যাতে তা কাযা করে (তিরমীজি)”।"
+                    android:layout_marginLeft="16dp"
+                    android:textAlignment="textStart"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="6dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp">
+
+                </TextView>
+
+
             </RelativeLayout>
 
 
-            <TextView
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="  ইচ্ছাকৃত পানাহার করলে রোজা ভঙ্গ হয়ে যায়। অনুরূপ ধুমপান করলে অথবা চিনি-লবন জাতীয় কোন বস্তু মুখে রাখার পর থুতুু গিলে ফেললে রোজা নষ্ট হয়ে যাবে। তবে ভুলবশত কিছু খেয়ে নিলে অথবা জোরপূবর্ক রোজাদারকে কেউ কিছু খেতে বাধ্য করলে রোজা ভঙ্গ হবে না।"
-                android:layout_marginLeft="18dp"
+                android:layout_margin="5dp"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/point">
 
-                android:drawableStart="@drawable/point"
+                </ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="পানাহারের কাজ করে এমন ইনজেকশন গ্রহণ করাতেও রোজা ভঙ্গ হবে। ইনজেকশনের মাধ্যমে শরীরে জীবনীশক্তি বৃদ্ধি করার জন্য কিংবা অন্য কোন কারণে শরীরে ওষুধ প্রবেশ করানো হলে রোজা ভেঙ্গে যাবে। শরীরের শক্তি বৃদ্ধির উদ্দেশ্যে যেমন গ্লুকোজ জাতীয় ইনজেকশন ব্যবহারে রোজা ভেঙ্গে যাবে। কারণ খাবার যেই কাজ করে এক্ষেত্রে অনেকটা একই কাজ করছে এটি। তবে শুধুমাত্র অপারগতায় চিকিৎসার উদ্দেশ্যে ইনসুলিন, পেনিসিলিন জাতীয় ইনজেকশন নেওয়া হয়, তাহলে রোজা ভঙ্গ হবে না।"
+                    android:layout_marginLeft="16dp"
+                    android:textAlignment="textStart"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="6dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp">
 
-                android:textColor="#FFFFFF"
-                android:textSize="16dp">
+                </TextView>
 
-            </TextView>
-            <TextView
+
+            </RelativeLayout>
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="  ইচ্ছাকৃত বমি করলে সিয়াম ভঙ্গ হয়ে যায়। তবে অনিচ্ছাকৃত বমির কারণে সিয়াম ভঙ্গ হবে না। যেমন মহানবী সাল্লালাহু আলাইহি ওয়াসাল্লাম ইরশাদ করেছেন, “যার অনিচ্ছাকৃত বমি আসে, তাকে সিয়াম কাযা করতে হবে না, আর যে ইচ্ছাকৃত বমি করে, সে যাতে তা কাযা করে (তিরমীজি)”।"
-                android:layout_marginLeft="18dp"
-                android:drawableStart="@drawable/point"
-                android:textAlignment="textStart"
-                android:textColor="#FFFFFF"
-                android:textSize="16dp">
+                android:layout_margin="5dp"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/point">
 
-            </TextView>
-            <TextView
+                </ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="মহিলাদের হায়েয বা নিফাস হলে অর্থাৎ মাসিক রক্তস্রাব শুরু হলে অথবা সন্তান প্রসব করলে রোজা ভঙ্গ হয়ে যাবে। পরবর্তীতে সমান সংখ্যক রোজা কাযা করে নিতে হবে।"
+                    android:layout_marginLeft="16dp"
+                    android:textAlignment="textStart"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="6dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp">
+
+                </TextView>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="  রোজাদার সিয়াম অবস্থায় স্ত্রী সহবাস করলে, তাকে উক্ত রোজা কাযা করতে হবে এবং কাফফারা আদায় করতে হবে।"
-                android:layout_marginLeft="16dp"
-                android:drawableLeft="@drawable/point"
-                android:textAlignment="textStart"
-                android:textColor="#FFFFFF"
-                android:textSize="16dp">
+                android:layout_margin="5dp"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/point">
 
-            </TextView>
+                </ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="কুলি করার সময় অসতর্কতার কারণে কণ্ঠনালীতে পানি প্রবেশ করলে রোজা ভঙ্গ হয়ে যায়।"
+                    android:layout_marginLeft="16dp"
+                    android:textAlignment="textStart"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="6dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp">
+
+                </TextView>
 
 
-            <TextView
+            </RelativeLayout>
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="পানাহারের কাজ করে এমন ইনজেকশন গ্রহণ করাতেও রোজা ভঙ্গ হবে। ইনজেকশনের মাধ্যমে শরীরে জীবনীশক্তি বৃদ্ধি করার জন্য কিংবা অন্য কোন কারণে শরীরে ওষুধ প্রবেশ করানো হলে রোজা ভেঙ্গে যাবে। শরীরের শক্তি বৃদ্ধির উদ্দেশ্যে যেমন গ্লুকোজ জাতীয় ইনজেকশন ব্যবহারে রোজা ভেঙ্গে যাবে। কারণ খাবার যেই কাজ করে এক্ষেত্রে অনেকটা একই কাজ করছে এটি। তবে শুধুমাত্র অপারগতায় চিকিৎসার উদ্দেশ্যে ইনসুলিন, পেনিসিলিন জাতীয় ইনজেকশন নেওয়া হয়, তাহলে রোজা ভঙ্গ হবে না।"
-                android:layout_marginLeft="18dp"
-                android:drawablePadding="7dp"
-                android:drawableStart="@drawable/point"
-                android:textAlignment="textStart"
-                android:textColor="#FFFFFF"
-                android:textSize="16dp">
+                android:layout_margin="5dp"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/point">
 
-            </TextView>
-            <TextView
+                </ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="দাঁতে আটকে থাকা ছোলা পরিমাণ বা তার চেয়ে বড় খাদ্যদ্রব্য গিলে ফেললে অথবা এর চেয়ে কম পরিমাণ মুখ থেকে বের করে পূণরায় গিলে ফেললে রোজা ভঙ্গ হয়ে যাবে।"
+                    android:layout_marginLeft="16dp"
+                    android:textAlignment="textStart"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="6dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp">
+
+                </TextView>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:drawablePadding="7dp"
-                android:text="বমহিলাদের হায়েয বা নিফাস হলে অর্থাৎ মাসিক রক্তস্রাব শুরু হলে অথবা সন্তান প্রসব করলে রোজা ভঙ্গ হয়ে যাবে। পরবর্তীতে সমান সংখ্যক রোজা কাযা করে নিতে হবে।"
-                android:layout_marginLeft="18dp"
-                android:drawableStart="@drawable/point"
-                android:textAlignment="textStart"
-                android:textColor="#FFFFFF"
-                android:textSize="16dp">
+                android:layout_margin="5dp"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/point">
 
-            </TextView>
-            <TextView
+                </ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="সাহরি গ্রহণের সময় রয়েছে মনে করে পানাহার করলো, কিন্তু দেখা গেলো সুবহে সাদিক শেষ হয়ে গেল। সে রোজা হবে না।"
+                    android:layout_marginLeft="16dp"
+                    android:textAlignment="textStart"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="6dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp">
+
+                </TextView>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:drawablePadding="7dp"
-                android:text="কুলি করার সময় অসতর্কতার কারণে কণ্ঠনালীতে পানি প্রবেশ করলে রোজা ভঙ্গ হয়ে যায়।"
-                android:layout_marginLeft="18dp"
-                android:drawableStart="@drawable/point"
-                android:textAlignment="textStart"
-                android:textColor="#FFFFFF"
-                android:textSize="16dp">
+                android:layout_margin="5dp"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/point">
 
-            </TextView>
-            <TextView
+                </ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="মুখ খোলা রাখার কারণে বৃষ্টির পানি কণ্ঠনালীতে প্রবেশ করলে রোজা ভঙ্গ হয়ে যায়।"
+                    android:layout_marginLeft="16dp"
+                    android:textAlignment="textStart"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="6dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp">
+
+                </TextView>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="দাঁতে আটকে থাকা ছোলা পরিমাণ বা তার চেয়ে বড় খাদ্যদ্রব্য গিলে ফেললে অথবা এর চেয়ে কম পরিমাণ মুখ থেকে বের করে পূণরায় গিলে ফেললে রোজা ভঙ্গ হয়ে যাবে।"
-                android:layout_marginLeft="18dp"
-                android:drawablePadding="7dp"
-                android:drawableStart="@drawable/point"
-                android:textAlignment="textStart"
-                android:textColor="#FFFFFF"
-                android:textSize="16dp">
+                android:layout_margin="5dp"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/point">
 
-            </TextView>
-            <TextView
+                </ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="নাকে বা কানে ঔষধ ঢেলে দিলে এবং পিায়থানার রাস্তা দিয়ে দেহে কিছু প্রবেশ করলে ।"
+                    android:layout_marginLeft="16dp"
+                    android:textAlignment="textStart"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="6dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp">
+
+                </TextView>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="সাহরি গ্রহণের সময় রয়েছে মনে করে পানাহার করলো, কিন্তু দেখা গেলো সুবহে সাদিক শেষ হয়ে গেল। সে রোজা হবে না।"
-               android:layout_marginLeft="18dp"
-                android:drawablePadding="7dp"
-                android:drawableStart="@drawable/point"
-                android:textAlignment="textStart"
-                android:textColor="#FFFFFF"
-                android:textSize="16dp">
+                android:layout_margin="5dp"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/point">
 
-            </TextView>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-               android:text="মুখ খোলা রাখার কারণে বৃষ্টির পানি কণ্ঠনালীতে প্রবেশ করলে রোজা ভঙ্গ হয়ে যায়।"
-                android:layout_marginLeft="18dp"
-                android:drawablePadding="7dp"
-                android:drawableStart="@drawable/point"
-                android:textAlignment="textStart"
-                android:textColor="#FFFFFF"
-                android:textSize="16dp">
+                </ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="দাঁতে আটকে থাকা ছোলা পরিমাণ বা তার চেয়ে বড় খাদ্যদ্রব্য গিলে ফেললে অথবা এর চেয়ে কম পরিমাণ মুখ থেকে বের করে পূণরায় গিলে ফেললে রোজা ভঙ্গ হয়ে যাবে।"
+                    android:layout_marginLeft="16dp"
+                    android:textAlignment="textStart"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="6dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp">
 
-            </TextView>
+                </TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-               android:text="নাকে বা কানে ঔষধ ঢেলে দিলে এবং পিায়থানার রাস্তা দিয়ে দেহে কিছু প্রবেশ করলে ।"
-                android:layout_marginLeft="18dp"
-                android:drawablePadding="7dp"
-                android:drawableStart="@drawable/point"
-                android:textAlignment="textStart"
-                android:textColor="#FFFFFF"
-                android:textSize="16dp">
 
-            </TextView>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-               android:text="দাঁতে আটকে থাকা ছোলা পরিমাণ বা তার চেয়ে বড় খাদ্যদ্রব্য গিলে ফেললে অথবা এর চেয়ে কম পরিমাণ মুখ থেকে বের করে পূণরায় গিলে ফেললে রোজা ভঙ্গ হয়ে যাবে।"
-                android:layout_marginLeft="18dp"
-                android:drawablePadding="7dp"
-                android:drawableStart="@drawable/point"
-                android:textAlignment="textStart"
-                android:textColor="#FFFFFF"
-                android:textSize="16dp">
+            </RelativeLayout>
 
-            </TextView>
+
 
         </LinearLayout>
 
     </ScrollView>
+</LinearLayout>
 </LinearLayout>

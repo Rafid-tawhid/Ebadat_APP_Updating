@@ -53,7 +53,8 @@ public class DoaShowActivity extends AppCompatActivity {
 
 
         //back btn
-        ImageView backBtn = findViewById(R.id.bck_btn);
+        ImageView backBtn = findViewById(R.id.cancelBtn);
+        ImageView backBtn2 = findViewById(R.id.bck_btn2);
 
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,6 +66,17 @@ public class DoaShowActivity extends AppCompatActivity {
 
             }
         });
+//        backBtn2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                //go back to previous fragment
+//                finish();
+//                DoaShowActivity.this.getSupportFragmentManager().beginTransaction()
+//                        .add(R.id.doa_bg2, new DuaListFragment(), "createPost").addToBackStack(null).commit();
+//
+//            }
+//        });
+
 
     }
 

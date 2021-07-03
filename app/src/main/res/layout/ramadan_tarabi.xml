@@ -5,335 +5,358 @@
     android:background="#151515"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:src="@drawable/ramadan_up"
-        android:scaleType="fitXY"
-
-
-        ></ImageView>
-
-
-
-
-    <ScrollView
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="-8dp"
+        android:layout_marginBottom="5dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/ramadan_up"
+            android:scaleType="centerCrop"
+            android:background="#FDCA85"
+            >
+        </ImageView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_ic"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:paddingLeft="10dp"
+            android:id="@+id/cancelBtn"
+            ></ImageView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/item_bg2"
+        android:layout_marginTop="-12dp"
         android:layout_marginLeft="8dp"
         android:padding="3dp"
         android:layout_marginRight="8dp"
-        android:background="@drawable/item_bg2"
-        >
-
-        <LinearLayout
+        android:orientation="vertical">
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#000000"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:background="#0E0E0E"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:id="@+id/nm"
+                android:textSize="20dp"
+                android:text="তারাবির নামাজ"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:textColor="#FDCA85"></TextView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_below="@+id/nm"
+                android:layout_marginBottom="5dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_union">
 
-            <RelativeLayout
+            </ImageView>
+
+            <!--        <ImageView-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="40dp"-->
+            <!--            android:layout_alignParentRight="true"-->
+            <!--            android:layout_marginRight="12dp"-->
+            <!--            android:id="@+id/cancelBtn"-->
+            <!--            android:src="@drawable/cross">-->
+
+            <!--        </ImageView>-->
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            >
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                >
+                android:layout_height="match_parent"
+                android:background="#0E0E0E"
+                android:layout_marginBottom="40dp"
+                android:orientation="vertical">
+
+
+
+
+
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:id="@+id/nm"
-                    android:textSize="20dp"
-                    android:text="তারাবির নামাজ"
-                    android:layout_marginTop="5dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerInParent="true"
-                    android:textColor="#FDCA85">
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text=" তারাবিহ নামাজের নিয়ত:"
+                    android:paddingLeft="10dp"
+                    android:drawableLeft="@drawable/heading"
+                    android:textAlignment="textStart"
+                    android:textColor="#FDCA85"
+                    android:textSize="18dp">
 
                 </TextView>
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="14dp"
-                    android:layout_below="@+id/nm"
-                    android:layout_marginBottom="5dp"
-                    android:layout_centerInParent="true"
-                    android:src="@drawable/ic_union">
-
-                </ImageView>
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginRight="12dp"
-                    android:id="@+id/cancelBtn"
-                    android:src="@drawable/cross">
-
-                </ImageView>
-            </RelativeLayout>
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_group_tarabi"
+                    android:layout_margin="8dp"
+                    android:scaleType="fitXY"
+                    android:paddingTop="4dp"
+                    ></ImageView>
 
 
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text=" তারাবিহ নামাজের নিয়ত:"
-                android:paddingLeft="10dp"
-                android:drawableLeft="@drawable/heading"
-                android:textAlignment="textStart"
-                android:textColor="#FDCA85"
-                android:textSize="18dp">
-
-            </TextView>
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_group_tarabi"
-                android:layout_margin="8dp"
-                android:scaleType="fitXY"
-                android:paddingTop="4dp"
-                ></ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text=" বাংলা উচ্চারন:"
+                    android:paddingLeft="10dp"
 
 
+                    android:textAlignment="center"
+                    android:textColor="#FDCA85"
+                    android:textSize="18dp">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:text=" বাংলা উচ্চারন:"
-                android:paddingLeft="10dp"
+                </TextView>
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text=" ননাওয়াইতু আন উসাল্লিয়া লিল্লাহি তায়ালা, রাকাআতাই সালাতিত তারাবিহ সুন্নাতু রাসূলিল্লাহি তায়ালা, মুতাওয়াজ্জিহান ইলা জিহাতিল কাবাতিশ শারিফাতি, আল্লাহু আকবার।"
 
-                android:textAlignment="center"
-                android:textColor="#FDCA85"
-                android:textSize="18dp">
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp">
 
-            </TextView>
+                </TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text=" ননাওয়াইতু আন উসাল্লিয়া লিল্লাহি তায়ালা, রাকাআতাই সালাতিত তারাবিহ সুন্নাতু রাসূলিল্লাহি তায়ালা, মুতাওয়াজ্জিহান ইলা জিহাতিল কাবাতিশ শারিফাতি, আল্লাহু আকবার।"
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text=" বাংলা অর্থ:"
+                    android:paddingLeft="10dp"
+                    android:textAlignment="center"
+                    android:textColor="#FDCA85"
+                    android:textSize="18dp">
 
-                android:padding="5dp"
-                android:textAlignment="center"
-                android:textColor="#FFFFFF"
-                android:textSize="13dp">
+                </TextView>
 
-            </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text=" আমি কেবলামুখি হয়ে দু’রাকাত তারাবির সুন্নতে মুয়াক্কাদা নামাজের নিয়ত করছি; আল্লাহু আকবার।"
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:text=" বাংলা অর্থ:"
-                android:paddingLeft="10dp"
-                android:textAlignment="center"
-                android:textColor="#FDCA85"
-                android:textSize="18dp">
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp">
 
-            </TextView>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text=" আমি কেবলামুখি হয়ে দু’রাকাত তারাবির সুন্নতে মুয়াক্কাদা নামাজের নিয়ত করছি; আল্লাহু আকবার।"
-
-                android:padding="5dp"
-                android:textAlignment="center"
-                android:textColor="#FFFFFF"
-                android:textSize="13dp">
-
-            </TextView>
+                </TextView>
 
 
 
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text=" তারাবিহ নামাজের দোয়া:"
-                android:paddingLeft="10dp"
-                android:drawableLeft="@drawable/heading"
-                android:textAlignment="textStart"
-                android:textColor="#FDCA85"
-                android:textSize="18dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text=" তারাবিহ নামাজের দোয়া:"
+                    android:paddingLeft="10dp"
+                    android:drawableLeft="@drawable/heading"
+                    android:textAlignment="textStart"
+                    android:textColor="#FDCA85"
+                    android:textSize="18dp">
 
-            </TextView>
+                </TextView>
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_group_tarabi_doa"
-                android:layout_margin="8dp"
-                android:scaleType="fitXY"
-                android:paddingTop="4dp"
-                ></ImageView>
-
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:text=" বাংলা উচ্চারন:"
-                android:paddingLeft="10dp"
-
-
-                android:textAlignment="center"
-                android:textColor="#FDCA85"
-                android:textSize="18dp">
-
-            </TextView>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text=" সুবহানাজিল মুলকি ওয়ালমালাকুতি সুবহানাজিল ইজ্জাতি ওয়াল আজমাতি ওয়ালহাইবাতি ওয়াল কুদরাতি ওয়াল কিবরিয়ায়ি ওয়াল জাবারুতি; সুবহানাল মালিকিল হাইয়্যিল্লাজি লা ইয়ানুমু ওয়া লা ইয়ামুতু, সুব্বুহুন কুদ্দুসুন রাববুনা ওয়া রাব্বুন মালাইকাতি ওয়ার রূহ।"
-
-                android:padding="5dp"
-                android:textAlignment="center"
-                android:textColor="#FFFFFF"
-                android:textSize="13dp">
-
-            </TextView>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:text=" বাংলা অর্থ:"
-                android:paddingLeft="10dp"
-                android:textAlignment="center"
-                android:textColor="#FDCA85"
-                android:textSize="18dp">
-
-            </TextView>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="  আল্লাহ পবিত্রময় সাম্রাজ্য ও মহত্ত্বের মালিক। তিনি পবিত্রময় সম্মান মহত্ত্ব ও প্রতিপত্তিশালী সত্তা। ক্ষমতাবান, গৌরবময় ও প্রতাপশালী তিনি পবিত্রময় ও রাজাধিরাজ যিনি চিরঞ্জীব, কখনো ঘুমায় না এবং চির মৃত্যুহীন সত্তা। তিনি পবিত্রময় ও বরকতময় আমাদের প্রতিপালক, ফেরেশতাকুল এবং জিবরাইলের (আ.) প্রতিপালক।"
-
-                android:padding="5dp"
-                android:textAlignment="center"
-                android:textColor="#FFFFFF"
-                android:textSize="13dp">
-
-            </TextView>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_group_tarabi_doa"
+                    android:layout_margin="8dp"
+                    android:scaleType="fitXY"
+                    android:paddingTop="4dp"
+                    ></ImageView>
 
 
 
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text=" তারাবিহ নামাজের মোনাজাত:"
-                android:paddingLeft="10dp"
-                android:drawableLeft="@drawable/heading"
-                android:textAlignment="textStart"
-                android:textColor="#FDCA85"
-                android:textSize="18dp">
-
-            </TextView>
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_group_tarabi_namaj"
-                android:layout_margin="8dp"
-                android:scaleType="fitXY"
-                android:paddingTop="4dp"
-                ></ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text=" বাংলা উচ্চারন:"
+                    android:paddingLeft="10dp"
 
 
+                    android:textAlignment="center"
+                    android:textColor="#FDCA85"
+                    android:textSize="18dp">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:text=" বাংলা উচ্চারন:"
-                android:paddingLeft="10dp"
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text=" সুবহানাজিল মুলকি ওয়ালমালাকুতি সুবহানাজিল ইজ্জাতি ওয়াল আজমাতি ওয়ালহাইবাতি ওয়াল কুদরাতি ওয়াল কিবরিয়ায়ি ওয়াল জাবারুতি; সুবহানাল মালিকিল হাইয়্যিল্লাজি লা ইয়ানুমু ওয়া লা ইয়ামুতু, সুব্বুহুন কুদ্দুসুন রাববুনা ওয়া রাব্বুন মালাইকাতি ওয়ার রূহ।"
+
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text=" বাংলা অর্থ:"
+                    android:paddingLeft="10dp"
+                    android:textAlignment="center"
+                    android:textColor="#FDCA85"
+                    android:textSize="18dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="  আল্লাহ পবিত্রময় সাম্রাজ্য ও মহত্ত্বের মালিক। তিনি পবিত্রময় সম্মান মহত্ত্ব ও প্রতিপত্তিশালী সত্তা। ক্ষমতাবান, গৌরবময় ও প্রতাপশালী তিনি পবিত্রময় ও রাজাধিরাজ যিনি চিরঞ্জীব, কখনো ঘুমায় না এবং চির মৃত্যুহীন সত্তা। তিনি পবিত্রময় ও বরকতময় আমাদের প্রতিপালক, ফেরেশতাকুল এবং জিবরাইলের (আ.) প্রতিপালক।"
+
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp">
+
+                </TextView>
 
 
-                android:textAlignment="center"
-                android:textColor="#FDCA85"
-                android:textSize="18dp">
 
-            </TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text=" আল্লাহুম্মা ইন্না নাসআলুকাল জান্নাতা ওয়া নাউজুবিকা মিনাননার। ইয়া খালিক্বাল জান্নাতি ওয়ান নার। বিরাহমাতিকা ইয়া আঝিঝু ইয়া গাফফার, ইয়া কারিমু ইয়া সাত্তার, ইয়া রাহিমু ইয়া ঝাব্বার, ইয়া খালিকু ইয়া বার্রু। আল্লাহুম্মা আঝিরনা মিনান নার। ইয়া মুঝিরু, ইয়া মুঝিরু, ইয়া মুঝির। বিরাহমাতিকা ইয়া আরহামার রাহিমিন।’"
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text=" তারাবিহ নামাজের মোনাজাত:"
+                    android:paddingLeft="10dp"
+                    android:drawableLeft="@drawable/heading"
+                    android:textAlignment="textStart"
+                    android:textColor="#FDCA85"
+                    android:textSize="18dp">
 
-                android:padding="5dp"
-                android:textAlignment="center"
-                android:textColor="#FFFFFF"
-                android:textSize="13dp">
+                </TextView>
 
-            </TextView>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_group_tarabi_namaj"
+                    android:layout_margin="8dp"
+                    android:scaleType="fitXY"
+                    android:paddingTop="4dp"
+                    ></ImageView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:text=" বাংলা অর্থ:"
-                android:paddingLeft="10dp"
-                android:textAlignment="center"
-                android:textColor="#FDCA85"
-                android:textSize="18dp">
 
-            </TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-               android:text="হে প্রভু! আমরা তোমারই কাছে বেহেশ্ত প্রার্থনা করছি। জাহান্নামের আজাব হতে তোমার কাছে আশ্রয় গ্রহন করছি।  হে  জান্নাত- জাহান্নামের সৃষ্টি কর্তা! হে শ্রেষ্ঠ ক্ষমতাশীল! হে করুণাময়! হে গোপনকারী! হে উপকারক! হে  ক্ষমতাশীল! হে সৃষ্টিকর্তা! হে প্রভু! হে ক্ষমাশীল! আমাদের কে  জাহান্নামের আগুন হতে রক্ষা করুন,
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text=" বাংলা উচ্চারন:"
+                    android:paddingLeft="10dp"
+
+
+                    android:textAlignment="center"
+                    android:textColor="#FDCA85"
+                    android:textSize="18dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text=" আল্লাহুম্মা ইন্না নাসআলুকাল জান্নাতা ওয়া নাউজুবিকা মিনাননার। ইয়া খালিক্বাল জান্নাতি ওয়ান নার। বিরাহমাতিকা ইয়া আঝিঝু ইয়া গাফফার, ইয়া কারিমু ইয়া সাত্তার, ইয়া রাহিমু ইয়া ঝাব্বার, ইয়া খালিকু ইয়া বার্রু। আল্লাহুম্মা আঝিরনা মিনান নার। ইয়া মুঝিরু, ইয়া মুঝিরু, ইয়া মুঝির। বিরাহমাতিকা ইয়া আরহামার রাহিমিন।’"
+
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text=" বাংলা অর্থ:"
+                    android:paddingLeft="10dp"
+                    android:textAlignment="center"
+                    android:textColor="#FDCA85"
+                    android:textSize="18dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="হে প্রভু! আমরা তোমারই কাছে বেহেশ্ত প্রার্থনা করছি। জাহান্নামের আজাব হতে তোমার কাছে আশ্রয় গ্রহন করছি।  হে  জান্নাত- জাহান্নামের সৃষ্টি কর্তা! হে শ্রেষ্ঠ ক্ষমতাশীল! হে করুণাময়! হে গোপনকারী! হে উপকারক! হে  ক্ষমতাশীল! হে সৃষ্টিকর্তা! হে প্রভু! হে ক্ষমাশীল! আমাদের কে  জাহান্নামের আগুন হতে রক্ষা করুন,
 হে রক্ষাকারী! হে রক্ষাকারী! হে রক্ষাকারী! আপনার অনুগ্রহ দ্বারা! হে সর্ব  শ্রেষ্ঠ দয়ালু ও দাতা । "
-                android:layout_marginLeft="18dp"
-                android:padding="5dp"
-                android:textAlignment="center"
-                android:textColor="#FFFFFF"
-                android:textSize="13dp">
+                    android:layout_marginLeft="18dp"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp">
 
-            </TextView>
+                </TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text=" তারাবিহ নামাজের নিয়ম:"
-                android:paddingLeft="10dp"
-                android:drawableLeft="@drawable/heading"
-                android:textAlignment="textStart"
-                android:textColor="#FDCA85"
-                android:textSize="18dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text=" তারাবিহ নামাজের নিয়ম:"
+                    android:paddingLeft="10dp"
+                    android:drawableLeft="@drawable/heading"
+                    android:textAlignment="textStart"
+                    android:textColor="#FDCA85"
+                    android:textSize="18dp">
 
-            </TextView>
+                </TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-              android:text="দুই রাকাআত করে মোট বিশ রাকাত তারাবিহ নামাজ আদায় করতে হয়। দুই দুই রাকাআত করে প্রতি ৪ রাকাআত পরপর কিছুক্ষণ বিশ্রাম নিতে হয়। বিশ্রামের এ সময়টিতে  তারাবিহ নামাজের  দোয়া তিন বার পড়তে হবে এবং তাসবিহ-তাহলিল ও আল্লাহর কাছে দোয়া করতে হবে।  চার রাকাত পরপর তারাবিহ নামাজের মোনাজাত দোয়া পড়তে হবে। "
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="দুই রাকাআত করে মোট বিশ রাকাত তারাবিহ নামাজ আদায় করতে হয়। দুই দুই রাকাআত করে প্রতি ৪ রাকাআত পরপর কিছুক্ষণ বিশ্রাম নিতে হয়। বিশ্রামের এ সময়টিতে  তারাবিহ নামাজের  দোয়া তিন বার পড়তে হবে এবং তাসবিহ-তাহলিল ও আল্লাহর কাছে দোয়া করতে হবে।  চার রাকাত পরপর তারাবিহ নামাজের মোনাজাত দোয়া পড়তে হবে। "
+                    android:textAlignment="center"
+                    android:padding="5dp"
+                    android:layout_marginBottom="50dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp">
 
-                android:padding="5dp"
-              android:layout_marginBottom="50dp"
-                android:textColor="#FFFFFF"
-                android:textSize="13dp">
+                </TextView>
 
-            </TextView>
+            </LinearLayout>
 
-        </LinearLayout>
-
-    </ScrollView>
+        </ScrollView>
+    </LinearLayout>
 </LinearLayout>

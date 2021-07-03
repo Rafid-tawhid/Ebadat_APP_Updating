@@ -1,267 +1,471 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#000000"
     android:orientation="vertical"
-    tools:context=".fragments.KalimaOne">
+    android:background="#151515"
+    android:layout_height="match_parent">
 
-
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:src="@drawable/ramadan_up"
-            android:scaleType="fitXY"
+            android:scaleType="centerCrop"
+            android:background="#FDCA85"
+            >
+        </ImageView>
 
-
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_ic"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:paddingLeft="10dp"
+            android:id="@+id/cancelBtn"
             ></ImageView>
-
-
-
-
+    </RelativeLayout>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="-8dp"
+
+
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/item_bg2"
+        android:layout_marginTop="-12dp"
         android:layout_marginLeft="8dp"
         android:padding="3dp"
+
+        android:layout_marginBottom="40dp"
         android:layout_marginRight="8dp"
-        android:background="@drawable/item_bg2"
-        >
-
-        <LinearLayout
+        android:orientation="vertical">
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#000000"
-            android:orientation="vertical">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                >
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:id="@+id/nm"
-                    android:textSize="20dp"
-                    android:text="রোজার ফরজ সমূহ"
-                    android:layout_marginTop="5dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerInParent="true"
-                    android:textColor="#FDCA85">
-
-                </TextView>
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="14dp"
-                    android:layout_below="@+id/nm"
-                    android:layout_marginBottom="5dp"
-                    android:layout_centerInParent="true"
-                    android:src="@drawable/ic_union">
-
-                </ImageView>
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginRight="12dp"
-                    android:id="@+id/cancelBtn"
-                    android:src="@drawable/cross">
-
-                </ImageView>
-            </RelativeLayout>
-
-
-
-
+            android:layout_height="wrap_content"
+            android:background="#0E0E0E"
+            >
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text=" রোজার ফরজ তিনটি:"
-                android:paddingLeft="10dp"
-                android:drawableLeft="@drawable/heading"
-                android:textAlignment="textStart"
-                android:textColor="#FDCA85"
-                android:textSize="18dp">
-
-            </TextView>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:id="@+id/nm"
+                android:textSize="20dp"
+                android:text="রোজার ফরজ সমূহ"
                 android:layout_marginTop="5dp"
-                android:text="  নিয়্যত করা।"
-                android:layout_marginLeft="18dp"
-                android:drawableStart="@drawable/point"
-               android:textAlignment="textStart"
-                android:textColor="#FFFFFF"
-                android:textSize="16dp">
-
-            </TextView>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="  সুবেহ সাদিক থেকে সূর্য পর্যন্ত সব ধরনের পানাহার থেকে বিরত থাকা।"
-                android:layout_marginLeft="18dp"
-                android:drawableStart="@drawable/point"
-                android:textAlignment="textStart"
-                android:textColor="#FFFFFF"
-                android:textSize="16dp">
-
-            </TextView>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="  যৌন আচরণ এবং ইন্দ্রিয় তৃপ্তি থেকে বিরত থাকা।"
-                android:layout_marginLeft="18dp"
-                android:drawableLeft="@drawable/point"
-                android:textAlignment="textStart"
-                android:textColor="#FFFFFF"
-                android:textSize="16dp">
-
-            </TextView>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:text=" যাদের উপর রোজার ফরজ:"
-                android:paddingLeft="10dp"
-
-                android:drawableLeft="@drawable/heading"
-                android:textAlignment="textStart"
-                android:textColor="#FDCA85"
-                android:textSize="18dp">
-
-            </TextView>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="মুসলমান হওয়া: মুসলিম ব্যক্তির জন্য রোজা রাখা ফরজ। রোজা কোন অমুসলিমের জন্য ফরজ নয়।"
-                android:layout_marginLeft="18dp"
-                android:drawablePadding="7dp"
-                android:drawableStart="@drawable/point"
-                android:textAlignment="textStart"
-                android:textColor="#FFFFFF"
-                android:textSize="16dp">
-
-            </TextView>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:drawablePadding="7dp"
-                android:text="বালেগ হওয়া: নাবালগের ওপর রোজা ফরজ নয়, অর্থাৎ ১২ বৎসর বয়সের কম বয়স হলে রোজা ফরজ হবেনা।"
-                android:layout_marginLeft="18dp"
-                android:drawableStart="@drawable/point"
-                android:textAlignment="textStart"
-                android:textColor="#FFFFFF"
-                android:textSize="16dp">
-
-            </TextView>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:drawablePadding="7dp"
-                android:text="বক্তির জন্য রোজা রাখার নিয়ম নাই। তবে সাধারন অসুখ বিসুখ হলে যদি সে রোজা রাখার উপযোগী হয় তবে সে রোজা রাখতে পারবে।"
-                android:layout_marginLeft="18dp"
-                android:drawableStart="@drawable/point"
-                android:textAlignment="textStart"
-                android:textColor="#FFFFFF"
-                android:textSize="16dp">
-
-            </TextView>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="সুস্থ মস্তিস্কের অধিকারী হওয়া: পাগলের ওপর রোজা ফরজ নয়।"
-                android:layout_marginLeft="18dp"
-                android:drawablePadding="7dp"
-                android:drawableStart="@drawable/point"
-                android:textAlignment="textStart"
-                android:textColor="#FFFFFF"
-                android:textSize="16dp">
-
-            </TextView>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="তাহীরা : পবিত্রতা হায়েজ-নেফাস মুক্ত হতে হবে।"
-                android:layout_marginLeft="18dp"
-                android:drawablePadding="7dp"
-                android:drawableStart="@drawable/point"
-                android:textAlignment="textStart"
-                android:textColor="#FFFFFF"
-                android:textSize="16dp">
-
-            </TextView>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="মুকিম হওয়া: অর্থাৎ স্তায়ীবাসিন্দা হওয়া। মুসাফিরের ওপর রোজা ফরজের ব্যপারে একটু ভিন্নতা আছে। যেমন কষ্টসাধ্য ভ্রমন হলে পরবর্তীতে রোজা আদায়ের বিধান আছে। আমি মনে করি বর্তমানে সফর অনেক আরামের সাথে করা যায় তাই সফর অবস্থায় একমাত্র কাহিল হয়ে না পড়লে রোজা রাখা উচিৎ।"
-                android:layout_marginLeft="18dp"
-                android:drawablePadding="7dp"
-                android:drawableStart="@drawable/point"
-                android:textAlignment="textStart"
-                android:textColor="#FFFFFF"
-                android:textSize="16dp">
-
-            </TextView>
-
-
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:textColor="#FDCA85"></TextView>
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
-               android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:src="@drawable/fajilat">
+                android:layout_height="14dp"
+                android:layout_below="@+id/nm"
+                android:layout_marginBottom="5dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_union">
 
             </ImageView>
 
+            <!--        <ImageView-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="40dp"-->
+            <!--            android:layout_alignParentRight="true"-->
+            <!--            android:layout_marginRight="12dp"-->
+            <!--            android:id="@+id/cancelBtn"-->
+            <!--            android:src="@drawable/cross">-->
+
+            <!--        </ImageView>-->
+        </RelativeLayout>
 
 
 
 
-
-
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="১. এ মাসের সাথে ইসলামের একটি গুরুত্বপূর্ণ রুকনের সম্পর্ক রয়েছে ; আর তা হলে সিয়াম পালন।হজ যেমন জিলহজ মাসের সাথে সম্পর্কিত হওয়ার কারণে সে মাসের মর্যাদা বৃদ্ধি করেছে এমনি সিয়াম রমজান মাসে হওয়ার কারণে এ মাসের মর্যাদা বেড়ে গেছে। আল্লাহ রাব্বুল আলামিন বলেন : হে মোমিনগণ! তোমাদের উপর সিয়াম ফরজ করা হয়েছে, যেমনি ফরজ করা হয়েছে তোমাদের পূর্ববর্তীদের উপর-যাতে তোমরা মুত্তাকি হতে পার। [সূরা বাকারা : ১৮৩] \n
+                android:layout_height="match_parent"
+                android:background="#0E0E0E"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text=" রোজার ফরজ তিনটি:"
+                    android:paddingLeft="10dp"
+                    android:drawableLeft="@drawable/heading"
+                    android:textAlignment="textStart"
+                    android:textColor="#FDCA85"
+                    android:textSize="18dp">
+
+                </TextView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="5dp"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+
+                        android:src="@drawable/point">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="নিয়্যত করা।"
+
+                        android:layout_marginLeft="18dp"
+                        android:textAlignment="textStart"
+                        android:layout_alignParentRight="true"
+                        android:paddingLeft="6dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dp">
+
+                    </TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="5dp"
+
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/point">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="সুবেহ সাদিক থেকে সূর্য পর্যন্ত সব ধরনের পানাহার থেকে বিরত থাকা।"
+                        android:layout_marginLeft="16dp"
+                        android:textAlignment="textStart"
+                        android:layout_alignParentRight="true"
+                        android:paddingLeft="6dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dp">
+
+                    </TextView>
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="5dp"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/point">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="যৌন আচরণ এবং ইন্দ্রিয় তৃপ্তি থেকে বিরত থাকা।"
+                        android:layout_marginLeft="16dp"
+                        android:textAlignment="textStart"
+                        android:layout_alignParentRight="true"
+                        android:paddingLeft="6dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dp">
+
+                    </TextView>
+
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text=" যাদের উপর রোজার ফরজ:"
+                    android:paddingLeft="10dp"
+
+                    android:drawableLeft="@drawable/heading"
+                    android:textAlignment="textStart"
+                    android:textColor="#FDCA85"
+                    android:textSize="18dp">
+
+                </TextView>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="5dp"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/point">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="মুসলমান হওয়া: মুসলিম ব্যক্তির জন্য রোজা রাখা ফরজ। রোজা কোন অমুসলিমের জন্য ফরজ নয়।"
+                        android:layout_marginLeft="16dp"
+                        android:textAlignment="textStart"
+                        android:layout_alignParentRight="true"
+                        android:paddingLeft="6dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dp">
+
+                    </TextView>
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="5dp"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/point">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="বালেগ হওয়া: নাবালগের ওপর রোজা ফরজ নয়, অর্থাৎ ১২ বৎসর বয়সের কম বয়স হলে রোজা ফরজ হবেনা।"
+                        android:layout_marginLeft="16dp"
+                        android:textAlignment="textStart"
+                        android:layout_alignParentRight="true"
+                        android:paddingLeft="6dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dp">
+
+                    </TextView>
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="5dp"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/point">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="বক্তির জন্য রোজা রাখার নিয়ম নাই। তবে সাধারন অসুখ বিসুখ হলে যদি সে রোজা রাখার উপযোগী হয় তবে সে রোজা রাখতে পারবে।"
+                        android:layout_marginLeft="16dp"
+                        android:textAlignment="textStart"
+                        android:layout_alignParentRight="true"
+                        android:paddingLeft="6dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dp">
+
+                    </TextView>
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="5dp"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/point">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="সুস্থ মস্তিস্কের অধিকারী হওয়া: পাগলের ওপর রোজা ফরজ নয়।"
+                        android:layout_marginLeft="16dp"
+                        android:textAlignment="textStart"
+                        android:layout_alignParentRight="true"
+                        android:paddingLeft="6dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dp">
+
+                    </TextView>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="5dp"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/point">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="তাহীরা : পবিত্রতা হায়েজ-নেফাস মুক্ত হতে হবে।"
+                        android:layout_marginLeft="16dp"
+                        android:textAlignment="textStart"
+                        android:layout_alignParentRight="true"
+                        android:paddingLeft="6dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dp">
+
+                    </TextView>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="5dp"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/point">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="মুকিম হওয়া: অর্থাৎ স্তায়ীবাসিন্দা হওয়া। মুসাফিরের ওপর রোজা ফরজের ব্যপারে একটু ভিন্নতা আছে। যেমন কষ্টসাধ্য ভ্রমন হলে পরবর্তীতে রোজা আদায়ের বিধান আছে। আমি মনে করি বর্তমানে সফর অনেক আরামের সাথে করা যায় তাই সফর অবস্থায় একমাত্র কাহিল হয়ে না পড়লে রোজা রাখা উচিৎ।"
+                        android:layout_marginLeft="16dp"
+                        android:textAlignment="textStart"
+                        android:layout_alignParentRight="true"
+                        android:paddingLeft="6dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dp">
+
+                    </TextView>
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#0E0E0E"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:id="@+id/nm2"
+                        android:textSize="20dp"
+                        android:text="রোজার ফজিলত"
+                        android:layout_marginTop="5dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:textColor="#FDCA85"></TextView>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="14dp"
+                        android:layout_below="@+id/nm2"
+                        android:layout_marginBottom="5dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_union">
+
+                    </ImageView>
+
+                    <!--        <ImageView-->
+                    <!--            android:layout_width="wrap_content"-->
+                    <!--            android:layout_height="40dp"-->
+                    <!--            android:layout_alignParentRight="true"-->
+                    <!--            android:layout_marginRight="12dp"-->
+                    <!--            android:id="@+id/cancelBtn"-->
+                    <!--            android:src="@drawable/cross">-->
+
+                    <!--        </ImageView>-->
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="6dp"
+                    android:text="১. এ মাসের সাথে ইসলামের একটি গুরুত্বপূর্ণ রুকনের সম্পর্ক রয়েছে ; আর তা হলে সিয়াম পালন।হজ যেমন জিলহজ মাসের সাথে সম্পর্কিত হওয়ার কারণে সে মাসের মর্যাদা বৃদ্ধি করেছে এমনি সিয়াম রমজান মাসে হওয়ার কারণে এ মাসের মর্যাদা বেড়ে গেছে। আল্লাহ রাব্বুল আলামিন বলেন : হে মোমিনগণ! তোমাদের উপর সিয়াম ফরজ করা হয়েছে, যেমনি ফরজ করা হয়েছে তোমাদের পূর্ববর্তীদের উপর-যাতে তোমরা মুত্তাকি হতে পার। [সূরা বাকারা : ১৮৩] \n \n
 
 রাসূলে করিম সাল্লাল্লাহু আলাইহি ওয়া সাল্লাম বলেছেন : ইসলাম যে পাঁচটি ভিত্তির উপর প্রতিষ্ঠিত তার একটি হল সিয়াম পালন। এ সিয়াম জান্নাত লাভের একটি মাধ্যম ; যেমন হাদিসে এসেছে : যে আল্লাহ ও তাঁর রাসূলের প্রতি ঈমান আনল, সালাত কায়েম করল, জাকাত আদায় করল, সিয়াম পালন করল রমজান মাসে, আল্লাহ তাআলার কর্তব্য হল তাকে জান্নাতে প্রবেশ করানো। [ বোখারি ]"
-                android:textAlignment="center"
-                android:textColor="#FFFFFF"
-                android:textSize="16dp">
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp">
 
-            </TextView>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="২. রমজান হল কোরআন নাজিলের মাস। আল্লাহ রাব্বুল আলামিন বলেন : রমজান মাস, এতে নাজিল হয়েছে আল-কোরআন, যা মানুষের দিশারি এবং স্পষ্ট নিদর্শন ও সত্যাসত্যের পার্থক্যকারী। [ সূরা বাকারা : ১৮৪ ] \n
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="6dp"
+                    android:text="২. রমজান হল কোরআন নাজিলের মাস। আল্লাহ রাব্বুল আলামিন বলেন : রমজান মাস, এতে নাজিল হয়েছে আল-কোরআন, যা মানুষের দিশারি এবং স্পষ্ট নিদর্শন ও সত্যাসত্যের পার্থক্যকারী। [ সূরা বাকারা : ১৮৪ ] \n
 
 রমজান মাসে সপ্তম আকাশের লওহে মাহফুজ থেকে দুনিয়ার আকাশে বায়তুল ইজ্জতে পবিত্র আল-কোরআন একবারে নাজিল হয়েছে। সেখান হতে আবার রমজান মাসে অল্প অল্প করে নবী করিম সাল্লাল্লাহু আলাইহি ওয়া সাল্লাম-এর প্রতি নাজিল হতে শুরু করে। কোরআন নাজিলের দুটি স্তরই রমজান মাসকে ধন্য করেছে। শুধু আল-কোরআনই নয় বরং ইবরাহিম আ.-এর সহিফা, তাওরাত, যবুর, ইঞ্জিল সহ সকল ঐশী গ্রন্থ এ মাসে অবতীর্ণ হয়েছে বলে তাবরানী বর্ণিত একটি সহি হাদিসে উল্লেখ করা হয়েছে। (সহি আল-জামে)
 
 এ মাসে মানুষের হেদায়াত ও আলোকবর্তিকা যেমন নাজিল হয়েছে তেমনি আল্লাহর রহমত হিসেবে এসেছে সিয়াম। তাই এ দুই নিয়ামতের শুকরিয়া আদায় করতে বেশি বেশি করে কোরআন তিলাওয়াত করা উচিত। প্রতি বছর রমজান মাসে জিবরাইল রাসূলুল্লাহ সাল্লাল্লাহু আলাইহি ওয়া সাল্লাম-কে পূর্ণ কোরআন শোনাতেন এবং রাসূল সাল্লাল্লাহু আলাইহি ওয়া সাল্লাম-ও তাকে পূর্ণ কোরআন শোনাতেন। আর জীবনের শেষ রমজানে আল্লাহর রাসূল দু বার পূর্ণ কোরআন তিলাওয়াত করেছেন। সহি মুসলিমের হাদিস দ্বারা এটা প্রমাণিত"
-                android:textAlignment="center"
-                android:textColor="#FFFFFF"
-                android:textSize="16dp">
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp">
 
-            </TextView>
+                </TextView>
 
-        </LinearLayout>
 
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+    </LinearLayout>
     </ScrollView>
 </LinearLayout>
