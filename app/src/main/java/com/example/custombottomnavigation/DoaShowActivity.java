@@ -29,13 +29,17 @@ public class DoaShowActivity extends AppCompatActivity {
         setContentView(R.layout.activity_doa_show);
 
 
+        //blur my background
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_BLUR_BEHIND,
+                WindowManager.LayoutParams.FLAG_BLUR_BEHIND);
+
         //hide action bar
 
         if (getSupportActionBar() != null) {
             getSupportActionBar().hide();
         }
 
-        name=findViewById(R.id.nameDoa);
+//        name=findViewById(R.id.nameDoa);
         title=findViewById(R.id.nameDoa2);
         bangla=findViewById(R.id.doaBangla);
         meaing=findViewById(R.id.doaMeaning);
@@ -43,7 +47,7 @@ public class DoaShowActivity extends AppCompatActivity {
 
 
 
-        name.setText(""+DuaListAdapter.pos.getTitle());
+//        name.setText(""+DuaListAdapter.pos.getTitle());
         title.setText(""+DuaListAdapter.pos.getTitle());
         bangla.setText(""+DuaListAdapter.pos.getBangla());
         meaing.setText(""+DuaListAdapter.pos.getOrtho());

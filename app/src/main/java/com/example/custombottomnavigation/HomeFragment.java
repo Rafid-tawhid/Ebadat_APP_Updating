@@ -1,6 +1,7 @@
 package com.example.custombottomnavigation;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
 
@@ -9,6 +10,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -53,7 +55,8 @@ public class HomeFragment extends Fragment {
     private Context context;
     ApiInterface apiInterface;
 
-    private String myArea;
+
+    public String myArea;
     long fj;
     long jh;
     long asr;
@@ -110,8 +113,8 @@ public class HomeFragment extends Fragment {
 
         //namaz time show
 
-        findClosetNamjTime();
 
+            findClosetNamjTime();
 
 
 
@@ -218,35 +221,16 @@ public class HomeFragment extends Fragment {
 
 
 
-    private void findClosetNamjTime() {
-//        Long[] numbers = new Long[50];
-//        numbers[0] = fj;
-//        numbers[1] = jh;
-//        numbers[2] = asr;
-//        numbers[3] = mgb;
-//        numbers[4] = esa;
-
-
-//        long time = (long) (System.currentTimeMillis());
-//
-//
-//
-//        long myNumber =time ;
-//        long distance = Math.abs(numbers[0] - myNumber);
-//        int idx = 0;
-//        for(int c = 1; c < numbers.length; c++){
-//            long cdistance = Math.abs(numbers[c] - myNumber);
-//            if(cdistance < distance){
-//                idx = c;
-//                distance = cdistance;
-//            }
-//        }
-//        long theNumber = numbers[0];
-
+    private void findClosetNamjTime()  {
 
 
 
     }
+
+
+
+
+
 
 
     // Get all select info from api
@@ -260,12 +244,11 @@ public class HomeFragment extends Fragment {
         int currentDay = calendar.get(Calendar.DAY_OF_MONTH);
 
 
-        //get location from spinner
-        myArea=MainActivity.area;
-
-      Log.e("aa",myArea);
-      Log.e("bb", String.valueOf(currentDay));
-
+        //get location not from spinner from shared preferrence which stored by spinner
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
+        String name = preferences.getString("Name", "");
+        myArea=name;
+//        myArea=MainActivity.area;
 
 
 
@@ -394,4 +377,6 @@ public class HomeFragment extends Fragment {
 
 
     }
+
+
 }

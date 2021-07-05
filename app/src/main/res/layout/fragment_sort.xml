@@ -204,7 +204,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="১"
+                                        android:text="২"
                                         android:textColor="#1A1A1A"
                                         android:textSize="16dp"
                                         android:layout_centerInParent="true">
@@ -306,7 +306,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="১"
+                                        android:text="৩"
                                         android:textColor="#1A1A1A"
                                         android:textSize="16dp"
                                         android:layout_centerInParent="true">
@@ -408,7 +408,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="১"
+                                        android:text="৪"
                                         android:textColor="#1A1A1A"
                                         android:textSize="16dp"
                                         android:layout_centerInParent="true">
@@ -510,7 +510,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="১"
+                                        android:text="৫"
                                         android:textColor="#1A1A1A"
                                         android:textSize="16dp"
                                         android:layout_centerInParent="true">
@@ -612,7 +612,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="১"
+                                        android:text="৬"
                                         android:textColor="#1A1A1A"
                                         android:textSize="16dp"
                                         android:layout_centerInParent="true">
@@ -714,7 +714,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="১"
+                                        android:text="৭"
                                         android:textColor="#1A1A1A"
                                         android:textSize="16dp"
                                         android:layout_centerInParent="true">
@@ -816,7 +816,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="১"
+                                        android:text="৮"
                                         android:textColor="#1A1A1A"
                                         android:textSize="16dp"
                                         android:layout_centerInParent="true">
@@ -918,7 +918,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="১"
+                                        android:text="৯"
                                         android:textColor="#1A1A1A"
                                         android:textSize="16dp"
                                         android:layout_centerInParent="true">
@@ -1020,7 +1020,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="১"
+                                        android:text="১০"
                                         android:textColor="#1A1A1A"
                                         android:textSize="16dp"
                                         android:layout_centerInParent="true">
@@ -1065,6 +1065,1031 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:text="অর্থঃ নিরঙ্কুশ শ্রেষ্ঠত্বের অধিকারী, সর্বশ্রেষ্ঠ, গৌরবান্বিত, অহংকারী"
+                                            android:textSize="12dp"
+                                            android:textAlignment="center"
+                                            android:layout_below="@+id/b1"
+                                            android:textColor="#FCFCFC"
+                                            android:layout_centerInParent="true">
+
+                                        </TextView>
+                                    </LinearLayout>
+
+
+
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+
+                    //
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        app:cardCornerRadius="5dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="98dp"
+
+                            android:background="#28272C"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="7">
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/gradient_bg">
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_centerInParent="true"
+                                        android:src="@drawable/num"
+                                        android:paddingLeft="5dp"
+                                        android:paddingRight="5dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingBottom="5dp"
+                                        android:scaleType="fitCenter"
+                                        android:background="@drawable/gradient_bg"
+                                        >
+
+                                    </ImageView>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="১১"
+                                        android:textColor="#1A1A1A"
+                                        android:textSize="16dp"
+                                        android:layout_centerInParent="true">
+
+                                    </TextView>
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="6"
+                                    >
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        android:paddingTop="8dp"
+                                        android:paddingBottom="8dp"
+                                        android:gravity="center"
+                                        >
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="ٱلْخَالِقُ"
+                                            android:textSize="22dp"
+
+                                            android:textColor="#FFE9A6"
+                                            android:layout_centerInParent="true">
+
+                                        </TextView>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="আল-খালিক্ব"
+                                            android:textSize="12dp"
+
+                                            android:layout_below="@+id/a1"
+                                            android:textColor="#FDCA85"
+                                            android:layout_centerInParent="true">
+
+                                        </TextView>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="অর্থঃ সৃষ্টিকর্তা, সৃষ্টিকারী"
+                                            android:textSize="12dp"
+                                            android:textAlignment="center"
+                                            android:layout_below="@+id/b1"
+                                            android:textColor="#FCFCFC"
+                                            android:layout_centerInParent="true">
+
+                                        </TextView>
+                                    </LinearLayout>
+
+
+
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        app:cardCornerRadius="5dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="98dp"
+
+                            android:background="#28272C"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="7">
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/gradient_bg">
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_centerInParent="true"
+                                        android:src="@drawable/num"
+                                        android:paddingLeft="5dp"
+                                        android:paddingRight="5dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingBottom="5dp"
+                                        android:scaleType="fitCenter"
+                                        android:background="@drawable/gradient_bg"
+                                        >
+
+                                    </ImageView>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="১২"
+                                        android:textColor="#1A1A1A"
+                                        android:textSize="16dp"
+                                        android:layout_centerInParent="true">
+
+                                    </TextView>
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="6"
+                                    >
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        android:paddingTop="8dp"
+                                        android:paddingBottom="8dp"
+                                        android:gravity="center"
+                                        >
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="ٱلْبَارِئُ"
+                                            android:textSize="22dp"
+
+                                            android:textColor="#FFE9A6"
+                                            android:layout_centerInParent="true">
+
+                                        </TextView>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="আল-বারী"
+                                            android:textSize="12dp"
+
+                                            android:layout_below="@+id/a1"
+                                            android:textColor="#FDCA85"
+                                            android:layout_centerInParent="true">
+
+                                        </TextView>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="অর্থঃ সঠিকভাবে সৃষ্টিকারী"
+                                            android:textSize="12dp"
+                                            android:textAlignment="center"
+                                            android:layout_below="@+id/b1"
+                                            android:textColor="#FCFCFC"
+                                            android:layout_centerInParent="true">
+
+                                        </TextView>
+                                    </LinearLayout>
+
+
+
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        app:cardCornerRadius="5dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="98dp"
+
+                            android:background="#28272C"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="7">
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/gradient_bg">
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_centerInParent="true"
+                                        android:src="@drawable/num"
+                                        android:paddingLeft="5dp"
+                                        android:paddingRight="5dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingBottom="5dp"
+                                        android:scaleType="fitCenter"
+                                        android:background="@drawable/gradient_bg"
+                                        >
+
+                                    </ImageView>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="১৩"
+                                        android:textColor="#1A1A1A"
+                                        android:textSize="16dp"
+                                        android:layout_centerInParent="true">
+
+                                    </TextView>
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="6"
+                                    >
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        android:paddingTop="8dp"
+                                        android:paddingBottom="8dp"
+                                        android:gravity="center"
+                                        >
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="ٱلْمُصَوِّرُ"
+                                            android:textSize="22dp"
+
+                                            android:textColor="#FFE9A6"
+                                            android:layout_centerInParent="true">
+
+                                        </TextView>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="আল-মুছউইর"
+                                            android:textSize="12dp"
+
+                                            android:layout_below="@+id/a1"
+                                            android:textColor="#FDCA85"
+                                            android:layout_centerInParent="true">
+
+                                        </TextView>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="অর্থঃ আকৃতি-দানকারী"
+                                            android:textSize="12dp"
+                                            android:textAlignment="center"
+                                            android:layout_below="@+id/b1"
+                                            android:textColor="#FCFCFC"
+                                            android:layout_centerInParent="true">
+
+                                        </TextView>
+                                    </LinearLayout>
+
+
+
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        app:cardCornerRadius="5dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="98dp"
+
+                            android:background="#28272C"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="7">
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/gradient_bg">
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_centerInParent="true"
+                                        android:src="@drawable/num"
+                                        android:paddingLeft="5dp"
+                                        android:paddingRight="5dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingBottom="5dp"
+                                        android:scaleType="fitCenter"
+                                        android:background="@drawable/gradient_bg"
+                                        >
+
+                                    </ImageView>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="১৪"
+                                        android:textColor="#1A1A1A"
+                                        android:textSize="16dp"
+                                        android:layout_centerInParent="true">
+
+                                    </TextView>
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="6"
+                                    >
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        android:paddingTop="8dp"
+                                        android:paddingBottom="8dp"
+                                        android:gravity="center"
+                                        >
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="ٱلْغَفَّارُ"
+                                            android:textSize="22dp"
+
+                                            android:textColor="#FFE9A6"
+                                            android:layout_centerInParent="true">
+
+                                        </TextView>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="আল-গফ্ফার"
+                                            android:textSize="12dp"
+
+                                            android:layout_below="@+id/a1"
+                                            android:textColor="#FDCA85"
+                                            android:layout_centerInParent="true">
+
+                                        </TextView>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="অর্থঃ পরম ক্ষমাশীল, অতি ক্ষমাশীল"
+                                            android:textSize="12dp"
+                                            android:textAlignment="center"
+                                            android:layout_below="@+id/b1"
+                                            android:textColor="#FCFCFC"
+                                            android:layout_centerInParent="true">
+
+                                        </TextView>
+                                    </LinearLayout>
+
+
+
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        app:cardCornerRadius="5dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="98dp"
+
+                            android:background="#28272C"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="7">
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/gradient_bg">
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_centerInParent="true"
+                                        android:src="@drawable/num"
+                                        android:paddingLeft="5dp"
+                                        android:paddingRight="5dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingBottom="5dp"
+                                        android:scaleType="fitCenter"
+                                        android:background="@drawable/gradient_bg"
+                                        >
+
+                                    </ImageView>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="১৫"
+                                        android:textColor="#1A1A1A"
+                                        android:textSize="16dp"
+                                        android:layout_centerInParent="true">
+
+                                    </TextView>
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="6"
+                                    >
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        android:paddingTop="8dp"
+                                        android:paddingBottom="8dp"
+                                        android:gravity="center"
+                                        >
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="ٱلْقَهَّارُ"
+                                            android:textSize="22dp"
+
+                                            android:textColor="#FFE9A6"
+                                            android:layout_centerInParent="true">
+
+                                        </TextView>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="আল-ক্বাহার"
+                                            android:textSize="12dp"
+
+                                            android:layout_below="@+id/a1"
+                                            android:textColor="#FDCA85"
+                                            android:layout_centerInParent="true">
+
+                                        </TextView>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="অর্থঃ কঠোর, মহাপ্রতাবশালী, দমনকারী"
+                                            android:textSize="12dp"
+                                            android:textAlignment="center"
+                                            android:layout_below="@+id/b1"
+                                            android:textColor="#FCFCFC"
+                                            android:layout_centerInParent="true">
+
+                                        </TextView>
+                                    </LinearLayout>
+
+
+
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        app:cardCornerRadius="5dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="98dp"
+
+                            android:background="#28272C"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="7">
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/gradient_bg">
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_centerInParent="true"
+                                        android:src="@drawable/num"
+                                        android:paddingLeft="5dp"
+                                        android:paddingRight="5dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingBottom="5dp"
+                                        android:scaleType="fitCenter"
+                                        android:background="@drawable/gradient_bg"
+                                        >
+
+                                    </ImageView>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="১৬"
+                                        android:textColor="#1A1A1A"
+                                        android:textSize="16dp"
+                                        android:layout_centerInParent="true">
+
+                                    </TextView>
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="6"
+                                    >
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        android:paddingTop="8dp"
+                                        android:paddingBottom="8dp"
+                                        android:gravity="center"
+                                        >
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="ٱلْوَهَّابُ"
+                                            android:textSize="22dp"
+
+                                            android:textColor="#FFE9A6"
+                                            android:layout_centerInParent="true">
+
+                                        </TextView>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="আল-ওয়াহ্হাব"
+                                            android:textSize="12dp"
+
+                                            android:layout_below="@+id/a1"
+                                            android:textColor="#FDCA85"
+                                            android:layout_centerInParent="true">
+
+                                        </TextView>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="অর্থঃ সবকিছু দানকারী, দানশীল, স্থাপনাকারী"
+                                            android:textSize="12dp"
+                                            android:textAlignment="center"
+                                            android:layout_below="@+id/b1"
+                                            android:textColor="#FCFCFC"
+                                            android:layout_centerInParent="true">
+
+                                        </TextView>
+                                    </LinearLayout>
+
+
+
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        app:cardCornerRadius="5dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="98dp"
+
+                            android:background="#28272C"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="7">
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/gradient_bg">
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_centerInParent="true"
+                                        android:src="@drawable/num"
+                                        android:paddingLeft="5dp"
+                                        android:paddingRight="5dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingBottom="5dp"
+                                        android:scaleType="fitCenter"
+                                        android:background="@drawable/gradient_bg"
+                                        >
+
+                                    </ImageView>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="১৭"
+                                        android:textColor="#1A1A1A"
+                                        android:textSize="16dp"
+                                        android:layout_centerInParent="true">
+
+                                    </TextView>
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="6"
+                                    >
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        android:paddingTop="8dp"
+                                        android:paddingBottom="8dp"
+                                        android:gravity="center"
+                                        >
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="ٱلْرَّزَّاقُ"
+                                            android:textSize="22dp"
+
+                                            android:textColor="#FFE9A6"
+                                            android:layout_centerInParent="true">
+
+                                        </TextView>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="আর-রজ্জাক্ব"
+                                            android:textSize="12dp"
+
+                                            android:layout_below="@+id/a1"
+                                            android:textColor="#FDCA85"
+                                            android:layout_centerInParent="true">
+
+                                        </TextView>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="অর্থঃ রিযিকদাতা"
+                                            android:textSize="12dp"
+                                            android:textAlignment="center"
+                                            android:layout_below="@+id/b1"
+                                            android:textColor="#FCFCFC"
+                                            android:layout_centerInParent="true">
+
+                                        </TextView>
+                                    </LinearLayout>
+
+
+
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        app:cardCornerRadius="5dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="98dp"
+
+                            android:background="#28272C"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="7">
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/gradient_bg">
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_centerInParent="true"
+                                        android:src="@drawable/num"
+                                        android:paddingLeft="5dp"
+                                        android:paddingRight="5dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingBottom="5dp"
+                                        android:scaleType="fitCenter"
+                                        android:background="@drawable/gradient_bg"
+                                        >
+
+                                    </ImageView>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="১৮"
+                                        android:textColor="#1A1A1A"
+                                        android:textSize="16dp"
+                                        android:layout_centerInParent="true">
+
+                                    </TextView>
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="6"
+                                    >
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        android:paddingTop="8dp"
+                                        android:paddingBottom="8dp"
+                                        android:gravity="center"
+                                        >
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="ٱلْفَتَّاحُ"
+                                            android:textSize="22dp"
+
+                                            android:textColor="#FFE9A6"
+                                            android:layout_centerInParent="true">
+
+                                        </TextView>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="আল ফাত্তাহ"
+                                            android:textSize="12dp"
+
+                                            android:layout_below="@+id/a1"
+                                            android:textColor="#FDCA85"
+                                            android:layout_centerInParent="true">
+
+                                        </TextView>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="অর্থঃ বিজয়দানকারী, শ্রেষ্ঠ ফয়সালাকারী, প্রারম্ভকারী"
+                                            android:textSize="12dp"
+                                            android:textAlignment="center"
+                                            android:layout_below="@+id/b1"
+                                            android:textColor="#FCFCFC"
+                                            android:layout_centerInParent="true">
+
+                                        </TextView>
+                                    </LinearLayout>
+
+
+
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        app:cardCornerRadius="5dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="98dp"
+
+                            android:background="#28272C"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="7">
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/gradient_bg">
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_centerInParent="true"
+                                        android:src="@drawable/num"
+                                        android:paddingLeft="5dp"
+                                        android:paddingRight="5dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingBottom="5dp"
+                                        android:scaleType="fitCenter"
+                                        android:background="@drawable/gradient_bg"
+                                        >
+
+                                    </ImageView>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="১৯"
+                                        android:textColor="#1A1A1A"
+                                        android:textSize="16dp"
+                                        android:layout_centerInParent="true">
+
+                                    </TextView>
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="6"
+                                    >
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        android:paddingTop="8dp"
+                                        android:paddingBottom="8dp"
+                                        android:gravity="center"
+                                        >
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="ٱلْعَلِيمُ"
+                                            android:textSize="22dp"
+
+                                            android:textColor="#FFE9A6"
+                                            android:layout_centerInParent="true">
+
+                                        </TextView>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="আল-আ'লীম"
+                                            android:textSize="12dp"
+
+                                            android:layout_below="@+id/a1"
+                                            android:textColor="#FDCA85"
+                                            android:layout_centerInParent="true">
+
+                                        </TextView>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="অর্থঃ সর্বজ্ঞ, মহাজ্ঞানী"
+                                            android:textSize="12dp"
+                                            android:textAlignment="center"
+                                            android:layout_below="@+id/b1"
+                                            android:textColor="#FCFCFC"
+                                            android:layout_centerInParent="true">
+
+                                        </TextView>
+                                    </LinearLayout>
+
+
+
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        app:cardCornerRadius="5dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="98dp"
+
+                            android:background="#28272C"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="7">
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/gradient_bg">
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_centerInParent="true"
+                                        android:src="@drawable/num"
+                                        android:paddingLeft="5dp"
+                                        android:paddingRight="5dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingBottom="5dp"
+                                        android:scaleType="fitCenter"
+                                        android:background="@drawable/gradient_bg"
+                                        >
+
+                                    </ImageView>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="২০"
+                                        android:textColor="#1A1A1A"
+                                        android:textSize="16dp"
+                                        android:layout_centerInParent="true">
+
+                                    </TextView>
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="6"
+                                    >
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        android:paddingTop="8dp"
+                                        android:paddingBottom="8dp"
+                                        android:gravity="center"
+                                        >
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="ٱلْقَابِضُ"
+                                            android:textSize="22dp"
+
+                                            android:textColor="#FFE9A6"
+                                            android:layout_centerInParent="true">
+
+                                        </TextView>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="আল-ক্ববিদ্ব'"
+                                            android:textSize="12dp"
+
+                                            android:layout_below="@+id/a1"
+                                            android:textColor="#FDCA85"
+                                            android:layout_centerInParent="true">
+
+                                        </TextView>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="অর্থঃ নিয়ন্ত্রণকারী, সরল পথ প্রদর্শনকারী"
                                             android:textSize="12dp"
                                             android:textAlignment="center"
                                             android:layout_below="@+id/b1"

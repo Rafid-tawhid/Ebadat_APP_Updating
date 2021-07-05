@@ -13,10 +13,12 @@ import androidx.fragment.app.FragmentTransaction;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -56,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
     DrawerLayout drawerLayout;
     NavigationView navigationView;
    public static Toolbar toolbar;
-   public static String area="dhaka";
+   public static String area="dhaka",storeArea,txt;
 
 
 
@@ -240,16 +242,28 @@ public class MainActivity extends AppCompatActivity {
                     }
 
                 });
-
+                //get stored value from shared preferences
                 List<String> categories = new ArrayList<String>();
-                categories.add("dhaka");
-                categories.add("mymensingh");
-                categories.add("rajshahi");
-                categories.add("rangpur");
-                categories.add("sylhet");
-                categories.add("barisal");
-                categories.add("chittagong");
-                categories.add("khulna");
+
+
+                SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
+                String name = preferences.getString("Name", "dhaka");
+
+                area=name;
+                if(!name.equalsIgnoreCase(""))
+                {
+                    categories.add(name);
+                    categories.add("dhaka");
+                    categories.add("mymensingh");
+                    categories.add("rajshahi");
+                    categories.add("rangpur");
+                    categories.add("sylhet");
+                    categories.add("barisal");
+                    categories.add("chittagong");
+                    categories.add("khulna");
+                    ;  /* Edit the value here*/
+                }
+
 
                 // Creating adapter for spinner
                 ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_spinner_item, categories);
@@ -266,6 +280,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
 
+                        storeSpinnerValueinSharedPreferences(area);
                         alertDialog.cancel();
                         //reload full activity
                         finish();
@@ -347,6 +362,23 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+    private void getAreaValueFromSharedPreferences() {
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
+        String name = preferences.getString("Name", "");
+        if(!name.equalsIgnoreCase(""))
+        {
+            storeArea = name;
+            /* Edit the value here*/
+            txt=name+", Bangladesh";
+        }
+    }
+
+    private void storeSpinnerValueinSharedPreferences(String myArea) {
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putString("Name",myArea);
+        editor.apply();
+    }
 
 
 
