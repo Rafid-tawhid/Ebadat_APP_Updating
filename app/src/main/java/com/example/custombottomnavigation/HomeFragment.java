@@ -32,8 +32,10 @@ import com.example.custombottomnavigation.fragments.KalimaFragment;
 import com.example.custombottomnavigation.fragments.RamadanFragment;
 
 
+import java.lang.reflect.Array;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalTime;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
@@ -50,8 +52,9 @@ import retrofit2.Response;
 
 public class HomeFragment extends Fragment {
 
-    LinearLayout hadis,kalima,ramadan,dua,jakat,namaj,koran,name99;
-    TextView fajar,johur,asar,magrib,esha;
+    LinearLayout hadis, kalima, ramadan, dua, jakat, namaj, koran, name99;
+    TextView fajar, johur, asar, magrib, esha, currentNamaj;
+    TextView demo;
     private Context context;
     ApiInterface apiInterface;
 
@@ -62,8 +65,7 @@ public class HomeFragment extends Fragment {
     long asr;
     long mgb;
     long esa;
-
-
+    long crnt;
 
 
     @Override
@@ -73,55 +75,54 @@ public class HomeFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_home, container, false);
 
 
-
     }
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
-    public void onViewCreated( View view,Bundle savedInstanceState) {
+    public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        hadis =view.findViewById(R.id.hadisId);
-        kalima=view.findViewById(R.id.kalima_main_btn);
-        ramadan=view.findViewById(R.id.ramadan_id);
-        dua=view.findViewById(R.id.dua_btn);
-        koran=view.findViewById(R.id.koran_id);
-        jakat=view.findViewById(R.id.jakat_btn);
-        namaj=view.findViewById(R.id.namaj_btn);
-        name99=view.findViewById(R.id.allahs_name);
-        fajar=view.findViewById(R.id.fajartimeId);
-        johur=view.findViewById(R.id.johor);
-        asar=view.findViewById(R.id.asorId);
-        magrib=view.findViewById(R.id.magribId);
-        esha=view.findViewById(R.id.esaId);
+        hadis = view.findViewById(R.id.hadisId);
+        kalima = view.findViewById(R.id.kalima_main_btn);
+        ramadan = view.findViewById(R.id.ramadan_id);
+        dua = view.findViewById(R.id.dua_btn);
+        koran = view.findViewById(R.id.koran_id);
+        jakat = view.findViewById(R.id.jakat_btn);
+        namaj = view.findViewById(R.id.namaj_btn);
+        name99 = view.findViewById(R.id.allahs_name);
+        fajar = view.findViewById(R.id.fajartimeId);
+        johur = view.findViewById(R.id.johor);
+        asar = view.findViewById(R.id.asorId);
+        magrib = view.findViewById(R.id.magribId);
+        esha = view.findViewById(R.id.esaId);
+        currentNamaj = view.findViewById(R.id.namaj);
+        demo = view.findViewById(R.id.a1);
 
 
-
-
-
-
-
-
-
+        crnt = System.currentTimeMillis();
 
 
         //api for namaj time
         //api data fetch
         apiInterface = RetrofitClient.getRetrofit("http://api.aladhan.com/").create(ApiInterface.class);
 //        getAllProductInfo();
+
         getAllInfo();
 
 
         //namaz time show
 
 
-            findClosetNamjTime();
+//            findClosetNamjTime();
 
+
+
+        setNamazTime();
 
 
         //SHOW TOOLBAR
         MainActivity.toolbar.setVisibility(View.VISIBLE);
 
-        namaj .setOnClickListener(new View.OnClickListener() {
+        namaj.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 NamazFragment fragment = new NamazFragment();
@@ -132,10 +133,9 @@ public class HomeFragment extends Fragment {
                 fragmentTransaction.commit();
 
 
-
             }
         });
-        jakat .setOnClickListener(new View.OnClickListener() {
+        jakat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ZakatFragment fragment = new ZakatFragment();
@@ -157,8 +157,6 @@ public class HomeFragment extends Fragment {
                 fragmentTransaction.commit();
 
 
-
-
             }
         });
         ramadan.setOnClickListener(new View.OnClickListener() {
@@ -169,8 +167,6 @@ public class HomeFragment extends Fragment {
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.main_frame_bg, fragment);
                 fragmentTransaction.commit();
-
-
 
 
             }
@@ -185,8 +181,6 @@ public class HomeFragment extends Fragment {
                 fragmentTransaction.commit();
 
 
-
-
             }
         });
         koran.setOnClickListener(new View.OnClickListener() {
@@ -197,8 +191,6 @@ public class HomeFragment extends Fragment {
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.main_frame_bg, fragment);
                 fragmentTransaction.commit();
-
-
 
 
             }
@@ -213,28 +205,82 @@ public class HomeFragment extends Fragment {
                 fragmentTransaction.commit();
 
 
-
-
             }
         });
     }
 
-
-
-    private void findClosetNamjTime()  {
-
-
-
+    private void setNamazTime() {
+//        if (crnt>crnt+10000&&crnt<crnt+20000)
+//        {
+//            Log.e("as","Fajar");
+//        }
+//        if (crnt>crnt+20000&&crnt<crnt+30000)
+//        {
+//            Log.e("as","Duhor");
+//        }
     }
 
 
-
-
-
+//    private void findClosetNamjTime()  {
+//        int temp, size;
+//
+//         int a= (int) (fj-crnt);
+//         int b= (int) (jh-crnt);
+//         int c= (int) (asr-crnt);
+//         int d= (int) (mgb-crnt);
+//         int e= (int) (esa-crnt);
+//        int array[] = {a, b, c, d, e};
+//        size = array.length;
+//        for(int i = 0; i<size; i++ ){
+//            for(int j = i+1; j<size; j++){
+//                if(array[i]>array[j]){
+//                    temp = array[i];
+//                    array[i] = array[j];
+//                    array[j] = temp;
+//                }
+//            }
+//        }
+//        Log.e("ss","Third smallest element is:: "+array[0]);
+//
+//
+////
+////        }
+//
+//       if (array[size-1]==b){
+//
+//            Log.e("qq"," b"+b);
+//        }
+//        else if(array[size-1]==c){
+//
+//            Log.e("qq"," c"+c);
+//        }
+//        else if (array[size-1]==d){
+//
+//            Log.e("qq"," d"+d);
+//        }
+//        else if (array[size-1]==e){
+//
+//            Log.e("qq"," e"+e);
+//        }
+//        if (array[size-1]==a){
+//
+//            Log.e("qq"," a"+a);
+//        }
+//        else {
+//            Log.e("qq"," ajira");
+//        }
+//
+//
+//
+//
+//
+//
+//
+//    }
 
 
     // Get all select info from api
-    private void getAllInfo(){
+    private void getAllInfo() {
 
         //get date and month from system
         Calendar calendar = Calendar.getInstance(TimeZone.getDefault());
@@ -247,24 +293,21 @@ public class HomeFragment extends Fragment {
         //get location not from spinner from shared preferrence which stored by spinner
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
         String name = preferences.getString("Name", "");
-        myArea=name;
+        myArea = name;
 //        myArea=MainActivity.area;
 
 
-
-        apiInterface.getAllInformation(myArea,currentMonth,currentYear).enqueue(new Callback<Example>() {
+        apiInterface.getAllInformation(myArea, currentMonth, currentYear).enqueue(new Callback<Example>() {
             @Override
             public void onResponse(Call<Example> call, Response<Example> response) {
-                if (response.code()==200){
+                if (response.code() == 200) {
+//
 
                     try {
 
-//                        Integer a=response.body().getData().get(currentDay).getDate().getHijri().getMonth().getNumber();
-//                        String b=response.body().getData().get(currentDay).getDate().getHijri().getMonth().getEn();
 //
-//                        Log.e("c", String.valueOf(a+b));
                         // get time remove last character
-                        String fazarTime=response.body().getData().get(currentDay).getTimings().getFajr().
+                        String fazarTime = response.body().getData().get(currentDay).getTimings().getFajr().
                                 substring(0, response.body().getData().get(currentDay).getTimings().getFajr().length() - 6);
 
                         SimpleDateFormat _24HourSDF = new SimpleDateFormat("HH:mm");
@@ -272,8 +315,7 @@ public class HomeFragment extends Fragment {
                         // string to time
                         Date _24HourDt = _24HourSDF.parse(fazarTime);
                         fajar.setText(_12HourSDF.format(_24HourDt));
-                        fj=_24HourDt.getTime();
-                        Log.e("cc", String.valueOf(fj));
+                        fj = _24HourDt.getTime();
 
 
                     } catch (ParseException e) {
@@ -283,7 +325,7 @@ public class HomeFragment extends Fragment {
 
                     try {
                         // get time remove last character
-                        String juhorTime=response.body().getData().get(currentDay).getTimings().getDhuhr().
+                        String juhorTime = response.body().getData().get(currentDay).getTimings().getDhuhr().
                                 substring(0, response.body().getData().get(currentDay).getTimings().getDhuhr().length() - 6);
 
                         SimpleDateFormat _24HourSDF = new SimpleDateFormat("HH:mm");
@@ -291,18 +333,17 @@ public class HomeFragment extends Fragment {
                         // string to time
                         Date _24HourDt = _24HourSDF.parse(juhorTime);
                         johur.setText(_12HourSDF.format(_24HourDt));
-                        jh=_24HourDt.getTime();
+                        jh = _24HourDt.getTime();
+
 
                     } catch (ParseException e) {
                         e.printStackTrace();
                     }
 
 
-
-
                     try {
                         // get time remove last character
-                        String asoreTime=response.body().getData().get(currentDay).getTimings().getAsr().
+                        String asoreTime = response.body().getData().get(currentDay).getTimings().getAsr().
                                 substring(0, response.body().getData().get(currentDay).getTimings().getAsr().length() - 6);
 
                         SimpleDateFormat _24HourSDF = new SimpleDateFormat("HH:mm");
@@ -310,8 +351,7 @@ public class HomeFragment extends Fragment {
                         // string to time
                         Date _24HourDt = _24HourSDF.parse(asoreTime);
                         asar.setText(_12HourSDF.format(_24HourDt));
-                        asr=_24HourDt.getTime();
-
+                        asr = _24HourDt.getTime();
 
 
                     } catch (ParseException e) {
@@ -319,19 +359,16 @@ public class HomeFragment extends Fragment {
                     }
 
 
-
-
-
                     try {
                         // get time remove last character
-                        String magribTime=response.body().getData().get(currentDay).getTimings().getMaghrib().substring(0, response.body().getData().get(currentDay).getTimings().getMaghrib().length() - 6);
+                        String magribTime = response.body().getData().get(currentDay).getTimings().getMaghrib().substring(0, response.body().getData().get(currentDay).getTimings().getMaghrib().length() - 6);
 
                         SimpleDateFormat _24HourSDF = new SimpleDateFormat("HH:mm");
                         SimpleDateFormat _12HourSDF = new SimpleDateFormat("hh:mm a");
                         // string to time
                         Date _24HourDt = _24HourSDF.parse(magribTime);
                         magrib.setText(_12HourSDF.format(_24HourDt));
-                        mgb=_24HourDt.getTime();
+                        mgb = _24HourDt.getTime();
 
                     } catch (ParseException e) {
                         e.printStackTrace();
@@ -340,27 +377,23 @@ public class HomeFragment extends Fragment {
 
                     try {
                         // get time remove last character
-                        String eshaTime=response.body().getData().get(currentDay).getTimings().getIsha().substring(0, response.body().getData().get(currentDay).getTimings().getIsha().length() - 6);
+                        String eshaTime = response.body().getData().get(currentDay).getTimings().getIsha().substring(0, response.body().getData().get(currentDay).getTimings().getIsha().length() - 6);
 
                         SimpleDateFormat _24HourSDF = new SimpleDateFormat("HH:mm");
                         SimpleDateFormat _12HourSDF = new SimpleDateFormat("hh:mm a");
                         // string to time
                         Date _24HourDt = _24HourSDF.parse(eshaTime);
                         esha.setText(_12HourSDF.format(_24HourDt));
-                        esa=_24HourDt.getTime();
+                        esa = _24HourDt.getTime();
 
                     } catch (ParseException e) {
                         e.printStackTrace();
                     }
 
 
-
-
-
-
-                }else {
+                } else {
                     Toast.makeText(getView().getContext(), "un Success", Toast.LENGTH_SHORT).show();
-                    Log.e("err","un Success");
+                    Log.e("err", "un Success");
 
                 }
 
@@ -368,15 +401,14 @@ public class HomeFragment extends Fragment {
 
             @Override
             public void onFailure(Call<Example> call, Throwable t) {
-                Log.e("err","on failure");
+                Log.e("err", "on failure");
 
             }
         });
 
 
-
-
     }
+
 
 
 }

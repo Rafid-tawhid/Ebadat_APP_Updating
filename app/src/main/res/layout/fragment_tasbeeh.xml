@@ -41,177 +41,181 @@
             ></ImageView>
     </RelativeLayout>
 
- <LinearLayout
-     android:layout_width="match_parent"
-     android:layout_height="match_parent"
-     android:orientation="vertical"
-     android:layout_marginTop="-24dp"
-     android:padding="5dp"
-     android:gravity="center"
-     >
-     <RelativeLayout
-         android:layout_width="match_parent"
-         android:layout_height="match_parent"
-         android:orientation="vertical"
 
 
-         android:layout_marginLeft="8dp"
-         android:padding="3dp"
-         android:layout_marginRight="8dp"
-         android:background="@drawable/item_bg2"
-         tools:ignore="NotSibling">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="-24dp"
+            android:padding="5dp"
+            android:gravity="center"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
 
 
-             <TextView
-                 android:layout_width="wrap_content"
-                 android:layout_height="30dp"
-                 android:id="@+id/nm"
-                 android:textSize="20dp"
-                 android:text="তাসবীহ্ গণনা করুন"
-                 android:layout_marginTop="5dp"
-                 android:layout_alignParentTop="true"
-                 android:layout_centerInParent="true"
-                 android:textColor="#FDCA85">
-
-             </TextView>
-             <ImageView
-                 android:layout_width="wrap_content"
-                 android:layout_height="14dp"
-                 android:layout_below="@+id/nm"
-                 android:layout_marginBottom="5dp"
-                 android:id="@+id/a1"
-                 android:layout_centerInParent="true"
-                 android:src="@drawable/ic_union">
-
-             </ImageView>
+                android:layout_marginLeft="8dp"
+                android:padding="3dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/item_bg2"
+                tools:ignore="NotSibling">
 
 
-         <Spinner
-             android:id="@+id/spinner2"
-             android:layout_width="200dp"
-             android:layout_margin="8dp"
-             android:background="@drawable/spinner_bg"
-             android:layout_height="35dp"
-             android:textColor="#FFFFFF"
-             android:paddingRight="20dp"
-             android:paddingTop="3dp"
-             android:paddingLeft="8dp"
-             android:paddingBottom="3dp"
-             android:layout_marginBottom="20dp"
-             android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
-             android:contentDescription="@string/app_name"
-             android:layout_centerInParent="true"
-             android:layout_below="@+id/a1"
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:id="@+id/nm"
+                    android:textSize="20dp"
+                    android:text="তাসবীহ্ গণনা করুন"
+                    android:layout_marginTop="5dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:textColor="#FDCA85">
 
-             ></Spinner>
-         <ImageView
-             android:layout_width="150dp"
-             android:layout_height="128dp"
-             android:layout_centerInParent="true"
-             android:layout_above="@+id/count_id"
-             android:layout_marginBottom="75dp"
+                </TextView>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="14dp"
+                    android:layout_below="@+id/nm"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/a1"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_union">
 
-             android:src="@drawable/ic_group_tasbhee_img"
-             tools:ignore="NotSibling"></ImageView>
+                </ImageView>
 
 
-         <androidx.cardview.widget.CardView
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             app:cardCornerRadius="5dp"
-             android:layout_above="@+id/count_id"
-             android:layout_centerInParent="true"
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="200dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/spinner_bg"
+                    android:layout_height="35dp"
+                    android:textColor="#FFFFFF"
+                    android:paddingRight="20dp"
+                    android:paddingTop="3dp"
+                    android:paddingLeft="8dp"
+                    android:paddingBottom="3dp"
+                    android:layout_marginBottom="20dp"
+                    android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
+                    android:contentDescription="@string/app_name"
+                    android:layout_centerInParent="true"
+                    android:layout_below="@+id/a1"
 
-             android:layout_marginTop="10dp"
-             android:layout_gravity="center"
-             >
-             <TextView
-                 android:layout_width="190dp"
-                 android:layout_height="60dp"
-                 android:background="#F8A349"
-                 android:text="00"
-                 android:id="@+id/count_show_id"
-                 android:textColor="#000000"
-                 android:textSize="28dp"
-                 android:textAlignment="center"
-                 android:gravity="center"
-                 android:layout_gravity="center"
-                 >
+                    ></Spinner>
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="128dp"
+                    android:layout_centerInParent="true"
+                    android:layout_above="@+id/count_id"
+                    android:layout_marginBottom="75dp"
 
-             </TextView>
-         </androidx.cardview.widget.CardView>
+                    android:src="@drawable/ic_group_tasbhee_img"
+                    tools:ignore="NotSibling"></ImageView>
 
-         <Button
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:background="@drawable/tb"
-             android:layout_alignParentBottom="true"
-             android:layout_centerInParent="true"
-             android:id="@+id/count_id"
-             android:layout_marginTop="30dp"
-             android:layout_marginBottom="65dp"
-             ></Button>
 
-         <RelativeLayout
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:orientation="horizontal"
-             android:paddingBottom="60dp"
-             android:layout_marginRight="10dp"
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="5dp"
+                    android:layout_above="@+id/count_id"
+                    android:layout_centerInParent="true"
 
-             >
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    >
+                    <TextView
+                        android:layout_width="190dp"
+                        android:layout_height="60dp"
+                        android:background="#F8A349"
+                        android:text="00"
+                        android:id="@+id/count_show_id"
+                        android:textColor="#000000"
+                        android:textSize="28dp"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        >
 
-             <ImageView
-                 android:layout_width="wrap_content"
-                 android:layout_height="wrap_content"
-                 android:src="@drawable/a"
+                    </TextView>
+                </androidx.cardview.widget.CardView>
 
-                 android:layout_alignParentRight="true"
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tb"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/count_id"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="65dp"
+                    ></Button>
 
-                 android:layout_margin="5dp"
-                 android:layout_above="@+id/soundId"
-                 android:id="@+id/reset_btn"
-                 >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="60dp"
+                    android:layout_marginRight="10dp"
 
-             </ImageView>
-             <ImageView
-                 android:layout_width="wrap_content"
-                 android:layout_height="wrap_content"
-                 android:src="@drawable/b"
-                 android:id="@+id/soundId"
-                 android:layout_margin="5dp"
-                 android:layout_above="@+id/store_count_id"
-                 android:layout_alignParentRight="true"
-                 >
+                    >
 
-             </ImageView>
-             <ImageView
-                 android:layout_width="wrap_content"
-                 android:layout_height="wrap_content"
-                 android:src="@drawable/c"
-                 android:id="@+id/store_count_id"
-                 android:layout_margin="5dp"
-                 android:layout_above="@+id/list_show_id"
-                 android:layout_alignParentRight="true"
-                 >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/a"
 
-             </ImageView>
+                        android:layout_alignParentRight="true"
 
-             <ImageView
-                 android:layout_width="wrap_content"
-                 android:layout_height="wrap_content"
-                 android:src="@drawable/d"
-                 android:id="@+id/list_show_id"
-                 android:layout_margin="5dp"
-                 android:layout_alignParentRight="true"
-                 android:layout_alignParentBottom="true"
-                 >
+                        android:layout_margin="5dp"
+                        android:layout_above="@+id/soundId"
+                        android:id="@+id/reset_btn"
+                        >
 
-             </ImageView>
-         </RelativeLayout>
-     </RelativeLayout>
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/b"
+                        android:id="@+id/soundId"
+                        android:layout_margin="5dp"
+                        android:layout_above="@+id/store_count_id"
+                        android:layout_alignParentRight="true"
+                        >
 
- </LinearLayout>
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/c"
+                        android:id="@+id/store_count_id"
+                        android:layout_margin="5dp"
+                        android:layout_above="@+id/list_show_id"
+                        android:layout_alignParentRight="true"
+                        >
+
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/d"
+                        android:id="@+id/list_show_id"
+                        android:layout_margin="5dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        >
+
+                    </ImageView>
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
 
 </LinearLayout>
 </FrameLayout>

@@ -44,6 +44,7 @@ public class DoaShowActivity extends AppCompatActivity {
         bangla=findViewById(R.id.doaBangla);
         meaing=findViewById(R.id.doaMeaning);
         doa=findViewById(R.id.doaImg);
+        title.setSelected(true);
 
 
 
@@ -65,8 +66,8 @@ public class DoaShowActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //go back to previous fragment
                 finish();
-                DoaShowActivity.this.getSupportFragmentManager().beginTransaction()
-                        .add(R.id.doa_bg2, new DuaListFragment(), "createPost").addToBackStack(null).commit();
+//                DoaShowActivity.this.getSupportFragmentManager().beginTransaction()
+//                        .add(R.id.doa_bg2, new DuaListFragment(), "createPost").addToBackStack(null).commit();
 
             }
         });

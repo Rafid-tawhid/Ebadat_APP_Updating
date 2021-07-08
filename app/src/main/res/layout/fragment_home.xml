@@ -133,6 +133,7 @@
                         android:textColor="#FFC07B"
                         android:textAlignment="center"
                         android:textSize="16dp"
+                        android:id="@+id/namaj"
                         android:layout_marginTop="40dp"
                         android:text="ফজর">
 
@@ -687,6 +688,12 @@
         </RelativeLayout>
     </ScrollView>
 
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/a1a"
+    android:visibility="gone">
 
+</TextView>
 
 </FrameLayout>

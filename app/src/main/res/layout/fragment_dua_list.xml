@@ -3,14 +3,17 @@
 <FrameLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#181818"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+
     tools:context=".fragments.DuaListFragment">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="#181818"
+
+        android:layout_marginBottom="60dp"
         >
         <RelativeLayout
             android:layout_width="match_parent"
@@ -40,7 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/dua_recyclervw"
-            android:layout_marginTop="-8dp"
+            android:layout_marginTop="-12dp"
             android:layout_marginLeft="8dp"
             android:padding="5dp"
 

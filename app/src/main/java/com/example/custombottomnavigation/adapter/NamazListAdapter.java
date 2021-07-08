@@ -10,13 +10,14 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.custombottomnavigation.DoaShowActivity;
+import com.example.custombottomnavigation.NamazShowActivity;
 import com.example.custombottomnavigation.R;
 import com.example.custombottomnavigation.models.DuaItems;
 
 import java.util.List;
 
 
-public class  DuaListAdapter extends RecyclerView.Adapter<DuaListAdapter.ViewHolder>
+public class NamazListAdapter extends RecyclerView.Adapter<NamazListAdapter.ViewHolder>
 {
 
 
@@ -24,7 +25,7 @@ public class  DuaListAdapter extends RecyclerView.Adapter<DuaListAdapter.ViewHol
     private Context context;
     public static DuaItems pos;
 
-    public DuaListAdapter(List<DuaItems> duaItemsList) {
+    public NamazListAdapter(List<DuaItems> duaItemsList) {
         this.duaItemsList = duaItemsList;
     }
 
@@ -40,7 +41,7 @@ public class  DuaListAdapter extends RecyclerView.Adapter<DuaListAdapter.ViewHol
     }
 
     @Override
-    public void onBindViewHolder(DuaListAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(NamazListAdapter.ViewHolder holder, int position) {
 
 
 
@@ -55,7 +56,7 @@ public class  DuaListAdapter extends RecyclerView.Adapter<DuaListAdapter.ViewHol
             @Override
             public void onClick(View v) {
                 pos=duaItemsList.get(position);
-                Intent nIntent = new Intent(v.getContext(),DoaShowActivity.class);
+                Intent nIntent = new Intent(v.getContext(), NamazShowActivity.class);
 
 //                String title=pos.getTitle();
 //                int doa=pos.getDua();
@@ -94,7 +95,6 @@ public class  DuaListAdapter extends RecyclerView.Adapter<DuaListAdapter.ViewHol
             super(itemView);
 
             dua_title=itemView.findViewById(R.id.headerTextViewId);
-            dua_title.setSelected(true);
 
 
 

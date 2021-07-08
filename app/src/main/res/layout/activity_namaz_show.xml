@@ -7,21 +7,20 @@
 
     android:background="@drawable/item_bg2"
 
-    tools:context=".DoaShowActivity">
+    tools:context=".NamazShowActivity">
 
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        >
+        android:layout_marginBottom="5dp">
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:src="@drawable/doa_up"
+            android:src="@drawable/namaj_up"
             android:background="#F6B066"
             >
         </ImageView>
@@ -41,7 +40,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="#181818"
         android:layout_gravity="center"
         android:orientation="vertical">
@@ -124,7 +123,7 @@
                             android:id="@+id/doaImg"
                             android:textAlignment="center"
                             android:textSize="22dp"
-                            android:padding="8dp"
+                           android:padding="8dp"
                             android:layout_margin="15dp"
                             android:textColor="#FDCA85"
                             >
@@ -134,7 +133,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="বাংলা"
+                            android:text="অনুবাদ"
                             android:textAlignment="center"
                             android:textSize="18dp"
 
@@ -158,7 +157,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="বাংলা অর্থ:"
+                            android:text="ফযিলত"
                             android:textAlignment="center"
                             android:textSize="18dp"
                             android:textColor="#FDCA85"

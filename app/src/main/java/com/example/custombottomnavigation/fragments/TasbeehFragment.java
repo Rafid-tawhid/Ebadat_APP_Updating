@@ -1,21 +1,18 @@
 package com.example.custombottomnavigation.fragments;
 
 import android.annotation.SuppressLint;
-import android.content.Intent;
-import android.content.res.Resources;
+import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.os.Vibrator;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.ViewTreeObserver;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -45,6 +42,8 @@ public class TasbeehFragment extends Fragment {
     private Spinner spinners;
     public String JikirName;
 
+    Context context;
+    TasbeehFragment fragments;
     int count=0;
 
     @Override
@@ -84,8 +83,12 @@ public class TasbeehFragment extends Fragment {
             public void onClick(View v) {
                 count++;
                 count_show.setText(""+count);
+                final Vibrator vibrator = (Vibrator) getView().getContext().getSystemService(Context.VIBRATOR_SERVICE);
+                vibrator.vibrate(50);
 
             }
+
+
         });
 
         reset.setOnClickListener(new View.OnClickListener() {
@@ -199,4 +202,6 @@ public class TasbeehFragment extends Fragment {
         spinners.setAdapter(dataAdapter);
 
     }
+
+
 }

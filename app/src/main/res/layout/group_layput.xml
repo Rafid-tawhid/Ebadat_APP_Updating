@@ -30,6 +30,10 @@
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
             android:text="Header"
+            android:ellipsize = "marquee"
+            android:fadingEdge = "horizontal"
+            android:marqueeRepeatLimit = "marquee_forever"
+            android:scrollHorizontally = "true"
             android:textColor="#FDCA85"
             android:textSize="18sp" />
         <ImageView
