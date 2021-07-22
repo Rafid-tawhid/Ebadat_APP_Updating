@@ -4,45 +4,41 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.custombottomnavigation.adapter.DuaListAdapter;
-import com.example.custombottomnavigation.adapter.NamazListAdapter;
+import com.example.custombottomnavigation.adapter.HazzListAdapter;
 
-public class NamazShowActivity extends AppCompatActivity {
+public class HazzShowActivity extends AppCompatActivity {
     TextView name,title,bangla,meaing;
     TextView doa;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_namaz_show);
+        setContentView(R.layout.activity_hazz_show);
+        //blur my background
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_BLUR_BEHIND,
+                WindowManager.LayoutParams.FLAG_BLUR_BEHIND);
+
         //hide action bar
 
         if (getSupportActionBar() != null) {
             getSupportActionBar().hide();
         }
-
         title=findViewById(R.id.nameDoa2);
-        bangla=findViewById(R.id.doaBangla);
-        meaing=findViewById(R.id.doaMeaning);
-        doa=findViewById(R.id.doaImg);
+        bangla=findViewById(R.id.doaMeaning);
+
+        title.setSelected(true);
 
 
 
-//        name.setText(""+DuaListAdapter.pos.getTitle());
-        title.setText(""+ NamazListAdapter.post.getTitle());
-        bangla.setText(""+NamazListAdapter.post.getBangla());
-        meaing.setText(""+NamazListAdapter.post.getOrtho());
-        doa.setText(""+NamazListAdapter.post.getArbi());
+        title.setText(""+ HazzListAdapter.post.getTitle());
+        bangla.setText(""+HazzListAdapter.post.getBangla());
 
 
-
-
-        //back btn
         ImageView backBtn = findViewById(R.id.cancelBtn);
-        ImageView backBtn2 = findViewById(R.id.bck_btn2);
-
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -53,6 +49,5 @@ public class NamazShowActivity extends AppCompatActivity {
 
             }
         });
-
     }
 }

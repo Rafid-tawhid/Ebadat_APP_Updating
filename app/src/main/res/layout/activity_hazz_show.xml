@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/item_bg2"
+    android:layout_height="match_parent"
+    tools:context=".HazzShowActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/hazz"
+                android:background="#F6B066"
+                >
+            </ImageView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_ic"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:paddingLeft="10dp"
+                android:id="@+id/cancelBtn"
+                ></ImageView>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#181818"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-10dp"
+                android:padding="12dp"
+                android:background="#181818"
+
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="6dp"
+                    android:orientation="vertical"
+                    android:layout_marginRight="6dp"
+                    android:background="#181818">
+                    <!--                <RelativeLayout-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="wrap_content">-->
+                    <!--                    <TextView-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:text="সাইয়্যেদুল "-->
+                    <!--                        android:textSize="18dp"-->
+
+                    <!--                        android:id="@+id/nameDoa"-->
+                    <!--                        android:background="@drawable/gradient_bg"-->
+                    <!--                        android:padding="13dp"-->
+                    <!--                        android:textColor="#181818">-->
+
+                    <!--                    </TextView>-->
+                    <!--                    <ImageView-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="40dp"-->
+                    <!--                        android:layout_alignParentRight="true"-->
+                    <!--                        android:layout_centerInParent="true"-->
+                    <!--                        android:layout_marginRight="12dp"-->
+                    <!--                        android:id="@+id/cancelBtn"-->
+
+                    <!--                        android:src="@drawable/cross">-->
+
+                    <!--                    </ImageView>-->
+                    <!--                </RelativeLayout>-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="সাইয়্যেদুল ইস্তিগফার"
+                        android:textColor="#FDCA85"
+                        android:id="@+id/nameDoa2"
+                        android:textSize="18dp"
+                        android:textAlignment="center"
+                        android:layout_margin="4dp"
+                        ></TextView>
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginBottom="40dp"
+                            >
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/dwn_ic">
+
+                            </ImageView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/doaImg"
+                                android:textAlignment="center"
+                                android:textSize="22dp"
+                                android:padding="8dp"
+                                android:visibility="gone"
+                                android:layout_margin="15dp"
+                                android:textColor="#FDCA85"
+                                >
+
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="বাংলা"
+                                android:textAlignment="center"
+                                android:textSize="18dp"
+
+                                android:visibility="gone"
+                                android:textColor="#FDCA85"
+                                android:layout_margin="4dp"
+                                >
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="FullDoa  "
+                                android:textAlignment="center"
+                                android:textSize="16dp"
+                                android:id="@+id/doaBangla"
+                                android:visibility="gone"
+                                android:textColor="#fff"
+                                android:layout_margin="4dp"
+                                >
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="বাংলা অর্থ:"
+                                android:visibility="gone"
+                                android:textAlignment="center"
+                                android:textSize="18dp"
+                                android:textColor="#FDCA85"
+                                android:layout_margin="4dp"
+                                >
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="BanglMeaning  "
+                                android:textAlignment="center"
+                                android:textSize="16dp"
+                                android:padding="10dp"
+                                android:id="@+id/doaMeaning"
+                                android:textColor="#fff"
+                                android:layout_margin="4dp"
+                                >
+
+                            </TextView>
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

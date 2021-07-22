@@ -15,8 +15,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -25,24 +23,19 @@ import com.example.custombottomnavigation.Retrofit.ApiInterface;
 import com.example.custombottomnavigation.Retrofit.RetrofitClient;
 import com.example.custombottomnavigation.example.Example;
 import com.example.custombottomnavigation.fragments.DuaListFragment;
+import com.example.custombottomnavigation.fragments.HazzFragment;
 import com.example.custombottomnavigation.fragments.KoranFragment;
 import com.example.custombottomnavigation.fragments.NamazFragment;
+import com.example.custombottomnavigation.fragments.SortFragment;
 import com.example.custombottomnavigation.fragments.ZakatFragment;
 import com.example.custombottomnavigation.fragments.KalimaFragment;
 import com.example.custombottomnavigation.fragments.RamadanFragment;
 
 
-import java.lang.reflect.Array;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.LocalTime;
-import java.time.ZoneId;
-import java.time.ZonedDateTime;
-import java.time.format.DateTimeFormatter;
-import java.time.format.FormatStyle;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.Locale;
 import java.util.TimeZone;
 
 import retrofit2.Call;
@@ -52,7 +45,7 @@ import retrofit2.Response;
 
 public class HomeFragment extends Fragment {
 
-    LinearLayout hadis, kalima, ramadan, dua, jakat, namaj, koran, name99;
+    LinearLayout hadis, kalima, ramadan, dua, jakat, namaj, koran, name99,hazz;
     TextView fajar, johur, asar, magrib, esha, currentNamaj;
     TextView demo;
     private Context context;
@@ -88,6 +81,7 @@ public class HomeFragment extends Fragment {
         koran = view.findViewById(R.id.koran_id);
         jakat = view.findViewById(R.id.jakat_btn);
         namaj = view.findViewById(R.id.namaj_btn);
+        hazz = view.findViewById(R.id.hazzId);
         name99 = view.findViewById(R.id.allahs_name);
         fajar = view.findViewById(R.id.fajartimeId);
         johur = view.findViewById(R.id.johor);
@@ -95,6 +89,7 @@ public class HomeFragment extends Fragment {
         magrib = view.findViewById(R.id.magribId);
         esha = view.findViewById(R.id.esaId);
         currentNamaj = view.findViewById(R.id.namaj);
+        demo = view.findViewById(R.id.a1);
         demo = view.findViewById(R.id.a1);
 
 
@@ -199,6 +194,18 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 SortFragment fragment = new SortFragment();
+                FragmentManager fragmentManager = getFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.main_frame_bg, fragment);
+                fragmentTransaction.commit();
+
+
+            }
+        });
+        hazz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                HazzFragment fragment = new HazzFragment();
                 FragmentManager fragmentManager = getFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.main_frame_bg, fragment);

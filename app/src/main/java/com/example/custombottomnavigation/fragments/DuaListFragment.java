@@ -44,6 +44,8 @@ public class DuaListFragment extends Fragment {
 
         //HIDE TOOLBAR
         MainActivity.toolbar.setVisibility(View.GONE);
+
+//       show all List dua Data
         initData();
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_dua_list, container, false);

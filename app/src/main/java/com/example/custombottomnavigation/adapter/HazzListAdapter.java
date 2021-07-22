@@ -6,18 +6,19 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.custombottomnavigation.DoaShowActivity;
-import com.example.custombottomnavigation.NamazShowActivity;
+import com.example.custombottomnavigation.HazzShowActivity;
 import com.example.custombottomnavigation.R;
 import com.example.custombottomnavigation.models.DuaItems;
 
 import java.util.List;
 
 
-public class NamazListAdapter extends RecyclerView.Adapter<NamazListAdapter.ViewHolder>
+public class HazzListAdapter extends RecyclerView.Adapter<HazzListAdapter.ViewHolder>
 {
 
 
@@ -25,7 +26,7 @@ public class NamazListAdapter extends RecyclerView.Adapter<NamazListAdapter.View
     private Context context;
     public static DuaItems post;
 
-    public NamazListAdapter(List<DuaItems> duaItemsList) {
+    public HazzListAdapter(List<DuaItems> duaItemsList) {
         this.duaItemsList = duaItemsList;
     }
 
@@ -41,7 +42,7 @@ public class NamazListAdapter extends RecyclerView.Adapter<NamazListAdapter.View
     }
 
     @Override
-    public void onBindViewHolder(NamazListAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(HazzListAdapter.ViewHolder holder, int position) {
 
 
 
@@ -56,7 +57,7 @@ public class NamazListAdapter extends RecyclerView.Adapter<NamazListAdapter.View
             @Override
             public void onClick(View v) {
                 post=duaItemsList.get(position);
-                Intent nIntent = new Intent(v.getContext(), NamazShowActivity.class);
+                Intent nIntent = new Intent(v.getContext(), HazzShowActivity.class);
 
 //                String title=pos.getTitle();
 //                int doa=pos.getDua();
@@ -73,7 +74,7 @@ public class NamazListAdapter extends RecyclerView.Adapter<NamazListAdapter.View
                 v.getContext().startActivity(nIntent);
 
 
-//                Toast.makeText(v.getContext(), "Numb : "+pos.getTitle(), Toast.LENGTH_SHORT).show();
+
             }
         });
 
@@ -95,6 +96,7 @@ public class NamazListAdapter extends RecyclerView.Adapter<NamazListAdapter.View
             super(itemView);
 
             dua_title=itemView.findViewById(R.id.headerTextViewId);
+            dua_title.setSelected(true);
 
 
 

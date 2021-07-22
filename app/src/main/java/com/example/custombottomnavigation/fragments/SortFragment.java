@@ -1,4 +1,4 @@
-package com.example.custombottomnavigation;
+package com.example.custombottomnavigation.fragments;
 
 import android.os.Bundle;
 
@@ -11,6 +11,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+
+import com.example.custombottomnavigation.HomeFragment;
+import com.example.custombottomnavigation.MainActivity;
+import com.example.custombottomnavigation.R;
 
 
 public class SortFragment extends Fragment {
