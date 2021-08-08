@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.os.CountDownTimer;
 import android.os.Handler;
 import android.preference.PreferenceManager;
 import android.util.Log;
@@ -36,6 +37,7 @@ import com.example.custombottomnavigation.fragments.RamadanFragment;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.time.LocalTime;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
@@ -45,6 +47,7 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.TimeZone;
 import java.util.Timer;
+import java.util.concurrent.TimeUnit;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -55,10 +58,11 @@ public class HomeFragment extends Fragment {
 
     LinearLayout hadis, kalima, ramadan, dua, jakat, namaj, koran, name99,hazz;
     TextView fajar, johur, asar, magrib, esha, currentNamaj,namajStartTime,namajEndTime;
+    public TextView counters;
     TextView demo;
-    LocalTime currrent;
     private Context context;
     ApiInterface apiInterface;
+    private CountDownTimer mCountDownTimer;
 
 
     public String myArea;
@@ -102,6 +106,7 @@ public class HomeFragment extends Fragment {
         demo = view.findViewById(R.id.a1);
         namajStartTime = view.findViewById(R.id.startTime);
         namajEndTime = view.findViewById(R.id.endTime);
+        counters = view.findViewById(R.id.ctr);
 
 
 
@@ -126,7 +131,7 @@ public class HomeFragment extends Fragment {
                     public void run() {
                         setNamajName();
                     }
-                }, 3000);
+                }, 5000);
             }
         }.start();
 
@@ -241,14 +246,7 @@ public class HomeFragment extends Fragment {
         DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("h:mm a", Locale.ENGLISH);
 //        String s1 = "3:00 AM";
 //        String s2 = "6:00 PM";
-//        String s3 = "12:01 PM";
-//        String s4 = "4:00 PM";
-//        String s5 = "4:01 PM";
-//        String s6= "6:00 PM";
-//        String s7= "6:01 PM";
-//        String s8= "7:00 PM";
-//        String s9= "7:01 PM";
-//        String s10= "11:59 PM";
+
         String s1 = fajar.getText().toString();
         String s2 = johur.getText().toString();
         String s3 = johur.getText().toString();
@@ -281,23 +279,45 @@ public class HomeFragment extends Fragment {
             namajStartTime.setText(s1);
             namajEndTime.setText(s2);
 
+            Duration duration = Duration.between(localTime, time2);
+            updateTimeRemaining(duration.getSeconds()*1000);
+
+
+
+
         }
 //        johor
         else if (localTime.isAfter(time3) && localTime.isBefore(time4))
         {
             currentNamaj.setText("জোহর");
+            namajStartTime.setText(s3);
+            namajEndTime.setText(s4);
+            Duration duration = Duration.between(localTime, time4);
+            updateTimeRemaining(duration.getSeconds()*1000);
         }
         else if (localTime.isAfter(time5) && localTime.isBefore(time6))
         {
             currentNamaj.setText("আসর");
+            namajStartTime.setText(s5);
+            namajEndTime.setText(s6);
+            Duration duration = Duration.between(localTime, time6);
+            updateTimeRemaining(duration.getSeconds()*1000);
         }
         else if (localTime.isAfter(time7) && localTime.isBefore(time8))
         {
             currentNamaj.setText("মাগরিব");
+            namajStartTime.setText(s7);
+            namajEndTime.setText(s8);
+            Duration duration = Duration.between(localTime, time8);
+            updateTimeRemaining(duration.getSeconds()*1000);
         }
         else if (localTime.isAfter(time9) && localTime.isBefore(time10))
         {
             currentNamaj.setText("ইশা");
+            namajStartTime.setText(s9);
+            namajEndTime.setText(s10);
+            Duration duration = Duration.between(localTime, time10);
+            updateTimeRemaining(duration.getSeconds()*1000);
         }
         else
         {
@@ -306,6 +326,10 @@ public class HomeFragment extends Fragment {
 
 
     }
+
+
+
+
 
 
     // Get all select info from api
@@ -439,6 +463,20 @@ public class HomeFragment extends Fragment {
 
         });
 
+
+
+    }
+    private void updateTimeRemaining(long millisUntilFinished) {
+
+        int totalSecondsLeft = (int) millisUntilFinished / 1000;
+        int hoursLeft = totalSecondsLeft / 3600;
+        int minutesLeft = (totalSecondsLeft % 3600) / 60;
+        int secondsLeft = totalSecondsLeft % 60;
+        String a=String.format("%02d", hoursLeft);
+        String b=String.format("%02d", minutesLeft);
+        String c=String.format("%02d", secondsLeft);
+        String aq=a+" "+b+" "+c;
+        counters.setText(aq);
 
 
     }
