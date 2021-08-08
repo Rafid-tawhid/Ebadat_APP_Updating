@@ -2,6 +2,7 @@ package com.example.custombottomnavigation;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.net.wifi.p2p.WifiP2pManager;
 import android.os.Build;
 import android.os.Bundle;
 
@@ -10,6 +11,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.os.Handler;
 import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -34,9 +36,15 @@ import com.example.custombottomnavigation.fragments.RamadanFragment;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalTime;
+import java.time.Period;
+import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Locale;
 import java.util.TimeZone;
+import java.util.Timer;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -46,8 +54,9 @@ import retrofit2.Response;
 public class HomeFragment extends Fragment {
 
     LinearLayout hadis, kalima, ramadan, dua, jakat, namaj, koran, name99,hazz;
-    TextView fajar, johur, asar, magrib, esha, currentNamaj;
+    TextView fajar, johur, asar, magrib, esha, currentNamaj,namajStartTime,namajEndTime;
     TextView demo;
+    LocalTime currrent;
     private Context context;
     ApiInterface apiInterface;
 
@@ -91,6 +100,9 @@ public class HomeFragment extends Fragment {
         currentNamaj = view.findViewById(R.id.namaj);
         demo = view.findViewById(R.id.a1);
         demo = view.findViewById(R.id.a1);
+        namajStartTime = view.findViewById(R.id.startTime);
+        namajEndTime = view.findViewById(R.id.endTime);
+
 
 
         crnt = System.currentTimeMillis();
@@ -104,14 +116,22 @@ public class HomeFragment extends Fragment {
         getAllInfo();
 
 
-        //namaz time show
+        //get Namaz Name after api call
+        final Handler mTimerHandler = new Handler();
+        final Handler threadHandler = new Handler();
+        new Thread() {
+            @Override
+            public void run() {
+                threadHandler.postDelayed(new Runnable() {
+                    public void run() {
+                        setNamajName();
+                    }
+                }, 3000);
+            }
+        }.start();
 
 
-//            findClosetNamjTime();
 
-
-
-        setNamazTime();
 
 
         //SHOW TOOLBAR
@@ -216,74 +236,76 @@ public class HomeFragment extends Fragment {
         });
     }
 
-    private void setNamazTime() {
-//        if (crnt>crnt+10000&&crnt<crnt+20000)
-//        {
-//            Log.e("as","Fajar");
-//        }
-//        if (crnt>crnt+20000&&crnt<crnt+30000)
-//        {
-//            Log.e("as","Duhor");
-//        }
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    private void setNamajName() {
+        DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("h:mm a", Locale.ENGLISH);
+//        String s1 = "3:00 AM";
+//        String s2 = "6:00 PM";
+//        String s3 = "12:01 PM";
+//        String s4 = "4:00 PM";
+//        String s5 = "4:01 PM";
+//        String s6= "6:00 PM";
+//        String s7= "6:01 PM";
+//        String s8= "7:00 PM";
+//        String s9= "7:01 PM";
+//        String s10= "11:59 PM";
+        String s1 = fajar.getText().toString();
+        String s2 = johur.getText().toString();
+        String s3 = johur.getText().toString();
+        String s4 = asar.getText().toString();
+        String s5 = asar.getText().toString();
+        String s6= magrib.getText().toString();
+        String s7= magrib.getText().toString();
+        String s8= esha.getText().toString();
+        String s9= esha.getText().toString();
+        String s10= fajar.getText().toString();
+
+        LocalTime time1 = LocalTime.parse(s1, timeFormatter);
+        LocalTime time2 = LocalTime.parse(s2, timeFormatter);
+        LocalTime time3 = LocalTime.parse(s3, timeFormatter);
+        LocalTime time4 = LocalTime.parse(s4, timeFormatter);
+        LocalTime time5 = LocalTime.parse(s5, timeFormatter);
+        LocalTime time6 = LocalTime.parse(s6, timeFormatter);
+        LocalTime time7 = LocalTime.parse(s7, timeFormatter);
+        LocalTime time8 = LocalTime.parse(s8, timeFormatter);
+        LocalTime time9 = LocalTime.parse(s9, timeFormatter);
+        LocalTime time10 = LocalTime.parse(s10, timeFormatter);
+
+
+        LocalTime localTime=LocalTime.now();
+
+
+        if (localTime.isAfter(time1) && localTime.isBefore(time2))
+        {
+            currentNamaj.setText("ফজর");
+            namajStartTime.setText(s1);
+            namajEndTime.setText(s2);
+
+        }
+//        johor
+        else if (localTime.isAfter(time3) && localTime.isBefore(time4))
+        {
+            currentNamaj.setText("জোহর");
+        }
+        else if (localTime.isAfter(time5) && localTime.isBefore(time6))
+        {
+            currentNamaj.setText("আসর");
+        }
+        else if (localTime.isAfter(time7) && localTime.isBefore(time8))
+        {
+            currentNamaj.setText("মাগরিব");
+        }
+        else if (localTime.isAfter(time9) && localTime.isBefore(time10))
+        {
+            currentNamaj.setText("ইশা");
+        }
+        else
+        {
+            currentNamaj.setText("ফজর+");
+        }
+
+
     }
-
-
-//    private void findClosetNamjTime()  {
-//        int temp, size;
-//
-//         int a= (int) (fj-crnt);
-//         int b= (int) (jh-crnt);
-//         int c= (int) (asr-crnt);
-//         int d= (int) (mgb-crnt);
-//         int e= (int) (esa-crnt);
-//        int array[] = {a, b, c, d, e};
-//        size = array.length;
-//        for(int i = 0; i<size; i++ ){
-//            for(int j = i+1; j<size; j++){
-//                if(array[i]>array[j]){
-//                    temp = array[i];
-//                    array[i] = array[j];
-//                    array[j] = temp;
-//                }
-//            }
-//        }
-//        Log.e("ss","Third smallest element is:: "+array[0]);
-//
-//
-////
-////        }
-//
-//       if (array[size-1]==b){
-//
-//            Log.e("qq"," b"+b);
-//        }
-//        else if(array[size-1]==c){
-//
-//            Log.e("qq"," c"+c);
-//        }
-//        else if (array[size-1]==d){
-//
-//            Log.e("qq"," d"+d);
-//        }
-//        else if (array[size-1]==e){
-//
-//            Log.e("qq"," e"+e);
-//        }
-//        if (array[size-1]==a){
-//
-//            Log.e("qq"," a"+a);
-//        }
-//        else {
-//            Log.e("qq"," ajira");
-//        }
-//
-//
-//
-//
-//
-//
-//
-//    }
 
 
     // Get all select info from api
@@ -301,7 +323,7 @@ public class HomeFragment extends Fragment {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
         String name = preferences.getString("Name", "");
         myArea = name;
-//        myArea=MainActivity.area;
+        myArea=MainActivity.area;
 
 
         apiInterface.getAllInformation(myArea, currentMonth, currentYear).enqueue(new Callback<Example>() {
@@ -398,9 +420,11 @@ public class HomeFragment extends Fragment {
                     }
 
 
-                } else {
+
+                }
+                else {
                     Toast.makeText(getView().getContext(), "un Success", Toast.LENGTH_SHORT).show();
-                    Log.e("err", "un Success");
+                    Log.e("ww", "un Success");
 
                 }
 
@@ -411,7 +435,10 @@ public class HomeFragment extends Fragment {
                 Log.e("err", "on failure");
 
             }
+
+
         });
+
 
 
     }
