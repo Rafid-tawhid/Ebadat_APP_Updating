@@ -280,7 +280,7 @@ public class HomeFragment extends Fragment {
             namajEndTime.setText(s2);
 
             Duration duration = Duration.between(localTime, time2);
-            updateTimeRemaining(duration.getSeconds()*1000);
+            countDown(duration.getSeconds()*1000);
 
 
 
@@ -293,7 +293,8 @@ public class HomeFragment extends Fragment {
             namajStartTime.setText(s3);
             namajEndTime.setText(s4);
             Duration duration = Duration.between(localTime, time4);
-            updateTimeRemaining(duration.getSeconds()*1000);
+            countDown(duration.getSeconds()*1000);
+
         }
         else if (localTime.isAfter(time5) && localTime.isBefore(time6))
         {
@@ -301,7 +302,7 @@ public class HomeFragment extends Fragment {
             namajStartTime.setText(s5);
             namajEndTime.setText(s6);
             Duration duration = Duration.between(localTime, time6);
-            updateTimeRemaining(duration.getSeconds()*1000);
+            countDown(duration.getSeconds()*1000);
         }
         else if (localTime.isAfter(time7) && localTime.isBefore(time8))
         {
@@ -309,7 +310,7 @@ public class HomeFragment extends Fragment {
             namajStartTime.setText(s7);
             namajEndTime.setText(s8);
             Duration duration = Duration.between(localTime, time8);
-            updateTimeRemaining(duration.getSeconds()*1000);
+            countDown(duration.getSeconds()*1000);
         }
         else if (localTime.isAfter(time9) && localTime.isBefore(time10))
         {
@@ -317,7 +318,7 @@ public class HomeFragment extends Fragment {
             namajStartTime.setText(s9);
             namajEndTime.setText(s10);
             Duration duration = Duration.between(localTime, time10);
-            updateTimeRemaining(duration.getSeconds()*1000);
+            countDown(duration.getSeconds()*1000);
         }
         else
         {
@@ -327,9 +328,19 @@ public class HomeFragment extends Fragment {
 
     }
 
+    private void countDown(long l) {
+        CountDownTimer timer= new CountDownTimer(l, 1000) {
+            @Override
+            public void onTick(long l) {
+            updateTimeRemaining(l);
+            }
 
+            @Override
+            public void onFinish() {
 
-
+            }
+        }.start();
+    }
 
 
     // Get all select info from api
@@ -468,6 +479,7 @@ public class HomeFragment extends Fragment {
     }
     private void updateTimeRemaining(long millisUntilFinished) {
 
+        long l=millisUntilFinished;
         int totalSecondsLeft = (int) millisUntilFinished / 1000;
         int hoursLeft = totalSecondsLeft / 3600;
         int minutesLeft = (totalSecondsLeft % 3600) / 60;
@@ -475,9 +487,7 @@ public class HomeFragment extends Fragment {
         String a=String.format("%02d", hoursLeft);
         String b=String.format("%02d", minutesLeft);
         String c=String.format("%02d", secondsLeft);
-        String aq=a+" "+b+" "+c;
-        counters.setText(aq);
-
+        counters.setText(a+" "+b+" "+c);
 
     }
 
