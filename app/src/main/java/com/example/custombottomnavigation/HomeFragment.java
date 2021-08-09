@@ -66,11 +66,11 @@ public class HomeFragment extends Fragment {
 
 
     public String myArea;
-    long fj;
-    long jh;
-    long asr;
-    long mgb;
-    long esa;
+    String fj;
+    String jh;
+    String asr;
+    String mgb;
+    String esa;
     long crnt;
 
 
@@ -121,7 +121,7 @@ public class HomeFragment extends Fragment {
         getAllInfo();
 
 
-        //get Namaz Name after api call
+        //get Namaz Name after api call after fixed 5 second
         final Handler mTimerHandler = new Handler();
         final Handler threadHandler = new Handler();
         new Thread() {
@@ -131,7 +131,7 @@ public class HomeFragment extends Fragment {
                     public void run() {
                         setNamajName();
                     }
-                }, 5000);
+                }, 3000);
             }
         }.start();
 
@@ -244,19 +244,27 @@ public class HomeFragment extends Fragment {
     @RequiresApi(api = Build.VERSION_CODES.O)
     private void setNamajName() {
         DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("h:mm a", Locale.ENGLISH);
-//        String s1 = "3:00 AM";
-//        String s2 = "6:00 PM";
 
-        String s1 = fajar.getText().toString();
-        String s2 = johur.getText().toString();
-        String s3 = johur.getText().toString();
-        String s4 = asar.getText().toString();
-        String s5 = asar.getText().toString();
-        String s6= magrib.getText().toString();
-        String s7= magrib.getText().toString();
-        String s8= esha.getText().toString();
-        String s9= esha.getText().toString();
-        String s10= fajar.getText().toString();
+        String s1,s2,s3,s4,s5,s6,s7,s8,s9,s10;
+
+        if (fj==null||jh==null)
+        {
+                s1 = "3:00 AM";s2 = "12:01 PM";s3 = "12:01 PM";s4 = "3:30 PM";s5 = "3:30 PM";s6 = "6:30 PM";s7 = "6:30 PM";s8 = "8:00 PM";s9 = "8:00 PM";s10 = "3:00 AM";
+        }
+        else
+        {
+          s1 = fj;
+          s2 = jh;
+          s3 = jh;
+          s4 = asr;
+          s5 = asr;
+          s6= mgb;
+          s7= mgb;
+          s8= esa;
+          s9= esa;
+          s10= fj;
+        }
+
 
         LocalTime time1 = LocalTime.parse(s1, timeFormatter);
         LocalTime time2 = LocalTime.parse(s2, timeFormatter);
@@ -323,6 +331,7 @@ public class HomeFragment extends Fragment {
         else
         {
             currentNamaj.setText("ফজর+");
+
         }
 
 
@@ -379,7 +388,9 @@ public class HomeFragment extends Fragment {
                         // string to time
                         Date _24HourDt = _24HourSDF.parse(fazarTime);
                         fajar.setText(_12HourSDF.format(_24HourDt));
-                        fj = _24HourDt.getTime();
+                        fj = _12HourSDF.format(_24HourDt);
+
+
 
 
                     } catch (ParseException e) {
@@ -397,7 +408,7 @@ public class HomeFragment extends Fragment {
                         // string to time
                         Date _24HourDt = _24HourSDF.parse(juhorTime);
                         johur.setText(_12HourSDF.format(_24HourDt));
-                        jh = _24HourDt.getTime();
+                        jh = _12HourSDF.format(_24HourDt);
 
 
                     } catch (ParseException e) {
@@ -415,7 +426,7 @@ public class HomeFragment extends Fragment {
                         // string to time
                         Date _24HourDt = _24HourSDF.parse(asoreTime);
                         asar.setText(_12HourSDF.format(_24HourDt));
-                        asr = _24HourDt.getTime();
+                        asr = _12HourSDF.format(_24HourDt);
 
 
                     } catch (ParseException e) {
@@ -432,7 +443,7 @@ public class HomeFragment extends Fragment {
                         // string to time
                         Date _24HourDt = _24HourSDF.parse(magribTime);
                         magrib.setText(_12HourSDF.format(_24HourDt));
-                        mgb = _24HourDt.getTime();
+                        mgb = _12HourSDF.format(_24HourDt);
 
                     } catch (ParseException e) {
                         e.printStackTrace();
@@ -448,7 +459,8 @@ public class HomeFragment extends Fragment {
                         // string to time
                         Date _24HourDt = _24HourSDF.parse(eshaTime);
                         esha.setText(_12HourSDF.format(_24HourDt));
-                        esa = _24HourDt.getTime();
+//                        esa = _24HourDt.getTime(); FOR MILISECOND
+                        esa = _12HourSDF.format(_24HourDt);
 
                     } catch (ParseException e) {
                         e.printStackTrace();
